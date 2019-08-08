@@ -1,0 +1,461 @@
+-----------------
+error-prone
+f10f48c87d828881dda9912f050bccf8bb36776c:core/src/test/resources/com/google/errorprone/bugpatterns/ArrayToStringPositiveCases.java
+com.github.javaparser.ParseProblemException: (line 52,col 3) Parse error. Found "<<", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+error-prone
+d51253011690def06db835d5ad605ca134c94d84:core/src/test/resources/com/google/errorprone/bugpatterns/ArrayToStringPositiveCases.java
+com.github.javaparser.ParseProblemException: (line 52,col 3) Parse error. Found "<<", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+error-prone
+f10f48c87d828881dda9912f050bccf8bb36776c:core/src/test/resources/com/google/errorprone/bugpatterns/ArrayToStringPositiveCases.java
+com.github.javaparser.ParseProblemException: (line 52,col 3) Parse error. Found "<<", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+storm
+bc391722098c1e66f6ebe0377a3de6b51a7cf38c:storm-core/src/jvm/backtype/storm/task/ShellBolt.java
+com.github.javaparser.ParseProblemException: (line 58,col 31) Parse error. Found "<<", expected "}"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3823)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+(line 79,col 25) Parse error. Found "else", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+realm-java
+00c9dd117b4b3279c4f48238948005994c90a491:realm/realm-library/src/syncIntegrationTest/java/io/realm/objectserver/PartialSyncTests.java
+com.github.javaparser.ParseProblemException: (line 77,col 9) Parse error. Found ")", expected one of  "else" "}"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3823)
+  com.github.javaparser.GeneratedJavaParser.LambdaBody(GeneratedJavaParser.java:4000)
+  com.github.javaparser.GeneratedJavaParser.Expression(GeneratedJavaParser.java:2191)
+  com.github.javaparser.GeneratedJavaParser.ArgumentList(GeneratedJavaParser.java:3486)
+  com.github.javaparser.GeneratedJavaParser.Arguments(GeneratedJavaParser.java:3473)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffixWithoutSuper(GeneratedJavaParser.java:3324)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffix(GeneratedJavaParser.java:3273)
+  com.github.javaparser.GeneratedJavaParser.PrimaryExpression(GeneratedJavaParser.java:2971)
+  com.github.javaparser.GeneratedJavaParser.StatementExpression(GeneratedJavaParser.java:4059)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3727)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+(line 79,col 5) Parse error. Found "@", expected one of  ")" ","
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Arguments(GeneratedJavaParser.java:3480)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffixWithoutSuper(GeneratedJavaParser.java:3324)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffix(GeneratedJavaParser.java:3273)
+  com.github.javaparser.GeneratedJavaParser.PrimaryExpression(GeneratedJavaParser.java:2971)
+  com.github.javaparser.GeneratedJavaParser.StatementExpression(GeneratedJavaParser.java:4059)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3727)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+realm-java
+7eae50c03e3ef36072e99a45f6cb2c8b3336085c:realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java
+com.github.javaparser.ParseProblemException: (line 851,col 134) Parse error. Found ".", expected "}"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3823)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+(line 877,col 13) Parse error. Found "else", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+realm-java
+b6a78c64de381f6c5f111b4dc931dcf3eedc567d:realm/realm-library/src/objectServer/java/io/realm/SyncConfiguration.java
+com.github.javaparser.ParseProblemException: (line 624,col 10) Parse error. Found "return", expected one of  "<" "@" "boolean" "byte" "char" "class" "double" "enum" "exports" "float" "int" "interface" "long" "module" "open" "opens" "provides" "requires" "short" "strictfp" "to" "transitive" "uses" "void" "with" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:957)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:913)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+realm-java
+be2464f1cd9924019524fe8c44c6b32482e6472b:realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java
+com.github.javaparser.ParseProblemException: (line 590,col 12) Parse error. Found  "String" <IDENTIFIER>, expected one of  ";" "@" "class" "enum" "interface" "module" "open"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:179)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+realm-java
+c46ebfb6b0b0ca14505cb6281d78d48f0632371c:realm/src/main/java/io/realm/internal/Table.java
+com.github.javaparser.ParseProblemException: (line 1371,col 1) Parse error. Found "public", expected one of  "enum" "exports" "module" "open" "opens" "provides" "requires" "strictfp" "to" "transitive" "uses" "with" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Identifier(GeneratedJavaParser.java:2151)
+  com.github.javaparser.GeneratedJavaParser.SimpleName(GeneratedJavaParser.java:2090)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1208)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+realm-java
+c46ebfb6b0b0ca14505cb6281d78d48f0632371c:realm-annotations-processor/src/main/java/io/realm/processor/RealmProcessor.java
+com.github.javaparser.ParseProblemException: (line 323,col 21) Parse error. Found "(", expected one of  "," ";" "=" "@" "["
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3847)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+(line 326,col 9) Parse error. Found "return", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+deeplearning4j
+abf8f56e296c03d70757025e1930bc534b81194f:nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java
+com.github.javaparser.ParseProblemException: (line 11588,col 55) Parse error. Found "(", expected one of  "," ";" "=" "@" "["
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3847)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3683)
+  com.github.javaparser.GeneratedJavaParser.ForStatement(GeneratedJavaParser.java:4604)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3747)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+(line 11590,col 61) Parse error. Found "else", expected "}"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3823)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3683)
+  com.github.javaparser.GeneratedJavaParser.ForStatement(GeneratedJavaParser.java:4604)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3747)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+(line 11635,col 5) Parse error. Found "if", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+deeplearning4j
+e34f03bd0c7c805789bdb9da427db7334e61cedc:nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java
+com.github.javaparser.ParseProblemException: (line 2118,col 5) Parse error. Found "return", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+elasticsearch
+3fcae916334410dd2516e898035e6011c07e629c:src/test/java/org/elasticsearch/alerts/actions/AlertActionsTest.java
+com.github.javaparser.ParseProblemException: (line 21,col 55) Parse error. Found "<<", expected one of  ";" "@" "\u001a" "abstract" "class" "default" "enum" "final" "import" "interface" "module" "native" "open" "private" "protected" "public" "static" "strictfp" "synchronized" "transient" "transitive" "volatile" <EOF>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:201)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+elasticsearch
+3fcae916334410dd2516e898035e6011c07e629c:src/test/java/org/elasticsearch/alerts/BootStrapTest.java
+com.github.javaparser.ParseProblemException: (line 44,col 23) Parse error. Found "<<", expected "}"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3823)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+(line 62,col 9) Parse error. Found "catch", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+elasticsearch
+f3de7783d2f6e1a53529170c8bfcb79f2e9bade3:core/src/main/java/org/elasticsearch/index/shard/IndexShard.java
+com.github.javaparser.ParseProblemException: (line 152,col 48) Parse error. Found "<<", expected one of  ";" "<" "@" "abstract" "boolean" "byte" "char" "class" "default" "double" "enum" "exports" "final" "float" "int" "interface" "long" "module" "native" "open" "opens" "private" "protected" "provides" "public" "requires" "short" "static" "strictfp" "synchronized" "to" "transient" "transitive" "uses" "void" "volatile" "with" "{" "}" <IDENTIFIER>
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:860)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+cassandra
+02d5ef3e765a34c738bc26796f2761e8cc7b715a:src/java/org/apache/cassandra/tracing/Tracing.java
+com.github.javaparser.ParseProblemException: (line 147,col 81) Parse error. Found "<<", expected "}"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3823)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.AllocationExpression(GeneratedJavaParser.java:3563)
+  com.github.javaparser.GeneratedJavaParser.PrimaryPrefix(GeneratedJavaParser.java:3177)
+  com.github.javaparser.GeneratedJavaParser.PrimaryExpression(GeneratedJavaParser.java:2963)
+  com.github.javaparser.GeneratedJavaParser.PostfixExpression(GeneratedJavaParser.java:2865)
+  com.github.javaparser.GeneratedJavaParser.UnaryExpressionNotPlusMinus(GeneratedJavaParser.java:2846)
+  com.github.javaparser.GeneratedJavaParser.UnaryExpression(GeneratedJavaParser.java:2750)
+  com.github.javaparser.GeneratedJavaParser.MultiplicativeExpression(GeneratedJavaParser.java:2637)
+  com.github.javaparser.GeneratedJavaParser.AdditiveExpression(GeneratedJavaParser.java:2599)
+  com.github.javaparser.GeneratedJavaParser.ShiftExpression(GeneratedJavaParser.java:2563)
+  com.github.javaparser.GeneratedJavaParser.RelationalExpression(GeneratedJavaParser.java:2513)
+  com.github.javaparser.GeneratedJavaParser.InstanceOfExpression(GeneratedJavaParser.java:2495)
+  com.github.javaparser.GeneratedJavaParser.EqualityExpression(GeneratedJavaParser.java:2457)
+  com.github.javaparser.GeneratedJavaParser.AndExpression(GeneratedJavaParser.java:2435)
+  com.github.javaparser.GeneratedJavaParser.ExclusiveOrExpression(GeneratedJavaParser.java:2414)
+  com.github.javaparser.GeneratedJavaParser.InclusiveOrExpression(GeneratedJavaParser.java:2393)
+  com.github.javaparser.GeneratedJavaParser.ConditionalAndExpression(GeneratedJavaParser.java:2372)
+  com.github.javaparser.GeneratedJavaParser.ConditionalOrExpression(GeneratedJavaParser.java:2351)
+  com.github.javaparser.GeneratedJavaParser.ConditionalExpression(GeneratedJavaParser.java:2332)
+  com.github.javaparser.GeneratedJavaParser.Expression(GeneratedJavaParser.java:2167)
+  com.github.javaparser.GeneratedJavaParser.ArgumentList(GeneratedJavaParser.java:3486)
+  com.github.javaparser.GeneratedJavaParser.Arguments(GeneratedJavaParser.java:3473)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffixWithoutSuper(GeneratedJavaParser.java:3324)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffix(GeneratedJavaParser.java:3273)
+  com.github.javaparser.GeneratedJavaParser.PrimaryExpression(GeneratedJavaParser.java:2971)
+  com.github.javaparser.GeneratedJavaParser.StatementExpression(GeneratedJavaParser.java:4059)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3727)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3683)
+  com.github.javaparser.GeneratedJavaParser.IfStatement(GeneratedJavaParser.java:4327)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3735)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
+-----------------
+cassandra
+02d5ef3e765a34c738bc26796f2761e8cc7b715a:src/java/org/apache/cassandra/tracing/Tracing.java
+com.github.javaparser.ParseProblemException: (line 147,col 81) Parse error. Found "<<", expected "}"
+Problem stacktrace : 
+  com.github.javaparser.GeneratedJavaParser.generateParseException(GeneratedJavaParser.java:10567)
+  com.github.javaparser.GeneratedJavaParser.jj_consume_token(GeneratedJavaParser.java:10426)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3823)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.AllocationExpression(GeneratedJavaParser.java:3563)
+  com.github.javaparser.GeneratedJavaParser.PrimaryPrefix(GeneratedJavaParser.java:3177)
+  com.github.javaparser.GeneratedJavaParser.PrimaryExpression(GeneratedJavaParser.java:2963)
+  com.github.javaparser.GeneratedJavaParser.PostfixExpression(GeneratedJavaParser.java:2865)
+  com.github.javaparser.GeneratedJavaParser.UnaryExpressionNotPlusMinus(GeneratedJavaParser.java:2846)
+  com.github.javaparser.GeneratedJavaParser.UnaryExpression(GeneratedJavaParser.java:2750)
+  com.github.javaparser.GeneratedJavaParser.MultiplicativeExpression(GeneratedJavaParser.java:2637)
+  com.github.javaparser.GeneratedJavaParser.AdditiveExpression(GeneratedJavaParser.java:2599)
+  com.github.javaparser.GeneratedJavaParser.ShiftExpression(GeneratedJavaParser.java:2563)
+  com.github.javaparser.GeneratedJavaParser.RelationalExpression(GeneratedJavaParser.java:2513)
+  com.github.javaparser.GeneratedJavaParser.InstanceOfExpression(GeneratedJavaParser.java:2495)
+  com.github.javaparser.GeneratedJavaParser.EqualityExpression(GeneratedJavaParser.java:2457)
+  com.github.javaparser.GeneratedJavaParser.AndExpression(GeneratedJavaParser.java:2435)
+  com.github.javaparser.GeneratedJavaParser.ExclusiveOrExpression(GeneratedJavaParser.java:2414)
+  com.github.javaparser.GeneratedJavaParser.InclusiveOrExpression(GeneratedJavaParser.java:2393)
+  com.github.javaparser.GeneratedJavaParser.ConditionalAndExpression(GeneratedJavaParser.java:2372)
+  com.github.javaparser.GeneratedJavaParser.ConditionalOrExpression(GeneratedJavaParser.java:2351)
+  com.github.javaparser.GeneratedJavaParser.ConditionalExpression(GeneratedJavaParser.java:2332)
+  com.github.javaparser.GeneratedJavaParser.Expression(GeneratedJavaParser.java:2167)
+  com.github.javaparser.GeneratedJavaParser.ArgumentList(GeneratedJavaParser.java:3486)
+  com.github.javaparser.GeneratedJavaParser.Arguments(GeneratedJavaParser.java:3473)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffixWithoutSuper(GeneratedJavaParser.java:3324)
+  com.github.javaparser.GeneratedJavaParser.PrimarySuffix(GeneratedJavaParser.java:3273)
+  com.github.javaparser.GeneratedJavaParser.PrimaryExpression(GeneratedJavaParser.java:2971)
+  com.github.javaparser.GeneratedJavaParser.StatementExpression(GeneratedJavaParser.java:4059)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3727)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3683)
+  com.github.javaparser.GeneratedJavaParser.IfStatement(GeneratedJavaParser.java:4327)
+  com.github.javaparser.GeneratedJavaParser.Statement(GeneratedJavaParser.java:3735)
+  com.github.javaparser.GeneratedJavaParser.BlockStatement(GeneratedJavaParser.java:3902)
+  com.github.javaparser.GeneratedJavaParser.Statements(GeneratedJavaParser.java:1644)
+  com.github.javaparser.GeneratedJavaParser.Block(GeneratedJavaParser.java:3822)
+  com.github.javaparser.GeneratedJavaParser.MethodDeclaration(GeneratedJavaParser.java:1253)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBodyDeclaration(GeneratedJavaParser.java:952)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceBody(GeneratedJavaParser.java:846)
+  com.github.javaparser.GeneratedJavaParser.ClassOrInterfaceDeclaration(GeneratedJavaParser.java:408)
+  com.github.javaparser.GeneratedJavaParser.CompilationUnit(GeneratedJavaParser.java:154)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:135)
+  com.github.javaparser.JavaParser.simplifiedParse(JavaParser.java:334)
+  com.github.javaparser.JavaParser.parse(JavaParser.java:209)
+  edu.pku.intellimerge.evaluation.ManualResultsChecker.main(ManualResultsChecker.java:42)
