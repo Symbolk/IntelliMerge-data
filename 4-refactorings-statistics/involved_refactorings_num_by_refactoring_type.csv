@@ -1,0 +1,16 @@
+;2;3;4;8;9;10;11;19;23;25
+Change Package;0;2;0;2;2;1;0;0;0;1
+Extract And Move Method;31;4;2;6;60;0;78;4;0;2
+Extract Interface;0;1;0;0;0;0;4;1;0;0
+Extract Method;71;28;4;41;116;2;361;9;6;21
+Extract Superclass;6;8;0;15;11;0;25;3;3;1
+Inline Method;10;3;0;3;17;0;56;4;1;2
+Move And Rename Class;0;2;5;3;10;0;16;0;0;0
+Move Attribute;4;8;0;1;329;0;77;0;2;4
+Move Class;12;4;0;11;13;0;39;5;10;1
+Move Method;7;16;1;7;27;0;118;0;48;5
+Pull Up Attribute;6;24;0;27;3;0;29;2;0;1
+Pull Up Method;8;19;1;47;29;0;92;3;1;2
+Push Down Method;17;6;0;10;11;0;16;5;0;9
+Rename Class;3;13;0;179;9;2;32;2;10;1
+Rename Method;34;21;12;19;159;3;153;5;17;66

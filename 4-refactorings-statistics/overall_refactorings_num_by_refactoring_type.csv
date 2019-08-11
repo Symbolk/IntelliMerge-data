@@ -1,0 +1,16 @@
+refactoring_type;2;3;4;8;9;10;11;19;23;25
+Change Package;1;8;1;7;14;9;4;0;0;1
+Extract And Move Method;36;23;7;183;231;0;277;9;6;202
+Extract Interface;1;21;1;0;9;2;25;1;2;1
+Extract Method;123;91;13;169;433;3;1076;19;42;92
+Extract Superclass;9;26;1;37;63;3;106;4;3;3
+Inline Method;19;33;0;21;113;0;197;9;1;12
+Move And Rename Class;8;31;13;11;256;2;131;3;2;2
+Move Attribute;16;176;0;155;8324;1;734;13;22;32
+Move Class;77;256;28;311;1203;58;301;861;53;13
+Move Method;14;158;8;125;698;2;544;6;63;57
+Pull Up Attribute;36;59;1;99;130;0;262;8;15;22
+Pull Up Method;10;213;4;415;409;1;366;8;17;8
+Push Down Method;17;49;0;13;107;0;109;8;5;34
+Rename Class;13;155;4;462;605;13;171;8;31;24
+Rename Method;83;297;39;182;1199;58;1058;33;82;300
