@@ -1,0 +1,770 @@
+storm: 191/1912
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_list653 : TList to _list661 : TList in method public read(prot TProtocol, struct LSWorkerHeartbeat) : void in class backtype.storm.generated.LSWorkerHeartbeat.LSWorkerHeartbeatTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSWorkerHeartbeat.java;738;0
+d;storm-core/src/jvm/backtype/storm/generated/LSWorkerHeartbeat.java;738;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i415 : int to _i531 : int in method public read(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;967;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;967;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.scheduler.Topologies moved to org.apache.storm.scheduler.Topologies
+s;storm-core/src/jvm/backtype/storm/scheduler/Topologies.java;26;58
+d;storm-core/src/jvm/org/apache/storm/scheduler/Topologies.java;26;58
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i445 : int to _i461 : int in method public read(prot TProtocol, struct ComponentPageInfo) : void in class backtype.storm.generated.ComponentPageInfo.ComponentPageInfoTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/ComponentPageInfo.java;2102;0
+d;storm-core/src/jvm/backtype/storm/generated/ComponentPageInfo.java;2135;0
+--------------------
+98704ec81a7629d11a95a744ee47d3baf7c2de6a;Rename Parameter;Rename Parameter	hkey : String to dataTypeDescription : RedisDataTypeDescription in method public opaque(jedisPoolConfig JedisPoolConfig, dataTypeDescription RedisDataTypeDescription) : StateFactory in class org.apache.storm.redis.trident.state.RedisMapState
+s;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisMapState.java;40;0
+d;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisMapState.java;41;0
+--------------------
+8fd1f4b193b5d81b3036726268da39380e2b3b61;Extract Superclass;Extract Superclass	org.apache.storm.redis.trident.state.AbstractRedisStateUpdater from classes [org.apache.storm.redis.trident.state.RedisClusterStateUpdater, org.apache.storm.redis.trident.state.RedisStateUpdater]
+s;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisClusterStateUpdater.java;26;43
+s;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisStateUpdater.java;27;47
+d;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/AbstractRedisStateUpdater.java;31;36
+d;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisClusterStateUpdater.java;26;43
+d;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisStateUpdater.java;27;47
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.state.CombinerValueUpdater moved to org.apache.storm.trident.state.CombinerValueUpdater
+s;storm-core/src/jvm/storm/trident/state/CombinerValueUpdater.java;22;14
+d;storm-core/src/jvm/org/apache/storm/trident/state/CombinerValueUpdater.java;22;14
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.LSSupervisorId moved to org.apache.storm.generated.LSSupervisorId
+s;storm-core/src/jvm/backtype/storm/generated/LSSupervisorId.java;53;352
+d;storm-core/src/jvm/org/apache/storm/generated/LSSupervisorId.java;53;352
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.TopicOffsetOutOfRangeException moved to org.apache.storm.kafka.TopicOffsetOutOfRangeException
+s;external/storm-kafka/src/jvm/storm/kafka/TopicOffsetOutOfRangeException.java;20;5
+d;external/storm-kafka/src/jvm/org/apache/storm/kafka/TopicOffsetOutOfRangeException.java;20;5
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.metric.internal.RateTrackerTest moved to org.apache.storm.metric.internal.RateTrackerTest
+s;storm-core/test/jvm/backtype/storm/metric/internal/RateTrackerTest.java;24;70
+d;storm-core/test/jvm/org/apache/storm/metric/internal/RateTrackerTest.java;24;70
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.starter.tools.SlidingWindowCounter moved to org.apache.storm.starter.tools.SlidingWindowCounter
+s;examples/storm-starter/src/jvm/storm/starter/tools/SlidingWindowCounter.java;23;96
+d;examples/storm-starter/src/jvm/org/apache/storm/starter/tools/SlidingWindowCounter.java;23;96
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_elem540 : long to _elem548 : long in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;850;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;850;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i336 : int to _i344 : int in method public read(prot TProtocol, struct TopologyInfo) : void in class backtype.storm.generated.TopologyInfo.TopologyInfoTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;2069;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;2069;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.multilang.ISerializer moved to org.apache.storm.multilang.ISerializer
+s;storm-core/src/jvm/backtype/storm/multilang/ISerializer.java;29;53
+d;storm-core/src/jvm/org/apache/storm/multilang/ISerializer.java;29;53
+--------------------
+444ec05e5a9f38f9a9472c54b39f1371c839683b;Move Attribute;Move Attribute	private threadDes : ThreadLocal<TDeserializer> from class storm.trident.util.TridentUtils to class backtype.storm.utils.Utils
+s;storm-core/src/jvm/storm/trident/util/TridentUtils.java;112;0
+d;storm-core/src/jvm/backtype/storm/utils/Utils.java;85;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i587 : int to _i595 : int in method public read(iprot TProtocol, struct StormBase) : void in class backtype.storm.generated.StormBase.StormBaseStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1150;0
+d;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1150;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.starter.bolt.RollingCountBolt moved to org.apache.storm.starter.bolt.RollingCountBolt
+s;examples/storm-starter/src/jvm/storm/starter/bolt/RollingCountBolt.java;37;105
+d;examples/storm-starter/src/jvm/org/apache/storm/starter/bolt/RollingCountBolt.java;37;105
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_iter615 : Map.Entry<String,ThriftSerializedObject> to _iter623 : Map.Entry<String,ThriftSerializedObject> in method public write(prot TProtocol, struct LocalStateData) : void in class backtype.storm.generated.LocalStateData.LocalStateDataTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;442;0
+d;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;442;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.messaging.netty.StormServerHandler moved to org.apache.storm.messaging.netty.StormServerHandler
+s;storm-core/src/jvm/backtype/storm/messaging/netty/StormServerHandler.java;31;43
+d;storm-core/src/jvm/org/apache/storm/messaging/netty/StormServerHandler.java;31;43
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.utils.StormBoundedExponentialBackoffRetry moved to org.apache.storm.utils.StormBoundedExponentialBackoffRetry
+s;storm-core/src/jvm/backtype/storm/utils/StormBoundedExponentialBackoffRetry.java;26;50
+d;storm-core/src/jvm/org/apache/storm/utils/StormBoundedExponentialBackoffRetry.java;26;50
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.nimbus.ITopologyActionNotifierPlugin moved to org.apache.storm.nimbus.ITopologyActionNotifierPlugin
+s;storm-core/src/jvm/backtype/storm/nimbus/ITopologyActionNotifierPlugin.java;22;21
+d;storm-core/src/jvm/org/apache/storm/nimbus/ITopologyActionNotifierPlugin.java;22;21
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i377 : int to _i493 : int in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;705;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;705;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.metric.internal.LatencyStatAndMetricTest moved to org.apache.storm.metric.internal.LatencyStatAndMetricTest
+s;storm-core/test/jvm/backtype/storm/metric/internal/LatencyStatAndMetricTest.java;27;56
+d;storm-core/test/jvm/org/apache/storm/metric/internal/LatencyStatAndMetricTest.java;27;56
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.util.TridentUtils moved to org.apache.storm.trident.util.TridentUtils
+s;storm-core/src/jvm/storm/trident/util/TridentUtils.java;37;80
+d;storm-core/src/jvm/org/apache/storm/trident/util/TridentUtils.java;37;80
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_elem673 : LSTopoHistory to _elem681 : LSTopoHistory in method public read(iprot TProtocol, struct LSTopoHistoryList) : void in class backtype.storm.generated.LSTopoHistoryList.LSTopoHistoryListStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSTopoHistoryList.java;376;0
+d;storm-core/src/jvm/backtype/storm/generated/LSTopoHistoryList.java;376;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_i384 : int to _i394 : int in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;736;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;736;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.security.auth.IHttpCredentialsPlugin moved to org.apache.storm.security.auth.IHttpCredentialsPlugin
+s;storm-core/src/jvm/backtype/storm/security/auth/IHttpCredentialsPlugin.java;24;24
+d;storm-core/src/jvm/org/apache/storm/security/auth/IHttpCredentialsPlugin.java;24;24
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.SupervisorInfo moved to org.apache.storm.generated.SupervisorInfo
+s;storm-core/src/jvm/backtype/storm/generated/SupervisorInfo.java;53;1392
+d;storm-core/src/jvm/org/apache/storm/generated/SupervisorInfo.java;53;1392
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.topology.base.BaseRichSpout moved to org.apache.storm.topology.base.BaseRichSpout
+s;storm-core/src/jvm/backtype/storm/topology/base/BaseRichSpout.java;26;20
+d;storm-core/src/jvm/org/apache/storm/topology/base/BaseRichSpout.java;26;20
+--------------------
+6cb8e5def2d037987d64463acedff9d3aadb55b1;Rename Variable;Rename Variable	_iter44 : TopologySummary to _iter72 : TopologySummary in method public write(oprot TProtocol) : void in class backtype.storm.generated.ClusterSummary
+s;jstorm-client/src/main/java/backtype/storm/generated/ClusterSummary.java;523;0
+d;jstorm-client/src/main/java/backtype/storm/generated/ClusterSummary.java;1055;0
+--------------------
+f0f7b6c1a536df814fa879f09303389de1edde67;Rename Parameter;Rename Parameter	stormId : String to topologyId : String in method public remove_task_heartbeat(topologyId String, taskId int) : void in class com.alibaba.jstorm.cluster.StormZkClusterState
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormZkClusterState.java;224;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormZkClusterState.java;223;0
+--------------------
+444ec05e5a9f38f9a9472c54b39f1371c839683b;Extract Interface;Extract Interface	backtype.storm.messaging.netty.INettySerializable from classes [backtype.storm.messaging.netty.SaslMessageToken]
+s;storm-core/src/jvm/backtype/storm/messaging/netty/SaslMessageToken.java;27;89
+d;storm-core/src/jvm/backtype/storm/messaging/netty/INettySerializable.java;23;3
+d;storm-core/src/jvm/backtype/storm/messaging/netty/SaslMessageToken.java;27;89
+--------------------
+8fd1f4b193b5d81b3036726268da39380e2b3b61;Pull Up Attribute;Pull Up Attribute	protected expireIntervalSec : int from class org.apache.storm.redis.trident.state.RedisStateUpdater to class org.apache.storm.redis.trident.state.AbstractRedisStateUpdater
+s;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisStateUpdater.java;36;0
+d;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/AbstractRedisStateUpdater.java;34;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_elem340 : long to _elem350 : long in method public read(iprot TProtocol, struct SupervisorInfo) : void in class backtype.storm.generated.SupervisorInfo.SupervisorInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/SupervisorInfo.java;1013;0
+d;storm-core/src/jvm/backtype/storm/generated/SupervisorInfo.java;1013;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.topology.IBasicOutputCollector moved to org.apache.storm.topology.IBasicOutputCollector
+s;storm-core/src/jvm/backtype/storm/topology/IBasicOutputCollector.java;24;3
+d;storm-core/src/jvm/org/apache/storm/topology/IBasicOutputCollector.java;24;3
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.operation.builtin.Negate moved to org.apache.storm.trident.operation.builtin.Negate
+s;storm-core/src/jvm/storm/trident/operation/builtin/Negate.java;25;23
+d;storm-core/src/jvm/org/apache/storm/trident/operation/builtin/Negate.java;25;23
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i397 : int to _i405 : int in method public read(iprot TProtocol, struct TopologyPageInfo) : void in class backtype.storm.generated.TopologyPageInfo.TopologyPageInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2048;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2048;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i613 : int to _i621 : int in method public read(iprot TProtocol, struct LocalStateData) : void in class backtype.storm.generated.LocalStateData.LocalStateDataStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;383;0
+d;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;383;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.testing.MkTupleParam moved to org.apache.storm.testing.MkTupleParam
+s;storm-core/src/jvm/backtype/storm/testing/MkTupleParam.java;23;28
+d;storm-core/src/jvm/org/apache/storm/testing/MkTupleParam.java;23;28
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.TopologyPageInfo moved to org.apache.storm.generated.TopologyPageInfo
+s;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;53;2543
+d;storm-core/src/jvm/org/apache/storm/generated/TopologyPageInfo.java;53;2543
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.utils.IndifferentAccessMap moved to org.apache.storm.utils.IndifferentAccessMap
+s;storm-core/src/jvm/backtype/storm/utils/IndifferentAccessMap.java;34;143
+d;storm-core/src/jvm/org/apache/storm/utils/IndifferentAccessMap.java;34;143
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_list566 : TList to _list574 : TList in method public read(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;1098;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;1098;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.metric.api.MeanReducer moved to org.apache.storm.metric.api.MeanReducer
+s;storm-core/src/jvm/backtype/storm/metric/api/MeanReducer.java;25;28
+d;storm-core/src/jvm/org/apache/storm/metric/api/MeanReducer.java;25;28
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.scheduler.WorkerSlot moved to org.apache.storm.scheduler.WorkerSlot
+s;storm-core/src/jvm/backtype/storm/scheduler/WorkerSlot.java;20;57
+d;storm-core/src/jvm/org/apache/storm/scheduler/WorkerSlot.java;20;57
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_key543 : NodeInfo to _key551 : NodeInfo in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;873;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;873;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_iter303 : ExecutorSummary to _iter308 : ExecutorSummary in method public write(prot TProtocol, struct TopologyInfo) : void in class backtype.storm.generated.TopologyInfo.TopologyInfoTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1277;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1317;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i251 : int to _i271 : int in method public read(prot TProtocol, struct SpoutStats) : void in class backtype.storm.generated.SpoutStats.SpoutStatsTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/SpoutStats.java;854;0
+d;storm-core/src/jvm/backtype/storm/generated/SpoutStats.java;894;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.nimbus.ITopologyActionNotifierPlugin moved to org.apache.storm.nimbus.ITopologyActionNotifierPlugin
+s;storm-core/src/jvm/backtype/storm/nimbus/ITopologyActionNotifierPlugin.java;22;21
+d;storm-core/src/jvm/org/apache/storm/nimbus/ITopologyActionNotifierPlugin.java;22;21
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.multilang.BoltMsg moved to org.apache.storm.multilang.BoltMsg
+s;storm-core/src/jvm/backtype/storm/multilang/BoltMsg.java;22;57
+d;storm-core/src/jvm/org/apache/storm/multilang/BoltMsg.java;22;57
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_map535 : TMap to _map543 : TMap in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;841;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;841;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.KillOptions moved to org.apache.storm.generated.KillOptions
+s;storm-core/src/jvm/backtype/storm/generated/KillOptions.java;53;353
+d;storm-core/src/jvm/org/apache/storm/generated/KillOptions.java;53;353
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.HBNodes moved to org.apache.storm.generated.HBNodes
+s;storm-core/src/jvm/backtype/storm/generated/HBNodes.java;53;407
+d;storm-core/src/jvm/org/apache/storm/generated/HBNodes.java;53;407
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_val472 : String to _val480 : String in method public read(iprot TProtocol, struct Credentials) : void in class backtype.storm.generated.Credentials.CredentialsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Credentials.java;371;0
+d;storm-core/src/jvm/backtype/storm/generated/Credentials.java;371;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.operation.TridentCollector moved to org.apache.storm.trident.operation.TridentCollector
+s;storm-core/src/jvm/storm/trident/operation/TridentCollector.java;23;3
+d;storm-core/src/jvm/org/apache/storm/trident/operation/TridentCollector.java;23;3
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_elem88 : TopologySummary to _elem96 : TopologySummary in method public read(iprot TProtocol, struct ClusterSummary) : void in class backtype.storm.generated.ClusterSummary.ClusterSummaryStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;696;0
+d;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;696;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.testing.MockedSources moved to org.apache.storm.testing.MockedSources
+s;storm-core/src/jvm/backtype/storm/testing/MockedSources.java;28;32
+d;storm-core/src/jvm/org/apache/storm/testing/MockedSources.java;28;32
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i405 : int to _i521 : int in method public read(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;936;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;936;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_elem368 : long to _elem484 : long in method public read(prot TProtocol, struct NodeInfo) : void in class backtype.storm.generated.NodeInfo.NodeInfoTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;544;0
+d;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;544;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_list385 : TList to _list501 : TList in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;739;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;739;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_map381 : TMap to _map497 : TMap in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;732;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;732;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.testing.TrackedTopology moved to org.apache.storm.testing.TrackedTopology
+s;storm-core/src/jvm/backtype/storm/testing/TrackedTopology.java;26;8
+d;storm-core/src/jvm/org/apache/storm/testing/TrackedTopology.java;26;8
+--------------------
+06d4bb6ef10a11e19e1d718a76d7062ef5f69834;Rename Method;Rename Method	private expireEvents(fullScan boolean) : List<Event<T>> renamed to private scanEvents(fullScan boolean) : List<Event<T>> in class backtype.storm.windowing.WindowManager
+s;storm-core/src/jvm/backtype/storm/windowing/WindowManager.java;169;34
+d;storm-core/src/jvm/backtype/storm/windowing/WindowManager.java;180;38
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.spout.ShellSpout moved to org.apache.storm.spout.ShellSpout
+s;storm-core/src/jvm/backtype/storm/spout/ShellSpout.java;43;237
+d;storm-core/src/jvm/org/apache/storm/spout/ShellSpout.java;43;237
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_iter519 : long to _iter527 : long in method public write(oprot TProtocol, struct NodeInfo) : void in class backtype.storm.generated.NodeInfo.NodeInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;501;0
+d;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;501;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.serialization.IKryoDecorator moved to org.apache.storm.serialization.IKryoDecorator
+s;storm-core/src/jvm/backtype/storm/serialization/IKryoDecorator.java;21;2
+d;storm-core/src/jvm/org/apache/storm/serialization/IKryoDecorator.java;21;2
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.topology.TopologyBuilderTest moved to org.apache.storm.topology.TopologyBuilderTest
+s;storm-core/test/jvm/backtype/storm/topology/TopologyBuilderTest.java;24;-25
+d;storm-core/test/jvm/org/apache/storm/topology/TopologyBuilderTest.java;24;29
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.trident.TridentKafkaState moved to org.apache.storm.kafka.trident.TridentKafkaState
+s;external/storm-kafka/src/jvm/storm/kafka/trident/TridentKafkaState.java;39;63
+d;external/storm-kafka/src/jvm/org/apache/storm/kafka/trident/TridentKafkaState.java;39;63
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.messaging.TransportFactory moved to org.apache.storm.messaging.TransportFactory
+s;storm-core/src/jvm/backtype/storm/messaging/TransportFactory.java;26;31
+d;storm-core/src/jvm/org/apache/storm/messaging/TransportFactory.java;26;31
+--------------------
+f0f7b6c1a536df814fa879f09303389de1edde67;Rename Parameter;Rename Parameter	storm_id : String to topologyId : String in method public supervisor_stormdist_root(conf Map, topologyId String) : String in class com.alibaba.jstorm.cluster.StormConfig
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormConfig.java;164;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormConfig.java;164;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.hooks.BaseTaskHook moved to org.apache.storm.hooks.BaseTaskHook
+s;storm-core/src/jvm/backtype/storm/hooks/BaseTaskHook.java;29;32
+d;storm-core/src/jvm/org/apache/storm/hooks/BaseTaskHook.java;29;32
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_elem386 : long to _elem502 : long in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;741;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;741;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_key395 : String to _key403 : String in method public read(iprot TProtocol, struct TopologyPageInfo) : void in class backtype.storm.generated.TopologyPageInfo.TopologyPageInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2046;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2046;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_val462 : int to _val578 : int in method public read(prot TProtocol, struct LSApprovedWorkers) : void in class backtype.storm.generated.LSApprovedWorkers.LSApprovedWorkersTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSApprovedWorkers.java;445;0
+d;storm-core/src/jvm/backtype/storm/generated/LSApprovedWorkers.java;445;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i568 : int to _i576 : int in method public read(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;1101;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;1101;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i595 : int to _i603 : int in method public read(prot TProtocol, struct StormBase) : void in class backtype.storm.generated.StormBase.StormBaseTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1336;0
+d;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1336;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.KafkaErrorTest moved to org.apache.storm.kafka.KafkaErrorTest
+s;external/storm-kafka/src/test/storm/kafka/KafkaErrorTest.java;26;30
+d;external/storm-kafka/src/test/org/apache/storm/kafka/KafkaErrorTest.java;26;30
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.TridentState moved to org.apache.storm.trident.TridentState
+s;storm-core/src/jvm/storm/trident/TridentState.java;23;17
+d;storm-core/src/jvm/org/apache/storm/trident/TridentState.java;23;17
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.Grouping moved to org.apache.storm.generated.Grouping
+s;storm-core/src/jvm/backtype/storm/generated/Grouping.java;53;747
+d;storm-core/src/jvm/org/apache/storm/generated/Grouping.java;53;747
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.topology.state.TestTransactionalState moved to org.apache.storm.trident.topology.state.TestTransactionalState
+s;storm-core/src/jvm/storm/trident/topology/state/TestTransactionalState.java;29;18
+d;storm-core/src/jvm/org/apache/storm/trident/topology/state/TestTransactionalState.java;29;18
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.operation.impl.IdentityMultiReducer moved to org.apache.storm.trident.operation.impl.IdentityMultiReducer
+s;storm-core/src/jvm/storm/trident/operation/impl/IdentityMultiReducer.java;27;24
+d;storm-core/src/jvm/org/apache/storm/trident/operation/impl/IdentityMultiReducer.java;27;24
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.state.ReadOnlyState moved to org.apache.storm.trident.state.ReadOnlyState
+s;storm-core/src/jvm/storm/trident/state/ReadOnlyState.java;20;11
+d;storm-core/src/jvm/org/apache/storm/trident/state/ReadOnlyState.java;20;11
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i622 : int to _i630 : int in method public read(iprot TProtocol, struct LocalAssignment) : void in class backtype.storm.generated.LocalAssignment.LocalAssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LocalAssignment.java;555;0
+d;storm-core/src/jvm/backtype/storm/generated/LocalAssignment.java;555;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.ClusterSummary moved to org.apache.storm.generated.ClusterSummary
+s;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;53;825
+d;storm-core/src/jvm/org/apache/storm/generated/ClusterSummary.java;53;825
+--------------------
+6cb8e5def2d037987d64463acedff9d3aadb55b1;Rename Parameter;Rename Parameter	stormId : String to topologyId : String in method public task_errors(topologyId String, taskId int) : List<TaskError> in class com.alibaba.jstorm.cluster.StormZkClusterState
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormZkClusterState.java;330;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormZkClusterState.java;329;0
+--------------------
+73650789729876f016810a8caf59bc9ef85601e1;Rename Variable;Rename Variable	_iter661 : Map.Entry<String,LogLevel> to _iter685 : Map.Entry<String,LogLevel> in method public write(prot TProtocol, struct LogConfig) : void in class backtype.storm.generated.LogConfig.LogConfigTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LogConfig.java;442;0
+d;storm-core/src/jvm/backtype/storm/generated/LogConfig.java;442;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_list666 : TList to _list674 : TList in method public read(prot TProtocol, struct LSTopoHistory) : void in class backtype.storm.generated.LSTopoHistory.LSTopoHistoryTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;780;0
+d;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;780;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i408 : int to _i524 : int in method public read(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;942;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;942;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.metric.SystemBolt moved to org.apache.storm.metric.SystemBolt
+s;storm-core/src/jvm/backtype/storm/metric/SystemBolt.java;39;126
+d;storm-core/src/jvm/org/apache/storm/metric/SystemBolt.java;39;126
+--------------------
+ee0678c7f8bed531a8514166c7254a2190f3c4a9;Rename Class;Rename Class	backtype.storm.multilang.Immission renamed to backtype.storm.multilang.BoltMsg
+s;storm-core/src/jvm/backtype/storm/multilang/Immission.java;5;47
+d;storm-core/src/jvm/backtype/storm/multilang/BoltMsg.java;5;58
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	present_debug : boolean to present_component_debug : boolean in method public hashCode() : int in class backtype.storm.generated.StormBase
+s;storm-core/src/jvm/backtype/storm/generated/StormBase.java;782;0
+d;storm-core/src/jvm/backtype/storm/generated/StormBase.java;797;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i467 : int to _i583 : int in method public read(iprot TProtocol, struct LSSupervisorAssignments) : void in class backtype.storm.generated.LSSupervisorAssignments.LSSupervisorAssignmentsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;383;0
+d;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;383;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_iter159 : Map.Entry<GlobalStreamId,Long> to _iter169 : Map.Entry<GlobalStreamId,Long> in method public write(prot TProtocol, struct BoltStats) : void in class backtype.storm.generated.BoltStats.BoltStatsTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/BoltStats.java;1188;0
+d;storm-core/src/jvm/backtype/storm/generated/BoltStats.java;1203;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_iter420 : Map.Entry<String,Integer> to _iter434 : Map.Entry<String,Integer> in method public write(oprot TProtocol, struct StormBase) : void in class backtype.storm.generated.StormBase.StormBaseStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1152;0
+d;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1183;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i364 : int to _i480 : int in method public read(iprot TProtocol, struct NodeInfo) : void in class backtype.storm.generated.NodeInfo.NodeInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;467;0
+d;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;467;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_val354 : double to _val362 : double in method public read(iprot TProtocol, struct TopologyStats) : void in class backtype.storm.generated.TopologyStats.TopologyStatsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyStats.java;783;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyStats.java;783;0
+--------------------
+fe5f41aa8332700d3f98422cb7d986fc47289bcd;Rename Parameter;Rename Parameter	port : int to type : ThriftConnectionType in method public ThriftServer(storm_conf Map, processor TProcessor, type ThriftConnectionType) in class backtype.storm.security.auth.ThriftServer
+s;storm-core/src/jvm/backtype/storm/security/auth/ThriftServer.java;36;0
+d;storm-core/src/jvm/backtype/storm/security/auth/ThriftServer.java;37;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_elem309 : ExecutorSummary to _elem317 : ExecutorSummary in method public read(iprot TProtocol, struct TopologyInfo) : void in class backtype.storm.generated.TopologyInfo.TopologyInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1655;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1655;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.testing.SpoutTracker moved to org.apache.storm.testing.SpoutTracker
+s;storm-core/src/jvm/backtype/storm/testing/SpoutTracker.java;32;79
+d;storm-core/src/jvm/org/apache/storm/testing/SpoutTracker.java;32;79
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_elem621 : ExecutorInfo to _elem629 : ExecutorInfo in method public read(iprot TProtocol, struct LocalAssignment) : void in class backtype.storm.generated.LocalAssignment.LocalAssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LocalAssignment.java;554;0
+d;storm-core/src/jvm/backtype/storm/generated/LocalAssignment.java;554;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.ExecutorSpecificStats moved to org.apache.storm.generated.ExecutorSpecificStats
+s;storm-core/src/jvm/backtype/storm/generated/ExecutorSpecificStats.java;53;334
+d;storm-core/src/jvm/org/apache/storm/generated/ExecutorSpecificStats.java;53;334
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.DRPCExecutionException moved to org.apache.storm.generated.DRPCExecutionException
+s;storm-core/src/jvm/backtype/storm/generated/DRPCExecutionException.java;53;352
+d;storm-core/src/jvm/org/apache/storm/generated/DRPCExecutionException.java;53;352
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_key465 : int to _key581 : int in method public read(iprot TProtocol, struct LSSupervisorAssignments) : void in class backtype.storm.generated.LSSupervisorAssignments.LSSupervisorAssignmentsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;381;0
+d;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;381;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_iter396 : Map.Entry<List<Long>,Long> to _iter406 : Map.Entry<List<Long>,Long> in method public write(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;894;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;894;0
+--------------------
+f0f7b6c1a536df814fa879f09303389de1edde67;Rename Parameter;Rename Parameter	stormId : String to topologyId : String in method public masterStormdistRoot(conf Map, topologyId String) : String in class com.alibaba.jstorm.cluster.StormConfig
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormConfig.java;217;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormConfig.java;217;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_iter349 : long to _iter359 : long in method public write(prot TProtocol, struct SupervisorInfo) : void in class backtype.storm.generated.SupervisorInfo.SupervisorInfoTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/SupervisorInfo.java;1190;0
+d;storm-core/src/jvm/backtype/storm/generated/SupervisorInfo.java;1190;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i671 : int to _i679 : int in method public read(prot TProtocol, struct LSTopoHistory) : void in class backtype.storm.generated.LSTopoHistory.LSTopoHistoryTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;794;0
+d;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;794;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.operation.builtin.Equals moved to org.apache.storm.trident.operation.builtin.Equals
+s;storm-core/src/jvm/storm/trident/operation/builtin/Equals.java;24;14
+d;storm-core/src/jvm/org/apache/storm/trident/operation/builtin/Equals.java;24;14
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_iter97 : TopologySummary to _iter104 : SupervisorSummary in method public write(prot TProtocol, struct ClusterSummary) : void in class backtype.storm.generated.ClusterSummary.ClusterSummaryTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;809;0
+d;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;802;0
+--------------------
+ee0678c7f8bed531a8514166c7254a2190f3c4a9;Rename Variable;Rename Variable	emission : Emission to shellMsg : ShellMsg in method public readShellMsg() : ShellMsg in class backtype.storm.multilang.JsonSerializer
+s;storm-core/src/jvm/backtype/storm/multilang/JsonSerializer.java;78;0
+d;storm-core/src/jvm/backtype/storm/multilang/JsonSerializer.java;79;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_map402 : TMap to _map412 : TMap in method public read(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;932;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;932;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i86 : int to _i94 : int in method public read(iprot TProtocol, struct ClusterSummary) : void in class backtype.storm.generated.ClusterSummary.ClusterSummaryStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;670;0
+d;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;670;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_key536 : List<Long> to _key544 : List<Long> in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;843;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;843;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.SpoutSpec moved to org.apache.storm.generated.SpoutSpec
+s;storm-core/src/jvm/backtype/storm/generated/SpoutSpec.java;53;460
+d;storm-core/src/jvm/org/apache/storm/generated/SpoutSpec.java;53;460
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.daemon.ClientJarTransformerRunner moved to org.apache.storm.daemon.ClientJarTransformerRunner
+s;storm-core/src/jvm/backtype/storm/daemon/ClientJarTransformerRunner.java;29;12
+d;storm-core/src/jvm/org/apache/storm/daemon/ClientJarTransformerRunner.java;29;12
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.drpc.ReturnResultsReducer moved to org.apache.storm.trident.drpc.ReturnResultsReducer
+s;storm-core/src/jvm/storm/trident/drpc/ReturnResultsReducer.java;41;80
+d;storm-core/src/jvm/org/apache/storm/trident/drpc/ReturnResultsReducer.java;41;80
+--------------------
+98704ec81a7629d11a95a744ee47d3baf7c2de6a;Rename Parameter;Rename Parameter	hkey : String to dataTypeDescription : RedisDataTypeDescription in method public nonTransactional(jedisClusterConfig JedisClusterConfig, dataTypeDescription RedisDataTypeDescription) : StateFactory in class org.apache.storm.redis.trident.state.RedisClusterMapState
+s;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisClusterMapState.java;86;0
+d;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisClusterMapState.java;87;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_i321 : int to _i329 : int in method public read(iprot TProtocol, struct TopologyInfo) : void in class backtype.storm.generated.TopologyInfo.TopologyInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1715;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1715;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.testing.FixedBatchSpout moved to org.apache.storm.trident.testing.FixedBatchSpout
+s;storm-core/src/jvm/storm/trident/testing/FixedBatchSpout.java;33;-34
+d;storm-core/src/jvm/org/apache/storm/trident/testing/FixedBatchSpout.java;33;64
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.utils.ShellProcess moved to org.apache.storm.utils.ShellProcess
+s;storm-core/src/jvm/backtype/storm/utils/ShellProcess.java;38;172
+d;storm-core/src/jvm/org/apache/storm/utils/ShellProcess.java;38;172
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.StringKeyValueScheme moved to org.apache.storm.kafka.StringKeyValueScheme
+s;external/storm-kafka/src/jvm/storm/kafka/StringKeyValueScheme.java;26;12
+d;external/storm-kafka/src/jvm/org/apache/storm/kafka/StringKeyValueScheme.java;26;12
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.ListBlobsResult moved to org.apache.storm.generated.ListBlobsResult
+s;storm-core/src/jvm/backtype/storm/generated/ListBlobsResult.java;53;502
+d;storm-core/src/jvm/org/apache/storm/generated/ListBlobsResult.java;53;502
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_elem475 : ExecutorInfo to _elem591 : ExecutorInfo in method public read(iprot TProtocol, struct LSWorkerHeartbeat) : void in class backtype.storm.generated.LSWorkerHeartbeat.LSWorkerHeartbeatStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSWorkerHeartbeat.java;643;0
+d;storm-core/src/jvm/backtype/storm/generated/LSWorkerHeartbeat.java;643;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_val396 : ComponentAggregateStats to _val404 : ComponentAggregateStats in method public read(iprot TProtocol, struct TopologyPageInfo) : void in class backtype.storm.generated.TopologyPageInfo.TopologyPageInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2047;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2047;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_iter149 : Map.Entry<GlobalStreamId,Long> to _iter159 : Map.Entry<GlobalStreamId,Long> in method public write(oprot TProtocol, struct BoltStats) : void in class backtype.storm.generated.BoltStats.BoltStatsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/BoltStats.java;1068;0
+d;storm-core/src/jvm/backtype/storm/generated/BoltStats.java;1089;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.metric.internal.CountStatAndMetric moved to org.apache.storm.metric.internal.CountStatAndMetric
+s;storm-core/src/jvm/backtype/storm/metric/internal/CountStatAndMetric.java;28;183
+d;storm-core/src/jvm/org/apache/storm/metric/internal/CountStatAndMetric.java;28;183
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_key399 : String to _key407 : String in method public read(iprot TProtocol, struct TopologyPageInfo) : void in class backtype.storm.generated.TopologyPageInfo.TopologyPageInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2067;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyPageInfo.java;2067;0
+--------------------
+6cb8e5def2d037987d64463acedff9d3aadb55b1;Rename Parameter;Rename Parameter	stormId : String to topologyId : String in method private downloadStormCode(conf Map, topologyId String, masterCodeDir String) : void in class com.alibaba.jstorm.daemon.supervisor.SyncSupervisorEvent
+s;jstorm-server/src/main/java/com/alibaba/jstorm/daemon/supervisor/SyncSupervisorEvent.java;163;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/daemon/supervisor/SyncSupervisorEvent.java;162;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.TestConfigValidate moved to org.apache.storm.TestConfigValidate
+s;storm-core/test/jvm/backtype/storm/TestConfigValidate.java;39;705
+d;storm-core/test/jvm/org/apache/storm/TestConfigValidate.java;39;705
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.TridentKafkaTest moved to org.apache.storm.kafka.TridentKafkaTest
+s;external/storm-kafka/src/test/storm/kafka/TridentKafkaTest.java;36;45
+d;external/storm-kafka/src/test/org/apache/storm/kafka/TridentKafkaTest.java;36;45
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.trident.IBatchCoordinator moved to org.apache.storm.kafka.trident.IBatchCoordinator
+s;external/storm-kafka/src/jvm/storm/kafka/trident/IBatchCoordinator.java;22;4
+d;external/storm-kafka/src/jvm/org/apache/storm/kafka/trident/IBatchCoordinator.java;22;4
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.operation.BaseOperation moved to org.apache.storm.trident.operation.BaseOperation
+s;storm-core/src/jvm/storm/trident/operation/BaseOperation.java;22;10
+d;storm-core/src/jvm/org/apache/storm/trident/operation/BaseOperation.java;22;10
+--------------------
+6cb8e5def2d037987d64463acedff9d3aadb55b1;Rename Variable;Rename Variable	canAlloc : boolean to lackingResource : String in method public checkResourceValid(taskAlloc ResourceAssignment, task Integer, defaultContext DefaultTopologyAssignContext, componentMap Map, componentName String, canUsedSupervisorIds Set<String>, alreadyAssign Map<Integer,ResourceAssignment>) : boolean in class com.alibaba.jstorm.schedule.default_assign.AssignTaskUtils
+s;jstorm-server/src/main/java/com/alibaba/jstorm/schedule/default_assign/AssignTaskUtils.java;52;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/schedule/default_assign/AssignTaskUtils.java;59;1
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_list666 : TList to _list674 : TList in method public read(prot TProtocol, struct LSTopoHistory) : void in class backtype.storm.generated.LSTopoHistory.LSTopoHistoryTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;780;0
+d;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;780;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_val324 : int to _val334 : int in method public read(prot TProtocol, struct RebalanceOptions) : void in class backtype.storm.generated.RebalanceOptions.RebalanceOptionsTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;650;0
+d;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;650;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.clojure.ClojureBolt moved to org.apache.storm.clojure.ClojureBolt
+s;storm-core/src/jvm/backtype/storm/clojure/ClojureBolt.java;40;79
+d;storm-core/src/jvm/org/apache/storm/clojure/ClojureBolt.java;40;79
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.metric.EventLoggerBolt moved to org.apache.storm.metric.EventLoggerBolt
+s;storm-core/src/jvm/backtype/storm/metric/EventLoggerBolt.java;30;-31
+d;storm-core/src/jvm/org/apache/storm/metric/EventLoggerBolt.java;30;37
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i373 : int to _i489 : int in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;685;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;685;0
+--------------------
+7fec9a1f4b9887897c9c7d0f3f80433fa34f18c0;Rename Parameter;Rename Parameter	redisKeyPrefix : String to storeMapper : RedisStoreMapper in method public RedisStateUpdater(storeMapper RedisStoreMapper, expireIntervalSec int) in class org.apache.storm.redis.trident.state.RedisStateUpdater
+s;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisStateUpdater.java;37;0
+d;external/storm-redis/src/main/java/org/apache/storm/redis/trident/state/RedisStateUpdater.java;38;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.spout.SleepSpoutWaitStrategy moved to org.apache.storm.spout.SleepSpoutWaitStrategy
+s;storm-core/src/jvm/backtype/storm/spout/SleepSpoutWaitStrategy.java;24;17
+d;storm-core/src/jvm/org/apache/storm/spout/SleepSpoutWaitStrategy.java;24;17
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.trident.selector.DefaultTopicSelector moved to org.apache.storm.kafka.trident.selector.DefaultTopicSelector
+s;external/storm-kafka/src/jvm/storm/kafka/trident/selector/DefaultTopicSelector.java;22;12
+d;external/storm-kafka/src/jvm/org/apache/storm/kafka/trident/selector/DefaultTopicSelector.java;22;12
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_val311 : List<ErrorInfo> to _val317 : List<ErrorInfo> in method public read(prot TProtocol, struct TopologyInfo) : void in class backtype.storm.generated.TopologyInfo.TopologyInfoTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1341;0
+d;storm-core/src/jvm/backtype/storm/generated/TopologyInfo.java;1388;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.scheduler.Topologies moved to org.apache.storm.scheduler.Topologies
+s;storm-core/src/jvm/backtype/storm/scheduler/Topologies.java;26;58
+d;storm-core/src/jvm/org/apache/storm/scheduler/Topologies.java;26;58
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_iter441 : Map.Entry<String,ThriftSerializedObject> to _iter557 : Map.Entry<String,ThriftSerializedObject> in method public write(prot TProtocol, struct LocalStateData) : void in class backtype.storm.generated.LocalStateData.LocalStateDataTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;442;0
+d;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;442;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.Config moved to org.apache.storm.Config
+s;storm-core/src/jvm/backtype/storm/Config.java;34;2301
+d;storm-core/src/jvm/org/apache/storm/Config.java;34;2301
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_iter389 : Map.Entry<List<Long>,NodeInfo> to _iter505 : Map.Entry<List<Long>,NodeInfo> in method public write(oprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;797;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;797;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_i419 : int to _i429 : int in method public read(iprot TProtocol, struct StormBase) : void in class backtype.storm.generated.StormBase.StormBaseStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1067;0
+d;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1086;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_iter468 : Map.Entry<Integer,LocalAssignment> to _iter584 : Map.Entry<Integer,LocalAssignment> in method public write(oprot TProtocol, struct LSSupervisorAssignments) : void in class backtype.storm.generated.LSSupervisorAssignments.LSSupervisorAssignmentsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;414;0
+d;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;414;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.testing.KeyedSummingBatchBolt moved to org.apache.storm.testing.KeyedSummingBatchBolt
+s;storm-core/src/jvm/backtype/storm/testing/KeyedSummingBatchBolt.java;32;29
+d;storm-core/src/jvm/org/apache/storm/testing/KeyedSummingBatchBolt.java;32;29
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_i467 : int to _i583 : int in method public read(iprot TProtocol, struct LSSupervisorAssignments) : void in class backtype.storm.generated.LSSupervisorAssignments.LSSupervisorAssignmentsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;383;0
+d;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;383;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.state.map.SnapshottableMap moved to org.apache.storm.trident.state.map.SnapshottableMap
+s;storm-core/src/jvm/storm/trident/state/map/SnapshottableMap.java;26;50
+d;storm-core/src/jvm/org/apache/storm/trident/state/map/SnapshottableMap.java;26;50
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.security.auth.authorizer.DRPCSimpleACLAuthorizer moved to org.apache.storm.security.auth.authorizer.DRPCSimpleACLAuthorizer
+s;storm-core/src/jvm/backtype/storm/security/auth/authorizer/DRPCSimpleACLAuthorizer.java;38;136
+d;storm-core/src/jvm/org/apache/storm/security/auth/authorizer/DRPCSimpleACLAuthorizer.java;38;136
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.utils.VersionInfo moved to org.apache.storm.utils.VersionInfo
+s;storm-core/src/jvm/backtype/storm/utils/VersionInfo.java;25;106
+d;storm-core/src/jvm/org/apache/storm/utils/VersionInfo.java;25;106
+--------------------
+286bacdf49937d1e8576eff27dfc887824ffdbbb;Rename Variable;Rename Variable	c : Channel to channel : Channel in method private srcAddressName() : String in class backtype.storm.messaging.netty.Client
+s;storm-core/src/jvm/backtype/storm/messaging/netty/Client.java;574;0
+d;storm-core/src/jvm/backtype/storm/messaging/netty/Client.java;422;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.tuple.TridentTuple moved to org.apache.storm.trident.tuple.TridentTuple
+s;storm-core/src/jvm/storm/trident/tuple/TridentTuple.java;26;8
+d;storm-core/src/jvm/org/apache/storm/trident/tuple/TridentTuple.java;26;8
+--------------------
+4104a0a9006b57debb63f56c0dd21a44809aa380;Inline Method;Inline Method	private createBatches(previous MessageBatch, msgs Iterator<TaskMessage>) : Batches inlined to public send(msgs Iterator<TaskMessage>) : void in class backtype.storm.messaging.netty.Client
+s;storm-core/src/jvm/backtype/storm/messaging/netty/Client.java;226;61
+s;storm-core/src/jvm/backtype/storm/messaging/netty/Client.java;313;12
+d;storm-core/src/jvm/backtype/storm/messaging/netty/Client.java;217;43
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_i435 : int to _i455 : int in method public read(prot TProtocol, struct ClusterWorkerHeartbeat) : void in class backtype.storm.generated.ClusterWorkerHeartbeat.ClusterWorkerHeartbeatTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/ClusterWorkerHeartbeat.java;751;0
+d;storm-core/src/jvm/backtype/storm/generated/ClusterWorkerHeartbeat.java;750;0
+--------------------
+f0f7b6c1a536df814fa879f09303389de1edde67;Rename Parameter;Rename Parameter	storm_id : String to topologyId : String in method public supervisor_stormdist_root(conf Map, topologyId String) : String in class com.alibaba.jstorm.cluster.StormConfig
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormConfig.java;164;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormConfig.java;164;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.testing.TestEventLogSpout moved to org.apache.storm.testing.TestEventLogSpout
+s;storm-core/src/jvm/backtype/storm/testing/TestEventLogSpout.java;37;-38
+d;storm-core/src/jvm/org/apache/storm/testing/TestEventLogSpout.java;37;102
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.KeyNotFoundException moved to org.apache.storm.generated.KeyNotFoundException
+s;storm-core/src/jvm/backtype/storm/generated/KeyNotFoundException.java;53;352
+d;storm-core/src/jvm/org/apache/storm/generated/KeyNotFoundException.java;53;352
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.messaging.IConnection moved to org.apache.storm.messaging.IConnection
+s;storm-core/src/jvm/backtype/storm/messaging/IConnection.java;25;38
+d;storm-core/src/jvm/org/apache/storm/messaging/IConnection.java;25;38
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_val444 : ThriftSerializedObject to _val464 : ThriftSerializedObject in method public read(prot TProtocol, struct LocalStateData) : void in class backtype.storm.generated.LocalStateData.LocalStateDataTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;457;0
+d;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;457;0
+--------------------
+f0f7b6c1a536df814fa879f09303389de1edde67;Rename Method;Rename Method	public get_storm_id(zkCluster StormClusterState, storm_name String) : String renamed to public get_topology_id(zkCluster StormClusterState, storm_name String) : String in class com.alibaba.jstorm.cluster.Cluster
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/Cluster.java;156;27
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/Cluster.java;158;27
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_iter396 : Map.Entry<List<Long>,Long> to _iter512 : Map.Entry<List<Long>,Long> in method public write(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;894;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;894;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_elem85 : SupervisorSummary to _elem93 : SupervisorSummary in method public read(iprot TProtocol, struct ClusterSummary) : void in class backtype.storm.generated.ClusterSummary.ClusterSummaryStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;669;0
+d;storm-core/src/jvm/backtype/storm/generated/ClusterSummary.java;669;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.scheduler.ExecutorDetails moved to org.apache.storm.scheduler.ExecutorDetails
+s;storm-core/src/jvm/backtype/storm/scheduler/ExecutorDetails.java;20;34
+d;storm-core/src/jvm/org/apache/storm/scheduler/ExecutorDetails.java;20;34
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_key317 : String to _key327 : String in method public read(iprot TProtocol, struct RebalanceOptions) : void in class backtype.storm.generated.RebalanceOptions.RebalanceOptionsStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;534;0
+d;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;534;0
+--------------------
+547ed4916761508040f056c6812e047e04e8db3a;Move Class;Move Class	backtype.storm.nimbus.ICodeDistributor moved to backtype.storm.codedistributor.ICodeDistributor
+s;storm-core/src/jvm/backtype/storm/nimbus/ICodeDistributor.java;10;47
+d;storm-core/src/jvm/backtype/storm/codedistributor/ICodeDistributor.java;10;47
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.operation.builtin.Negate moved to org.apache.storm.trident.operation.builtin.Negate
+s;storm-core/src/jvm/storm/trident/operation/builtin/Negate.java;25;23
+d;storm-core/src/jvm/org/apache/storm/trident/operation/builtin/Negate.java;25;23
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.generated.SettableBlobMeta moved to org.apache.storm.generated.SettableBlobMeta
+s;storm-core/src/jvm/backtype/storm/generated/SettableBlobMeta.java;53;513
+d;storm-core/src/jvm/org/apache/storm/generated/SettableBlobMeta.java;53;513
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_set367 : TSet to _set377 : TSet in method public read(prot TProtocol, struct NodeInfo) : void in class backtype.storm.generated.NodeInfo.NodeInfoTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;542;0
+d;storm-core/src/jvm/backtype/storm/generated/NodeInfo.java;542;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_i341 : int to _i351 : int in method public read(iprot TProtocol, struct SupervisorInfo) : void in class backtype.storm.generated.SupervisorInfo.SupervisorInfoStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/SupervisorInfo.java;1014;0
+d;storm-core/src/jvm/backtype/storm/generated/SupervisorInfo.java;1014;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.security.auth.authorizer.ImpersonationAuthorizer moved to org.apache.storm.security.auth.authorizer.ImpersonationAuthorizer
+s;storm-core/src/jvm/backtype/storm/security/auth/authorizer/ImpersonationAuthorizer.java;31;141
+d;storm-core/src/jvm/org/apache/storm/security/auth/authorizer/ImpersonationAuthorizer.java;31;141
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.multilang.NoOutputException moved to org.apache.storm.multilang.NoOutputException
+s;storm-core/src/jvm/backtype/storm/multilang/NoOutputException.java;20;20
+d;storm-core/src/jvm/org/apache/storm/multilang/NoOutputException.java;20;20
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.windowing.WaterMarkEvent moved to org.apache.storm.windowing.WaterMarkEvent
+s;storm-core/src/jvm/backtype/storm/windowing/WaterMarkEvent.java;20;18
+d;storm-core/src/jvm/org/apache/storm/windowing/WaterMarkEvent.java;20;18
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_iter663 : String to _iter671 : String in method public write(oprot TProtocol, struct LSTopoHistory) : void in class backtype.storm.generated.LSTopoHistory.LSTopoHistoryStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;729;0
+d;storm-core/src/jvm/backtype/storm/generated/LSTopoHistory.java;729;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.trident.operation.impl.CombinerAggStateUpdater moved to org.apache.storm.trident.operation.impl.CombinerAggStateUpdater
+s;storm-core/src/jvm/storm/trident/operation/impl/CombinerAggStateUpdater.java;31;25
+d;storm-core/src/jvm/org/apache/storm/trident/operation/impl/CombinerAggStateUpdater.java;31;25
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_key323 : String to _key333 : String in method public read(prot TProtocol, struct RebalanceOptions) : void in class backtype.storm.generated.RebalanceOptions.RebalanceOptionsTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;649;0
+d;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;649;0
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_val646 : LocalAssignment to _val654 : LocalAssignment in method public read(prot TProtocol, struct LSSupervisorAssignments) : void in class backtype.storm.generated.LSSupervisorAssignments.LSSupervisorAssignmentsTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;457;0
+d;storm-core/src/jvm/backtype/storm/generated/LSSupervisorAssignments.java;457;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_val376 : NodeInfo to _val386 : NodeInfo in method public read(iprot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;704;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;704;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.hooks.BaseTaskHook moved to org.apache.storm.hooks.BaseTaskHook
+s;storm-core/src/jvm/backtype/storm/hooks/BaseTaskHook.java;29;32
+d;storm-core/src/jvm/org/apache/storm/hooks/BaseTaskHook.java;29;32
+--------------------
+f0f7b6c1a536df814fa879f09303389de1edde67;Rename Method;Rename Method	public get_storm_id(zkCluster StormClusterState, storm_name String) : String renamed to public get_topology_id(zkCluster StormClusterState, storm_name String) : String in class com.alibaba.jstorm.cluster.Cluster
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/Cluster.java;156;27
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/Cluster.java;158;27
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_map322 : TMap to _map438 : TMap in method public read(prot TProtocol, struct RebalanceOptions) : void in class backtype.storm.generated.RebalanceOptions.RebalanceOptionsTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;647;0
+d;storm-core/src/jvm/backtype/storm/generated/RebalanceOptions.java;647;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.state.ISynchronizeOutputCollector moved to org.apache.storm.state.ISynchronizeOutputCollector
+s;storm-core/src/jvm/backtype/storm/state/ISynchronizeOutputCollector.java;22;2
+d;storm-core/src/jvm/org/apache/storm/state/ISynchronizeOutputCollector.java;22;2
+--------------------
+6cb8e5def2d037987d64463acedff9d3aadb55b1;Rename Parameter;Rename Parameter	stormId : String to topologyId : String in method public remove_storm_base(topologyId String) : void in class com.alibaba.jstorm.cluster.StormZkClusterState
+s;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormZkClusterState.java;219;0
+d;jstorm-server/src/main/java/com/alibaba/jstorm/cluster/StormZkClusterState.java;218;0
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_key399 : String to _key515 : String in method public read(prot TProtocol, struct Assignment) : void in class backtype.storm.generated.Assignment.AssignmentTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Assignment.java;919;0
+d;storm-core/src/jvm/backtype/storm/generated/Assignment.java;919;0
+--------------------
+306ec57d9cebaaa8f5b9caa0c6fcfb256702bc77;Rename Variable;Rename Variable	_key417 : String to _key427 : String in method public read(iprot TProtocol, struct StormBase) : void in class backtype.storm.generated.StormBase.StormBaseStandardScheme
+s;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1065;0
+d;storm-core/src/jvm/backtype/storm/generated/StormBase.java;1084;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.Partition moved to org.apache.storm.kafka.Partition
+s;external/storm-kafka/src/jvm/storm/kafka/Partition.java;24;63
+d;external/storm-kafka/src/jvm/org/apache/storm/kafka/Partition.java;24;63
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	storm.kafka.bolt.selector.KafkaTopicSelector moved to org.apache.storm.kafka.bolt.selector.KafkaTopicSelector
+s;external/storm-kafka/src/jvm/storm/kafka/bolt/selector/KafkaTopicSelector.java;24;2
+d;external/storm-kafka/src/jvm/org/apache/storm/kafka/bolt/selector/KafkaTopicSelector.java;24;2
+--------------------
+a16b50c961a1272315dcc3340ae369c516e25235;Rename Variable;Rename Variable	_val444 : ThriftSerializedObject to _val560 : ThriftSerializedObject in method public read(prot TProtocol, struct LocalStateData) : void in class backtype.storm.generated.LocalStateData.LocalStateDataTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;457;0
+d;storm-core/src/jvm/backtype/storm/generated/LocalStateData.java;457;0
+--------------------
+d839d1bf88b855edda344fc548f0701e2a018655;Move Class;Move Class	backtype.storm.security.auth.IAutoCredentials moved to org.apache.storm.security.auth.IAutoCredentials
+s;storm-core/src/jvm/backtype/storm/security/auth/IAutoCredentials.java;25;30
+d;storm-core/src/jvm/org/apache/storm/security/auth/IAutoCredentials.java;25;30
+--------------------
+b03ce6b28e0f16d11b769f75a069de0328637794;Rename Variable;Rename Variable	_key477 : String to _key485 : String in method public read(prot TProtocol, struct Credentials) : void in class backtype.storm.generated.Credentials.CredentialsTupleScheme
+s;storm-core/src/jvm/backtype/storm/generated/Credentials.java;444;0
+d;storm-core/src/jvm/backtype/storm/generated/Credentials.java;444;0

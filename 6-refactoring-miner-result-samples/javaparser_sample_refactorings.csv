@@ -1,0 +1,253 @@
+javaparser: 62/621
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	n1 : InitializerDeclaration to n : InitializerDeclaration in method public visit(n InitializerDeclaration, arg Visitable) : Boolean in class com.github.javaparser.ast.visitor.EqualsVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;390;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;393;0
+--------------------
+ff9e95d00be12b5eb99237f50acb77e094417862;Pull Up Method;Pull Up Method	public getThrownExceptions() : NodeList<ReferenceType> from class com.github.javaparser.ast.body.MethodDeclaration to public getThrownExceptions() : NodeList<ReferenceType> from class com.github.javaparser.ast.body.CallableDeclaration
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/MethodDeclaration.java;132;3
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/CallableDeclaration.java;130;3
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : UnaryExpr to n : UnaryExpr in method public visit(n UnaryExpr, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;563;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;563;0
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : SynchronizedStmt to n : SynchronizedStmt in method public visit(n SynchronizedStmt, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;797;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;796;0
+--------------------
+95245a501059ef998be5052adb5930d744533731;Extract Method;Extract Method	public setElementType(elementType Type) : MethodDeclaration extracted from public setType(type Type) : MethodDeclaration in class com.github.javaparser.ast.body.MethodDeclaration
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/MethodDeclaration.java;229;5
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/MethodDeclaration.java;255;5
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/MethodDeclaration.java;246;7
+--------------------
+95245a501059ef998be5052adb5930d744533731;Rename Parameter;Rename Parameter	type : Type to elementType : Type in method public create(elementType Type, name String) : Parameter in class com.github.javaparser.ast.body.Parameter
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/Parameter.java;72;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/Parameter.java;81;0
+--------------------
+741bb6782772c81d603681688dc5d1e779ce05eb;Rename Method;Rename Method	public classifyReferencessCoreJavaparsermodelContexts() : void renamed to public classifyReferencesCoreJavaparsermodelContexts() : void in class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTestingJss060Test
+s;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;306;21
+d;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;309;21
+--------------------
+ac01fb1dfeebd05077dd73f83608716aea266c0d;Move Method;Move Method	public classifyReferencessCoreJavaparsermodelJavaParserAnonymousClassDeclaration() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTest to public classifyReferencessCoreJavaparsermodelJavaParserAnonymousClassDeclaration() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTestingJss060Test
+s;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTest.java;329;3
+d;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;329;3
+--------------------
+e1afc730342d1020886b508ba874e366c401eb7d;Rename Variable;Rename Variable	classOrInterfaceDeclaration : ClassOrInterfaceDeclaration to typeDeclaration : TypeDeclaration<?> in method public resolveDeclaration(node Node, resultClass Class<T>) : T in class com.github.javaparser.symbolsolver.JavaSymbolSolver
+s;javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/JavaSymbolSolver.java;92;0
+d;javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/JavaSymbolSolver.java;92;0
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : ClassExpr to n : ClassExpr in method public visit(n ClassExpr, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;388;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;387;0
+--------------------
+6d06ae94c521628da4bcd76675f3660fee8ebf76;Rename Class;Rename Class	com.github.javaparser.ast.modules.ModuleUsesStmt renamed to com.github.javaparser.ast.modules.ModuleUsesDirective
+s;javaparser-core/src/main/java/com/github/javaparser/ast/modules/ModuleUsesStmt.java;19;124
+d;javaparser-core/src/main/java/com/github/javaparser/ast/modules/ModuleUsesDirective.java;19;148
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : BooleanLiteralExpr to n : BooleanLiteralExpr in method public visit(n BooleanLiteralExpr, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;478;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;477;0
+--------------------
+00e95181f47b51e4529b8cb3ad8cb310faa10b07;Extract Method;Extract Method	public removeScope() : ObjectCreationExpr extracted from public remove(node Node) : boolean in class com.github.javaparser.ast.expr.ObjectCreationExpr
+s;javaparser-core/src/main/java/com/github/javaparser/ast/expr/ObjectCreationExpr.java;206;33
+d;javaparser-core/src/main/java/com/github/javaparser/ast/expr/ObjectCreationExpr.java;241;2
+d;javaparser-core/src/main/java/com/github/javaparser/ast/expr/ObjectCreationExpr.java;206;33
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : DoubleLiteralExpr to n : DoubleLiteralExpr in method public visit(n DoubleLiteralExpr, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;470;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;470;0
+--------------------
+00e95181f47b51e4529b8cb3ad8cb310faa10b07;Rename Variable;Rename Variable	annotationMemberDeclaration : AnnotationMemberDeclaration to decl : AnnotationMemberDeclaration in method public removeDefaultValueWhenNoDefaultValueIsPresent() : void in class com.github.javaparser.ast.body.AnnotationMemberDeclarationTest
+s;javaparser-testing/src/test/java/com/github/javaparser/ast/body/AnnotationMemberDeclarationTest.java;45;0
+d;javaparser-testing/src/test/java/com/github/javaparser/ast/body/AnnotationMemberDeclarationTest.java;46;0
+--------------------
+6084184a80dcf7651411157cc0f40fa4b7e750eb;Move Attribute;Move Attribute	public namePropertyMetaModel : PropertyMetaModel from class com.github.javaparser.metamodel.ConstructorDeclarationMetaModel to class com.github.javaparser.metamodel.CallableDeclarationMetaModel
+s;javaparser-metamodel/src/main/java/com/github/javaparser/metamodel/ConstructorDeclarationMetaModel.java;15;0
+d;javaparser-metamodel/src/main/java/com/github/javaparser/metamodel/CallableDeclarationMetaModel.java;13;0
+--------------------
+6d06ae94c521628da4bcd76675f3660fee8ebf76;Rename Class;Rename Class	com.github.javaparser.ast.modules.ModuleExportsStmt renamed to com.github.javaparser.ast.modules.ModuleExportsDirective
+s;javaparser-core/src/main/java/com/github/javaparser/ast/modules/ModuleExportsStmt.java;21;150
+d;javaparser-core/src/main/java/com/github/javaparser/ast/modules/ModuleExportsDirective.java;21;173
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	n1 : StringLiteralExpr to n : StringLiteralExpr in method public visit(n StringLiteralExpr, arg Visitable) : Boolean in class com.github.javaparser.ast.visitor.EqualsVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;660;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;663;0
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : EmptyMemberDeclaration to n : EmptyMemberDeclaration in method public visit(n EmptyMemberDeclaration, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;211;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;211;0
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : JavadocComment to n : JavadocComment in method public visit(n JavadocComment, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;230;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;229;0
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : NameExpr to n : NameExpr in method public visit(n NameExpr, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;506;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;506;0
+--------------------
+ff9e95d00be12b5eb99237f50acb77e094417862;Pull Up Method;Pull Up Method	public getNodeLists() : List<NodeList<?>> from class com.github.javaparser.ast.body.ConstructorDeclaration to public getNodeLists() : List<NodeList<?>> from class com.github.javaparser.ast.body.CallableDeclaration
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/ConstructorDeclaration.java;250;3
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/CallableDeclaration.java;185;3
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : ClassExpr to n : ClassExpr in method public visit(n ClassExpr, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;388;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;387;0
+--------------------
+ac01fb1dfeebd05077dd73f83608716aea266c0d;Move Attribute;Move Attribute	private src : Path from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTest to class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTestingJss060Test
+s;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTest.java;20;0
+d;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;20;0
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	n1 : FieldDeclaration to n : FieldDeclaration in method public visit(n FieldDeclaration, arg Visitable) : Boolean in class com.github.javaparser.ast.visitor.EqualsVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;286;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;289;0
+--------------------
+e426a53a86990314bafe7b3e33dd41632eec1757;Move Class;Move Class	com.github.javaparser.junit.ast.visitor.ModifierVisitorTest moved to com.github.javaparser.ast.visitor.ModifierVisitorTest
+s;javaparser-testing/src/test/java/com/github/javaparser/junit/ast/visitor/Visitors.java;20;-21
+d;javaparser-testing/src/test/java/com/github/javaparser/ast/visitor/Visitors.java;20;2
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : ThrowStmt to n : ThrowStmt in method public visit(n ThrowStmt, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;788;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;788;0
+--------------------
+ac01fb1dfeebd05077dd73f83608716aea266c0d;Move Method;Move Method	public classifyReferencessCoreResolutionTypesolvers() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTest to public classifyReferencessCoreResolutionTypesolvers() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTestingJss060Test
+s;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTest.java;418;7
+d;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;418;7
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Variable;Rename Variable	normalAnnotationExpr : NormalAnnotationExpr to annotation : NormalAnnotationExpr in method package addAnnotation(name String) : N in class com.github.javaparser.ast.nodeTypes.NodeWithAnnotations
+s;javaparser-core/src/main/java/com/github/javaparser/ast/nodeTypes/NodeWithAnnotations.java;66;1
+d;javaparser-core/src/main/java/com/github/javaparser/ast/nodeTypes/NodeWithAnnotations.java;67;1
+--------------------
+95245a501059ef998be5052adb5930d744533731;Push Down Method;Push Down Method	public create(type PrimitiveType, arrayCount int) : ReferenceType from class com.github.javaparser.ast.type.ReferenceType to public arrayOf(type Type, annotations AnnotationExpr[]) : ArrayType from class com.github.javaparser.ast.type.ArrayType
+s;javaparser-core/src/main/java/com/github/javaparser/ast/type/ReferenceType.java;95;11
+d;javaparser-core/src/main/java/com/github/javaparser/ast/type/ArrayType.java;83;2
+--------------------
+63eebf8a57420ae4b79550e744624144d9f80570;Rename Class;Rename Class	com.github.javaparser.ast.nodeTypes.NamedNode renamed to com.github.javaparser.ast.nodeTypes.NodeWithName
+s;javaparser-core/src/main/java/com/github/javaparser/ast/nodeTypes/NamedNode.java;24;11
+d;javaparser-core/src/main/java/com/github/javaparser/ast/nodeTypes/NodeWithName.java;24;11
+--------------------
+00e95181f47b51e4529b8cb3ad8cb310faa10b07;Extract Method;Extract Method	public removeSuperTypes() : WildcardType extracted from public remove(node Node) : boolean in class com.github.javaparser.ast.type.WildcardType
+s;javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java;127;17
+d;javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java;150;2
+d;javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java;127;17
+--------------------
+95245a501059ef998be5052adb5930d744533731;Rename Method;Rename Method	public getType() : Type renamed to public getElementType() : Type in class com.github.javaparser.ast.expr.VariableDeclarationExpr
+s;javaparser-core/src/main/java/com/github/javaparser/ast/expr/VariableDeclarationExpr.java;142;3
+d;javaparser-core/src/main/java/com/github/javaparser/ast/expr/VariableDeclarationExpr.java;151;3
+--------------------
+6af6a803428020fcd32fbe2efce782ad34b2ee25;Rename Variable;Rename Variable	scope : Expression to scope_ : Expression in method public visit(_n FieldAccessExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;663;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;663;0
+--------------------
+4e0c2d80433bd875e7561bff85cce283bfa4a53c;Rename Method;Rename Method	public setSuperTypes(superTypes ReferenceType) : WildcardType renamed to public setSuperType(superType ReferenceType) : WildcardType in class com.github.javaparser.ast.type.WildcardType
+s;javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java;105;13
+d;javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java;105;13
+--------------------
+26bc041fa0d9638628dc05b03d16369c3e7dffb0;Extract Variable;Extract Variable	superClass : ResolvedReferenceType in method public getAncestors(acceptIncompleteList boolean) : List<ResolvedReferenceType> from class com.github.javaparser.symbolsolver.javassistmodel.JavassistClassDeclaration
+d;javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/javassistmodel/JavassistClassDeclaration.java;174;0
+--------------------
+00e95181f47b51e4529b8cb3ad8cb310faa10b07;Extract Method;Extract Method	public removeMessage() : AssertStmt extracted from public remove(node Node) : boolean in class com.github.javaparser.ast.stmt.AssertStmt
+s;javaparser-core/src/main/java/com/github/javaparser/ast/stmt/AssertStmt.java;107;11
+d;javaparser-core/src/main/java/com/github/javaparser/ast/stmt/AssertStmt.java;120;2
+d;javaparser-core/src/main/java/com/github/javaparser/ast/stmt/AssertStmt.java;107;11
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	n1 : BinaryExpr to n : BinaryExpr in method public visit(n BinaryExpr, arg Visitable) : Boolean in class com.github.javaparser.ast.visitor.EqualsVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;574;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/EqualsVisitor.java;577;0
+--------------------
+a7c98559a0b954d79429ac577474cf1700b03ce4;Rename Method;Rename Method	public getPath() : Optional<Path> renamed to public getStorage() : Optional<Storage> in class com.github.javaparser.ast.CompilationUnit
+s;javaparser-core/src/main/java/com/github/javaparser/ast/CompilationUnit.java;502;5
+d;javaparser-core/src/main/java/com/github/javaparser/ast/CompilationUnit.java;508;5
+--------------------
+ac01fb1dfeebd05077dd73f83608716aea266c0d;Move Method;Move Method	public classifyReferencessModelDeclarations() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTest to public classifyReferencessModelDeclarations() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTestingJss060Test
+s;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTest.java;438;20
+d;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;438;20
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : VariableDeclarator to n : VariableDeclarator in method public visit(n VariableDeclarator, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;160;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;159;0
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : ThisExpr to n : ThisExpr in method public visit(n ThisExpr, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;545;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;544;0
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : ClassExpr to n : ClassExpr in method public visit(n ClassExpr, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;388;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;388;0
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : UnaryExpr to n : UnaryExpr in method public visit(n UnaryExpr, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;563;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;563;0
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : BooleanLiteralExpr to n : BooleanLiteralExpr in method public visit(n BooleanLiteralExpr, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;478;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;477;0
+--------------------
+6af6a803428020fcd32fbe2efce782ad34b2ee25;Rename Variable;Rename Variable	t : Type to type : Type<?> in method public visit(n ClassOrInterfaceType, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/GenericVisitorAdapter.java;440;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/GenericVisitorAdapter.java;370;0
+--------------------
+6084184a80dcf7651411157cc0f40fa4b7e750eb;Push Down Attribute;Push Down Attribute	private body : BlockStmt from class com.github.javaparser.ast.body.CallableDeclaration to class com.github.javaparser.ast.body.MethodDeclaration
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/CallableDeclaration.java;55;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/MethodDeclaration.java;58;0
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : NameExpr to n : NameExpr in method public visit(n NameExpr, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;506;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;506;0
+--------------------
+d696f5b42b94bdc317f4417c4c0cf834fee0e00a;Rename Parameter;Rename Parameter	_n : DoubleLiteralExpr to n : DoubleLiteralExpr in method public visit(n DoubleLiteralExpr, arg Void) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;470;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;470;0
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : CharLiteralExpr to n : CharLiteralExpr in method public visit(n CharLiteralExpr, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;462;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;461;0
+--------------------
+ac01fb1dfeebd05077dd73f83608716aea266c0d;Move Method;Move Method	public classifyReferencessCoreJavaparsermodelContexts() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTest to public classifyReferencessCoreJavaparsermodelContexts() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTestingJss060Test
+s;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTest.java;306;21
+d;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;306;21
+--------------------
+ac01fb1dfeebd05077dd73f83608716aea266c0d;Move Method;Move Method	public classifyReferencessCoreDeclarationsCommon() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTest to public classifyReferencessCoreDeclarationsCommon() : void from class com.github.javaparser.symbolsolver.resolution.naming.NameLogicTestingJss060Test
+s;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTest.java;286;3
+d;javaparser-symbol-solver-testing/src/test/java/com/github/javaparser/symbolsolver/resolution/naming/NameLogicTestingJss060Test.java;286;3
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : CatchClause to n : CatchClause in method public visit(n CatchClause, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;819;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;818;0
+--------------------
+1a2fc7b77f45de699236ad0bfb64232106b74ca6;Rename Method;Rename Method	public toAST() : Optional<ConstructorDeclaration> renamed to public toAst() : Optional<ConstructorDeclaration> in class com.github.javaparser.symbolsolver.reflectionmodel.ReflectionConstructorDeclaration
+s;javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionConstructorDeclaration.java;100;3
+d;javaparser-symbol-solver-core/src/main/java/com/github/javaparser/symbolsolver/reflectionmodel/ReflectionConstructorDeclaration.java;100;3
+--------------------
+88d5ca079a9ca0f041c3275e47b7a1d69775d6cc;Rename Parameter;Rename Parameter	_n : LocalClassDeclarationStmt to n : LocalClassDeclarationStmt in method public visit(n LocalClassDeclarationStmt, arg Object) : Visitable in class com.github.javaparser.ast.visitor.CloneVisitor
+s;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;632;0
+d;javaparser-core/src/main/java/com/github/javaparser/ast/visitor/CloneVisitor.java;631;0
+--------------------
+a7c98559a0b954d79429ac577474cf1700b03ce4;Rename Method;Rename Method	public getPath() : Optional<Path> renamed to public getStorage() : Optional<Storage> in class com.github.javaparser.ast.CompilationUnit
+s;javaparser-core/src/main/java/com/github/javaparser/ast/CompilationUnit.java;502;5
+d;javaparser-core/src/main/java/com/github/javaparser/ast/CompilationUnit.java;508;5
+--------------------
+ff9e95d00be12b5eb99237f50acb77e094417862;Pull Up Method;Pull Up Method	public getParameters() : NodeList<Parameter> from class com.github.javaparser.ast.body.MethodDeclaration to public getParameters() : NodeList<Parameter> from class com.github.javaparser.ast.body.CallableDeclaration
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/MethodDeclaration.java;127;3
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/CallableDeclaration.java;116;3
+--------------------
+106211108b292dd5976287648c510706ee4dfa5e;Rename Variable;Rename Variable	f : FieldDeclaration to nodeField : FieldDeclaration in method public generate(nodeClass Class<? extends Node>, metaModelCoid ClassOrInterfaceDeclaration, initializeNodeMetaModelsStatements NodeList<Statement>, initializePropertyMetaModelsStatements NodeList<Statement>, initializeConstructorParametersStatements NodeList<Statement>, sourceRoot SourceRoot) : void in class com.github.javaparser.generator.metamodel.NodeMetaModelGenerator
+s;javaparser-metamodel-generator/src/main/java/com/github/javaparser/generator/metamodel/NodeMetaModelGenerator.java;33;0
+d;javaparser-metamodel-generator/src/main/java/com/github/javaparser/generator/metamodel/NodeMetaModelGenerator.java;33;0
+--------------------
+ff9e95d00be12b5eb99237f50acb77e094417862;Pull Up Method;Pull Up Method	public getDeclarationAsString() : String from class com.github.javaparser.ast.body.ConstructorDeclaration to public getDeclarationAsString() : String from class com.github.javaparser.ast.body.CallableDeclaration
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/ConstructorDeclaration.java;229;3
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/CallableDeclaration.java;163;3
+--------------------
+ff9e95d00be12b5eb99237f50acb77e094417862;Pull Up Method;Pull Up Method	public getDeclarationAsString(includingModifiers boolean, includingThrows boolean) : String from class com.github.javaparser.ast.body.ConstructorDeclaration to public getDeclarationAsString(includingModifiers boolean, includingThrows boolean) : String from class com.github.javaparser.ast.body.CallableDeclaration
+s;javaparser-core/src/main/java/com/github/javaparser/ast/body/ConstructorDeclaration.java;224;3
+d;javaparser-core/src/main/java/com/github/javaparser/ast/body/CallableDeclaration.java;158;3
+--------------------
+4e0c2d80433bd875e7561bff85cce283bfa4a53c;Rename Method;Rename Method	public getExtendedTypes() : Optional<ReferenceType> renamed to public getExtendedType() : Optional<ReferenceType> in class com.github.javaparser.ast.type.WildcardType
+s;javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java;82;2
+d;javaparser-core/src/main/java/com/github/javaparser/ast/type/WildcardType.java;82;2
+--------------------
+00e95181f47b51e4529b8cb3ad8cb310faa10b07;Extract Method;Extract Method	public removeTryBlock() : TryStmt extracted from public remove(node Node) : boolean in class com.github.javaparser.ast.stmt.TryStmt
+s;javaparser-core/src/main/java/com/github/javaparser/ast/stmt/TryStmt.java;154;29
+d;javaparser-core/src/main/java/com/github/javaparser/ast/stmt/TryStmt.java;189;2
+d;javaparser-core/src/main/java/com/github/javaparser/ast/stmt/TryStmt.java;154;29

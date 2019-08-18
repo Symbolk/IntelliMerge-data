@@ -1,0 +1,1118 @@
+deeplearning4j: 269/2687
+--------------------
+f963996fb7c11f979030accd394476ea0a1d4abf;Extract Method;Extract Method	protected checkShapeValues(length int, shape int[]) : void extracted from public create(data float[], shape int[], offset int) : INDArray in class org.nd4j.linalg.factory.Nd4j
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;3553;18
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;4781;6
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;3602;26
+--------------------
+a0ce67bb02d91d6a7d7266d70c11b43e253a16fc;Rename Method;Rename Method	public Glove(cache VocabCache, sentenceIterator SentenceIterator, textVectorizer TextVectorizer, tokenizerFactory TokenizerFactory, lookupTable GloveWeightLookupTable, layerSize int, learningRate double, xMax double, windowSize int, coOccurrences CoOccurrences, stopWords List<String>, stem boolean, batchSize int, minWordFrequency int, maxCount double, iterations int, symmetric boolean, gen Random, shuffle boolean, seed long, numWorkers int) renamed to public LegacyGlove(cache VocabCache, sentenceIterator SentenceIterator, textVectorizer TextVectorizer, tokenizerFactory TokenizerFactory, lookupTable GloveWeightLookupTable, layerSize int, learningRate double, xMax double, windowSize int, coOccurrences CoOccurrences, stopWords List<String>, stem boolean, batchSize int, minWordFrequency int, maxCount double, iterations int, symmetric boolean, gen Random, shuffle boolean, seed long, numWorkers int) in class org.deeplearning4j.models.glove.LegacyGlove
+s;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/glove/LegacyGlove.java;87;22
+d;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/glove/LegacyGlove.java;87;22
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_triu renamed to org.nd4j.nativeblas.Nd4jCpu.triu
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16258;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15218;14
+--------------------
+18ac731704b6d244cdc609cc8d9f02524c3fe90f;Rename Parameter;Rename Parameter	transformProcess : ImageTransformProcess to imageTransformProcess : ImageTransformProcess in method public setImageTransformProcess(imageTransformProcess ImageTransformProcess) : void in class org.datavec.spark.transform.ImageSparkTransformServer
+s;datavec-spark-inference-parent/datavec-spark-inference-server/src/main/java/org/datavec/spark/transform/ImageSparkTransformServer.java;139;0
+d;datavec-spark-inference-parent/datavec-spark-inference-server/src/main/java/org/datavec/spark/transform/ImageSparkTransformServer.java;125;0
+--------------------
+ddfc2a1253698dc35b7642c4916290af11c93e0d;Rename Method;Rename Method	public exec() : void renamed to public execute() : void in class org.deeplearning4j.cli.subcommands.Train
+s;deeplearning4j-cli/deeplearning4j-cli-api/src/main/java/org/deeplearning4j/cli/subcommands/Train.java;110;24
+d;deeplearning4j-cli/deeplearning4j-cli-api/src/main/java/org/deeplearning4j/cli/subcommands/Train.java;111;22
+--------------------
+02bed42417ae5c3ffaa53e0fef8c02f045b2ff9c;Extract Method;Extract Method	private dummyFloat() : JCudaBuffer extracted from private toArgs(extraArgs Object[], dataType String) : Pointer in class org.nd4j.linalg.jcublas.ops.executioner.JCudaExecutioner
+s;nd4j-jcublas-parent/nd4j-jcublas-common/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;243;20
+d;nd4j-jcublas-parent/nd4j-jcublas-common/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;90;2
+d;nd4j-jcublas-parent/nd4j-jcublas-common/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;239;20
+--------------------
+2189e5ef9fd9d752048c35a672e8fd7c8c0f8d21;Rename Variable;Rename Variable	properties : int to propIdx : int in method protected asFlatNode(node DifferentialFunction, bufferBuilder FlatBufferBuilder, variables List<SDVariable>, reverseMap Map<String,Integer>, forwardMap Map<String,Integer>, framesMap Map<String,Integer>, idCounter AtomicInteger, id Integer) : int in class org.nd4j.autodiff.samediff.SameDiff
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;11031;0
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;11059;0
+--------------------
+25226a6f55eaf2bed7a5c8b475a09e1ef3bdb2e2;Extract Variable;Extract Variable	xtraz : val in method private exec(op TransformOp) : void from class org.nd4j.linalg.cpu.nativecpu.ops.NativeOpExecutioner
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/linalg/cpu/nativecpu/ops/NativeOpExecutioner.java;717;0
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public oneHot(name String, indices SDVariable, depth int) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public oneHot(name String, indices SDVariable, depth int) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;6307;13
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1448;13
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public sigmoidDerivative(iX DifferentialFunction<ArrayField>, wrt DifferentialFunction<ArrayField>) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;388;4
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;388;4
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public gte(name String, x SDVariable, y double) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public gte(name String, x SDVariable, y double) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;3690;13
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;669;13
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public neg(i_x ArrayField) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;162;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;164;3
+--------------------
+9468b3edc616410f45ac533048fb1756e9faddb2;Move Method;Move Method	private mapLossFunction(kerasLoss String) : LossFunctions.LossFunction from class org.deeplearning4j.nn.modelimport.keras.ModelConfiguration to private mapLossFunction(kerasLoss String) : LossFunctions.LossFunction from class org.deeplearning4j.nn.modelimport.keras.KerasLayer
+s;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/ModelConfiguration.java;292;53
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasLayer.java;442;53
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_static_rnn renamed to org.nd4j.nativeblas.Nd4jCpu.static_rnn
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15537;29
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14497;29
+--------------------
+4bafbe4f49fd7c988a82bee36815e0db1e3e84ae;Extract And Move Method;Extract And Move Method	public aeronChannel(host String, port int) : String extracted from public startSubscriber(context Aeron.Context, host String, port int, callback NDArrayCallback, streamId int) : AeronNDArraySubscriber in class org.nd4j.aeron.ipc.AeronNDArraySubscriber & moved to class org.nd4j.aeron.ipc.AeronUtil
+s;nd4j-serde/nd4j-aeron/src/main/java/org/nd4j/aeron/ipc/AeronNDArraySubscriber.java;79;36
+d;nd4j-serde/nd4j-aeron/src/main/java/org/nd4j/aeron/ipc/AeronUtil.java;33;8
+d;nd4j-serde/nd4j-aeron/src/main/java/org/nd4j/aeron/ipc/AeronNDArraySubscriber.java;124;39
+--------------------
+ce5b2bac9322dc874dd84196e7021d8a7a5f5ce3;Rename Class;Rename Class	org.deeplearning4j.nn.conf.graph.NormalizeVertex renamed to org.deeplearning4j.nn.conf.graph.L2NormalizeVertex
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/graph/NormalizeVertex.java;28;63
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/graph/L2NormalizeVertex.java;28;63
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public eq(name String, x SDVariable, y SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public eq(name String, x SDVariable, y SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;4010;14
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;465;14
+--------------------
+f963996fb7c11f979030accd394476ea0a1d4abf;Rename Variable;Rename Variable	expected : double to expectedEuclidean : double in method public testEuclideanManhattanDistanceAlongDimension_Rank4() : void in class org.nd4j.linalg.ops.OpExecutionerTestsC
+s;nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/ops/OpExecutionerTestsC.java;777;0
+d;nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/ops/OpExecutionerTestsC.java;904;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_maxpool2d_bp renamed to org.nd4j.nativeblas.Nd4jCpu.maxpool2d_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14208;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13168;14
+--------------------
+a8bbb9dd6b46fa4ba064d4d7449a399773d26ca2;Extract Method;Extract Method	public sub(varName String, sameDiffVariable SDVariable) : SDVariable extracted from public sub(sameDiffVariable SDVariable) : SDVariable in class org.nd4j.autodiff.samediff.impl.SDVariable
+s;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;485;20
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;731;20
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;363;8
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_concat renamed to org.nd4j.nativeblas.Nd4jCpu.concat
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15884;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14844;14
+--------------------
+76a4d9e5755ce1f3c3db65b4f641667d5c32e3c5;Move Attribute;Move Attribute	private contextsForDevices : Map<Integer,Map<Integer,CudaContext>> from class org.nd4j.jita.allocator.context.ContextPool to class org.nd4j.jita.allocator.context.impl.BasicContextPool
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/ContextPool.java;42;0
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/impl/BasicContextPool.java;38;0
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public sigmoid(iX DifferentialFunction<ArrayField>) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;380;4
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;380;4
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.Identity moved to org.nd4j.linalg.api.ops.impl.transforms.same.Identity
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/Identity.java;27;39
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/same/Identity.java;28;39
+--------------------
+322f2572c70fbf13aaab96cc5fe760c7e65a496b;Pull Up Method;Pull Up Method	public getStateViewArray() : INDArray from class org.deeplearning4j.nn.updater.graph.ComputationGraphUpdater to public getStateViewArray() : INDArray from class org.deeplearning4j.nn.updater.BaseMultiLayerUpdater
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/graph/ComputationGraphUpdater.java;201;2
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/BaseMultiLayerUpdater.java;153;3
+--------------------
+a06105b8dcbfaf665aa390da233d5b00ff702687;Pull Up Method;Pull Up Method	public numLabels() : int from class org.deeplearning4j.nn.layers.OutputLayer to public numLabels() : int from class org.deeplearning4j.nn.layers.BaseOutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;268;8
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;269;8
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_stack renamed to org.nd4j.nativeblas.Nd4jCpu.parallel_stack
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;17262;21
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16984;14
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_softsign_bp renamed to org.nd4j.nativeblas.Nd4jCpu.softsign_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12058;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;11018;14
+--------------------
+2b339a83f39d160169df9ed14fb54c7652970a19;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.convolution.FullConv3DDerivative moved to org.nd4j.linalg.api.ops.impl.layers.convolution.FullConv3DDerivative
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/convolution/FullConv3DDerivative.java;12;30
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/FullConv3DDerivative.java;12;30
+--------------------
+44d76e3bc1d7ab58812d81466b72c0a748b5a9e2;Pull Up Attribute;Pull Up Attribute	protected z : INDArray from class org.nd4j.linalg.api.ops.BaseTransformOp to class org.nd4j.linalg.api.ops.BaseOp
+s;nd4j-api/src/main/java/org/nd4j/linalg/api/ops/BaseTransformOp.java;27;0
+d;nd4j-api/src/main/java/org/nd4j/linalg/api/ops/BaseOp.java;30;0
+--------------------
+084f62dbaecbe570d46b2745525c2260a6bcf5cd;Extract And Move Method;Extract And Move Method	public symmetric(symmetric boolean) : Builder extracted from public fit() : void in class org.deeplearning4j.models.glove.Glove & moved to class org.deeplearning4j.models.glove.CoOccurrences.Builder
+s;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/glove/Glove.java;74;92
+d;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/glove/CoOccurrences.java;217;3
+d;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/glove/Glove.java;96;54
+--------------------
+174614003e5fa40a991ecd77c529721eee88d6f6;Extract Method;Extract Method	public setListeners(statsStorage StatsStorage, listeners Collection<? extends IterationListener>) : void extracted from public setListeners(listeners Collection<IterationListener>) : void in class org.deeplearning4j.spark.impl.multilayer.SparkDl4jMultiLayer
+s;deeplearning4j-scaleout/spark/dl4j-spark/src/main/java/org/deeplearning4j/spark/impl/multilayer/SparkDl4jMultiLayer.java;278;13
+d;deeplearning4j-scaleout/spark/dl4j-spark/src/main/java/org/deeplearning4j/spark/impl/multilayer/SparkDl4jMultiLayer.java;297;20
+d;deeplearning4j-scaleout/spark/dl4j-spark/src/main/java/org/deeplearning4j/spark/impl/multilayer/SparkDl4jMultiLayer.java;281;14
+--------------------
+8653a319df75aeb10aed2132c10dc0a6c8c62e10;Rename Method;Rename Method	public close() : void renamed to public destroy() : void in class org.nd4j.linalg.api.buffer.DoubleBuffer
+s;nd4j-api/src/main/java/org/nd4j/linalg/api/buffer/DoubleBuffer.java;216;14
+d;nd4j-api/src/main/java/org/nd4j/linalg/api/buffer/DoubleBuffer.java;216;12
+--------------------
+f77f1ee99959b6a9666c794b17484c6c2eb85d2f;Move Method;Move Method	public testNeuralNetConfigAPI() : void from class org.deeplearning4j.nn.layers.layerBuilderTest to public testNeuralNetConfigAPI() : void from class org.deeplearning4j.nn.conf.NeuralNetConfLayerBuilderTest
+s;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/layers/layerBuilderTest.java;68;146
+d;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/conf/NeuralNetConfLayerBuilderTest.java;37;146
+--------------------
+416ee0b58143be57f24406befba99e300b5d1442;Move Class;Move Class	org.deeplearning4j.nn.conf.serde.LegacyLayerDeserializerHelper moved to org.deeplearning4j.nn.conf.serde.legacyformat.LegacyLayerDeserializerHelper
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/serde/LegacyLayerDeserializerHelper.java;5;3
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/serde/legacyformat/LegacyLayerDeserializerHelper.java;5;3
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public unsortedSegmentMean(data SDVariable, segmentIds SDVariable, numSegments int) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public unsortedSegmentMean(data SDVariable, segmentIds SDVariable, numSegments int) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;5711;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2774;5
+--------------------
+76a8b3457671c9acd210c69ddd110cdfd423d159;Rename Parameter;Rename Parameter	kerasConfig : Map<String,Object> to layerConfig : Map<String,Object> in method public buildDropoutLayer(layerConfig Map<String,Object>) : DropoutLayer in class org.deeplearning4j.nn.modelimport.keras.LayerConfiguration
+s;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/LayerConfiguration.java;309;0
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/LayerConfiguration.java;310;0
+--------------------
+f963996fb7c11f979030accd394476ea0a1d4abf;Extract Method;Extract Method	private assertDataSetCacheGetsCompleted(cache DataSetCache, namespace String, cachedIt DataSetIterator) : void extracted from private runDataSetTest(cache DataSetCache) : void in class org.nd4j.linalg.dataset.CachingDataSetIteratorTest
+s;nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/dataset/CachingDataSetIteratorTest.java;59;36
+d;nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/dataset/CachingDataSetIteratorTest.java;81;7
+d;nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/dataset/CachingDataSetIteratorTest.java;57;22
+--------------------
+b45f228696fe31b27c1d8c66eb1f46f220c96cea;Rename Variable;Rename Variable	sY : val to sH : val in method public initFromTensorFlow(nodeDef NodeDef, initWith SameDiff, attributesForNode Map<String,AttrValue>, graph GraphDef) : void in class org.nd4j.linalg.api.ops.impl.layers.convolution.Pooling2D
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/Pooling2D.java;138;0
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/Pooling2D.java;138;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_lrelu renamed to org.nd4j.nativeblas.Nd4jCpu.relu
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12220;19
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;11108;18
+--------------------
+41d4467b7bfd9a1c06efb6fc09fe3f24d8ebf898;Rename Method;Rename Method	public setIntegerArguments(iargs Integer[]) : Builder renamed to public addIntegerArguments(iargs Integer[]) : DynamicCustomOpsBuilder in class org.nd4j.linalg.api.ops.DynamicCustomOp.DynamicCustomOpsBuilder
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/DynamicCustomOp.java;157;21
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/DynamicCustomOp.java;424;22
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public leakyRelu(value ArrayField, alpha double) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;450;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;466;3
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_pointwise_conv2d renamed to org.nd4j.nativeblas.Nd4jCpu.pointwise_conv2d
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14744;24
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13704;24
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_mirror_pad renamed to org.nd4j.nativeblas.Nd4jCpu.mirror_pad
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16291;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15251;14
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public reshape(i_x ArrayField, shape int[]) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;172;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;174;3
+--------------------
+96a7106693fb679a281801d66d93b407b68fe20c;Rename Variable;Rename Variable	sigmaPrimeZ : INDArray to activationDerivative : INDArray in method public backwardGradient(gradient Gradient, weights INDArray) : Pair<Gradient,INDArray> in class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;152;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;152;0
+--------------------
+07d9d0e704a58b83a68847663f9cab8dd5a2082b;Move Source Folder;Move Source Folder	deeplearning4j-core/src/test/java/org/deeplearning4j/datasets/fetchers to deeplearning4j-core/src/test/java/org/deeplearning4j/base
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_concat renamed to org.nd4j.nativeblas.Nd4jCpu.concat
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15884;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14844;14
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_gru renamed to org.nd4j.nativeblas.Nd4jCpu.gru
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15505;28
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14465;28
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public variance(i_x ArrayField, biasCorrected boolean, dimensions int[]) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;132;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;134;3
+--------------------
+0fff490f2d32350eab18d5ec4ead8f2b6ca09582;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.broadcast.BroadcastLessThan moved to org.nd4j.linalg.api.ops.impl.broadcast.bool.BroadcastLessThan
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/broadcast/BroadcastLessThan.java;27;61
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/broadcast/bool/BroadcastLessThan.java;28;61
+--------------------
+c1cd4f8c7c178660e62a994d67ef821d2546d561;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.floating.Zeta moved to org.nd4j.linalg.api.ops.impl.transforms.custom.Zeta
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/floating/Zeta.java;28;36
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/custom/Zeta.java;28;36
+--------------------
+18ac731704b6d244cdc609cc8d9f02524c3fe90f;Rename Variable;Rename Variable	csvRecord : CSVRecord to singleCsvRecord : SingleCSVRecord in method public testVectorOneHotLabel() : void in class org.datavec.spark.transform.SingleCSVRecordTest
+s;datavec-spark-inference-parent/datavec-spark-inference-model/src/test/java/org/datavec/spark/transform/CSVRecordTest.java;28;0
+d;datavec-spark-inference-parent/datavec-spark-inference-model/src/test/java/org/datavec/spark/transform/SingleCSVRecordTest.java;28;0
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public stridedSlice(in SDVariable, begin int[], end int[], strides int[], beginMask int, endMask int, ellipsisMask int, newAxisMask int, shrinkAxisMask int) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public stridedSlice(in SDVariable, begin int[], end int[], strides int[], beginMask int, endMask int, ellipsisMask int, newAxisMask int, shrinkAxisMask int) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;9698;6
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2604;6
+--------------------
+ffd7303118dc5445996d9829df779653afd262d0;Rename Variable;Rename Variable	n : int to newRank : int in method public subArray(resolution ShapeOffsetResolution) : INDArray in class org.nd4j.linalg.api.ndarray.BaseSparseNDArrayCOO
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseSparseNDArrayCOO.java;423;0
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseSparseNDArrayCOO.java;472;0
+--------------------
+b45f228696fe31b27c1d8c66eb1f46f220c96cea;Rename Variable;Rename Variable	sX : val to sW : val in method public initFromTensorFlow(nodeDef NodeDef, initWith SameDiff, attributesForNode Map<String,AttrValue>, graph GraphDef) : void in class org.nd4j.linalg.api.ops.impl.layers.convolution.Pooling2D
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/Pooling2D.java;139;0
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/Pooling2D.java;139;0
+--------------------
+641caa841bce03dde470458970655baebcac240a;Rename Method;Rename Method	public Glove(cache VocabCache, sentenceIterator SentenceIterator, textVectorizer TextVectorizer, tokenizerFactory TokenizerFactory, lookupTable GloveWeightLookupTable, layerSize int, learningRate double, xMax double, windowSize int, coOccurrences CoOccurrences, stopWords List<String>, stem boolean, batchSize int, minWordFrequency int, maxCount double, iterations int, symmetric boolean, gen Random, shuffle boolean, seed long, numWorkers int) renamed to public LegacyGlove(cache VocabCache, sentenceIterator SentenceIterator, textVectorizer TextVectorizer, tokenizerFactory TokenizerFactory, lookupTable GloveWeightLookupTable, layerSize int, learningRate double, xMax double, windowSize int, coOccurrences CoOccurrences, stopWords List<String>, stem boolean, batchSize int, minWordFrequency int, maxCount double, iterations int, symmetric boolean, gen Random, shuffle boolean, seed long, numWorkers int) in class org.deeplearning4j.models.glove.LegacyGlove
+s;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/glove/LegacyGlove.java;87;22
+d;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/glove/LegacyGlove.java;87;22
+--------------------
+3fcd15c21b3aeeb9e5d93d3d504dfd0123b4e6e7;Move Attribute;Move Attribute	protected momentumAfter : Map<Integer,Double> from class org.deeplearning4j.nn.conf.NeuralNetConfiguration to class org.deeplearning4j.nn.conf.layers.Layer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/NeuralNetConfiguration.java;61;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/layers/Layer.java;64;0
+--------------------
+eda902d2e71401e5d7e3d837f78dcf28cc3b30cc;Rename Method;Rename Method	public setMaxDeviceMemoryUsed(percentage double) : void renamed to public setMaximumDeviceMemoryUsed(percentage double) : Configuration in class org.nd4j.jita.conf.Configuration
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/conf/Configuration.java;84;11
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/conf/Configuration.java;105;13
+--------------------
+9fe021bb3717526fa854fadaa09f534c52c8f46b;Inline Method;Inline Method	protected createBias(conf NeuralNetConfiguration) : INDArray inlined to public init(params Map<String,INDArray>, conf NeuralNetConfiguration, paramsView INDArray) : void in class org.deeplearning4j.nn.params.ConvolutionParamInitializer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/params/ConvolutionParamInitializer.java;43;10
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/params/ConvolutionParamInitializer.java;61;5
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/params/ConvolutionParamInitializer.java;55;20
+--------------------
+bc1b79b14f6b4531923553959bb930c313e0f644;Move Method;Move Method	public testStridedSliceShrinkAxisMask() : void from class org.nd4j.autodiff.samediff.SameDiffTests to public testStridedSliceShrinkAxisMask() : void from class org.nd4j.autodiff.opvalidation.ShapeOpValidation
+s;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/samediff/SameDiffTests.java;2699;15
+d;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/opvalidation/ShapeOpValidation.java;1349;15
+--------------------
+9889bb7614950b7557df344846ffd10b27a2d815;Rename Variable;Rename Variable	backward : INDArray[] to p : Pair<Gradient,INDArray[]> in method public testL2Node() : void in class org.deeplearning4j.nn.graph.graphnodes.TestGraphNodes
+s;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/graph/graphnodes/TestGraphNodes.java;320;0
+d;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/graph/graphnodes/TestGraphNodes.java;378;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_softmax renamed to org.nd4j.nativeblas.Nd4jCpu.log_softmax_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;19534;40
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;18811;14
+--------------------
+9fa5d250b12625ffbdc74fee823afdf069c0f51b;Pull Up Attribute;Pull Up Attribute	protected padding : int[] from class org.deeplearning4j.nn.conf.layers.ConvolutionLayer.Builder to class org.deeplearning4j.nn.conf.layers.ConvolutionLayer.BaseConvBuilder
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/layers/ConvolutionLayer.java;168;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/layers/ConvolutionLayer.java;214;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_reduce_min renamed to org.nd4j.nativeblas.Nd4jCpu.reduce_min
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;18641;30
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;17601;30
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public rollAxis(iX Variable<ArrayField>, axis int) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;472;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;472;3
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public reverse(x SDVariable, dimensions int[]) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public reverse(x SDVariable, dimensions int[]) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;7955;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1794;5
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_reversesubtract_bp renamed to org.nd4j.nativeblas.Nd4jCpu.reversesubtract_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13229;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12189;14
+--------------------
+99aeb26c989ea5bcfdbbcce624ca43f3c32ee393;Move Method;Move Method	public batchSize() : int from class org.deeplearning4j.nn.BaseMultiLayerNetwork to public batchSize() : int from class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/BaseMultiLayerNetwork.java;174;3
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;114;3
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_identity_bp renamed to org.nd4j.nativeblas.Nd4jCpu.identity_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12497;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;11457;14
+--------------------
+76a4d9e5755ce1f3c3db65b4f641667d5c32e3c5;Move Attribute;Move Attribute	private MAX_STREAMS_PER_DEVICE : int from class org.nd4j.jita.allocator.context.ContextPool to class org.nd4j.jita.allocator.context.impl.BasicContextPool
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/ContextPool.java;34;0
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/impl/BasicContextPool.java;30;0
+--------------------
+0e655b78d5a8ff7f5ca7ba75cff4955044e2a0c3;Extract Variable;Extract Variable	loss : LossFunctions.LossFunction in method private buildLossLayer(layerConfig Map<String,Object>, train boolean) : LossLayer from class org.deeplearning4j.nn.modelimport.keras.KerasLayer
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasLayer.java;844;0
+--------------------
+b796f6428d86f83864496977a9080495b0db4d29;Extract Method;Extract Method	private toInt(val boolean) : int extracted from private invoke(op Accumulation, dimension int[], result INDArray, sync boolean) : CudaContext in class org.nd4j.linalg.jcublas.ops.executioner.JCudaExecutioner
+s;nd4j-jcublas-parent/nd4j-jcublas-7.5/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;311;123
+d;nd4j-jcublas-parent/nd4j-jcublas-7.5/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;315;2
+d;nd4j-jcublas-parent/nd4j-jcublas-7.5/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;320;130
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public expandDims(input ArrayField, dim int) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;635;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;651;3
+--------------------
+4d3a3ab641f8d652e87c8c56e59995afcd9667fa;Pull Up Method;Pull Up Method	public onEpochEnd(model Model) : void from class org.deeplearning4j.ui.stats.StatsListener to public onEpochEnd(model Model) : void from class org.deeplearning4j.ui.stats.BaseStatsListener
+s;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/StatsListener.java;203;3
+d;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/BaseStatsListener.java;211;3
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public scatterAdd(name String, ref SDVariable, indices SDVariable, updates SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public scatterAdd(name String, ref SDVariable, indices SDVariable, updates SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;9730;16
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1965;16
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public segmentMean(data SDVariable, segmentIds SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public segmentMean(data SDVariable, segmentIds SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;5686;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2160;5
+--------------------
+c1cd4f8c7c178660e62a994d67ef821d2546d561;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.arithmetic.bp.RDivBpOp moved to org.nd4j.linalg.api.ops.impl.transforms.pairwise.arithmetic.bp.RDivBpOp
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/arithmetic/bp/RDivBpOp.java;22;17
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/pairwise/arithmetic/bp/RDivBpOp.java;22;17
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.LogX moved to org.nd4j.linalg.api.ops.impl.transforms.floating.LogX
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/LogX.java;29;68
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/floating/LogX.java;29;68
+--------------------
+9236412b868c0316401ec32149e00840d0059403;Extract Method;Extract Method	public oneHot(name String, indices SDVariable, depth int, axis int, on double, off double, dataType DataType) : SDVariable extracted from public oneHot(name String, indices SDVariable, depth int, axis int, on double, off double) : SDVariable in class org.nd4j.autodiff.samediff.SameDiff
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;6060;13
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;6098;6
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;6084;12
+--------------------
+409a706ecbc14b654bd17fd82f1a2d73bbe33470;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.accum.SparseSoftmaxCrossEntropyLossWithLogits moved to org.nd4j.linalg.api.ops.impl.loss.SparseSoftmaxCrossEntropyLossWithLogits
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/accum/SparseSoftmaxCrossEntropyLossWithLogits.java;37;48
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/loss/SparseSoftmaxCrossEntropyLossWithLogits.java;37;48
+--------------------
+f963996fb7c11f979030accd394476ea0a1d4abf;Extract Method;Extract Method	protected checkShapeValues(length int, shape int[]) : void extracted from public create(data double[], shape int[], ordering char) : INDArray in class org.nd4j.linalg.factory.Nd4j
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;4173;18
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;4781;6
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;4272;26
+--------------------
+c1cd4f8c7c178660e62a994d67ef821d2546d561;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.Sinh moved to org.nd4j.linalg.api.ops.impl.transforms.floating.Sinh
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/Sinh.java;28;65
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/floating/Sinh.java;28;65
+--------------------
+1429169d76e74147d65e9bbbb720f847830ba8b4;Move Method;Move Method	protected createWeightMatrix() : INDArray from class org.deeplearning4j.nn.layers.ConvolutionDownSampleLayer to protected createWeightMatrix(conf NeuralNetConfiguration) : INDArray from class org.deeplearning4j.nn.params.ConvolutionParamInitializer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/ConvolutionDownSampleLayer.java;36;7
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/params/ConvolutionParamInitializer.java;34;6
+--------------------
+e64c92f6498b118c592b80cc48fed309b6b1c884;Move Attribute;Move Attribute	private configuration : Configuration from class org.nd4j.jita.constant.CudaConstantHandler to class org.nd4j.jita.constant.ProtectedCudaShapeInfoProvider
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/constant/CudaConstantHandler.java;42;0
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/constant/ProtectedCudaShapeInfoProvider.java;27;0
+--------------------
+322f2572c70fbf13aaab96cc5fe760c7e65a496b;Rename Variable;Rename Variable	layers : Layer[] to l : Layer[] in method public MultiLayerUpdater(network MultiLayerNetwork, updaterState INDArray) in class org.deeplearning4j.nn.updater.MultiLayerUpdater
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/MultiLayerUpdater.java;43;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/MultiLayerUpdater.java;31;0
+--------------------
+79230386f61240c5254784d2f4202e745fd5b4c8;Move And Rename Class;Move And Rename Class	org.deeplearning4j.models.abstractvectors.AbstractVectors moved and renamed to org.deeplearning4j.models.sequencevectors.SequenceVectors
+s;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/abstractvectors/AbstractVectors.java;35;709
+d;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/sequencevectors/SequenceVectors.java;28;709
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_upsampling2d_bp renamed to org.nd4j.nativeblas.Nd4jCpu.upsampling2d_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14474;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13434;14
+--------------------
+bc150ce72d3fea7c15581e68f57b5067e4b02324;Move Method;Move Method	public getSeed() : long from class org.deeplearning4j.nn.conf.NeuralNetConfiguration to public getSeed() : long from class org.deeplearning4j.nn.conf.rng.DefaultRandom
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/NeuralNetConfiguration.java;546;2
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/rng/DefaultRandom.java;40;2
+--------------------
+b5ba07fe7c8044655f33a5b8a04e02ad338be3cf;Extract Variable;Extract Variable	test2 : INDArray in method public testEight() : void from class org.nd4j.linalg.shape.ShapeTestsC
+d;nd4j-tests/src/test/java/org/nd4j/linalg/shape/ShapeTestsC.java;127;0
+--------------------
+f4b23fedef40dcba360d6d2be59936575e48f0ba;Move Class;Move Class	org.nd4j.linalg.util.Paths moved to org.nd4j.org.nd4j.linalg.util.Paths
+s;nd4j-api/src/main/java/org/nd4j/linalg/util/Paths.java;27;40
+d;nd4j-common/src/main/java/org/nd4j/org/nd4j/linalg/util/Paths.java;27;40
+--------------------
+b061323adaf87034f9036ccd544166cd01eee20d;Rename Variable;Rename Variable	repos : List<VersionInfo> to dependencies : List<VersionInfo> in method public checkVersions() : void in class org.nd4j.versioncheck.VersionCheck
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/versioncheck/VersionCheck.java;91;0
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/versioncheck/VersionCheck.java;91;0
+--------------------
+333c1d7f6a46834fbb7bd86f22db69dd2edd9c4c;Move Method;Move Method	public testSwapReshape() : void from class org.nd4j.linalg.Nd4jTestsC to public testSwapReshape() : void from class org.nd4j.linalg.slicing.SlicingTestsC
+s;nd4j-tests/src/test/java/org/nd4j/linalg/Nd4jTestsC.java;1315;18
+d;nd4j-tests/src/test/java/org/nd4j/linalg/slicing/SlicingTestsC.java;69;18
+--------------------
+53585a3a9591cd298d9fb9b1114a80f680f3b508;Rename Variable;Rename Variable	vPrevW : INDArray to vPrev : INDArray in method public testNestorovsUpdater() : void in class org.deeplearning4j.nn.updater.TestUpdaters
+s;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/updater/TestUpdaters.java;217;0
+d;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/updater/TestUpdaters.java;180;0
+--------------------
+473c9a3a1bc4e8fcbac2e9586b4b013e359bfd3b;Rename Variable;Rename Variable	backpropParamLength : int to paramLength : int in method public init(parameters INDArray, cloneParametersArray boolean) : void in class org.deeplearning4j.nn.multilayer.MultiLayerNetwork
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java;382;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java;382;0
+--------------------
+b580a420b14280983c32e036fba4395e20d35d96;Rename Class;Rename Class	org.deeplearning4j.nn.conf.override.LayerFactoryOverride renamed to org.deeplearning4j.nn.conf.override.LayerOverride
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/override/LayerFactoryOverride.java;24;18
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/override/LayerOverride.java;24;18
+--------------------
+f861df14d8ad96e13cc4406e1fc8f39f38db88d9;Extract Method;Extract Method	public createLossLayer(layerName String, kerasLoss String, train boolean) : KerasLayer extracted from public createLossLayer(layerName String, kerasLoss String) : KerasLayer in class org.deeplearning4j.nn.modelimport.keras.KerasLayer
+s;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasLayer.java;310;15
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasLayer.java;350;18
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasLayer.java;337;11
+--------------------
+bc1b79b14f6b4531923553959bb930c313e0f644;Extract Method;Extract Method	public lastIndex(name String, in SDVariable, condition Condition, keepDims boolean, dimensions int[]) : SDVariable extracted from public lastIndex(name String, in SDVariable, condition Condition, dimensions int[]) : SDVariable in class org.nd4j.autodiff.samediff.SameDiff
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;3447;3
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;3495;3
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;3491;2
+--------------------
+f963996fb7c11f979030accd394476ea0a1d4abf;Extract Method;Extract Method	protected checkShapeValues(length int, shape int[]) : void extracted from public create(data float[], rows int, columns int, stride int[], offset int, ordering char) : INDArray in class org.nd4j.linalg.factory.Nd4j
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;4089;22
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;4781;6
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;4180;22
+--------------------
+c1cd4f8c7c178660e62a994d67ef821d2546d561;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.arithmetic.TruncateDivOp moved to org.nd4j.linalg.api.ops.impl.transforms.pairwise.arithmetic.TruncateDivOp
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/arithmetic/TruncateDivOp.java;29;52
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/pairwise/arithmetic/TruncateDivOp.java;28;52
+--------------------
+c1cd4f8c7c178660e62a994d67ef821d2546d561;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.arithmetic.OldDivOp moved to org.nd4j.linalg.api.ops.impl.transforms.pairwise.arithmetic.OldDivOp
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/arithmetic/OldDivOp.java;28;77
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/pairwise/arithmetic/OldDivOp.java;28;77
+--------------------
+f4b23fedef40dcba360d6d2be59936575e48f0ba;Move Class;Move Class	org.nd4j.linalg.util.InputStreamUtil moved to org.nd4j.org.nd4j.linalg.util.InputStreamUtil
+s;nd4j-api/src/main/java/org/nd4j/linalg/util/InputStreamUtil.java;27;50
+d;nd4j-common/src/main/java/org/nd4j/org/nd4j/linalg/util/InputStreamUtil.java;27;50
+--------------------
+a06105b8dcbfaf665aa390da233d5b00ff702687;Pull Up Method;Pull Up Method	public setLabels(labels INDArray) : void from class org.deeplearning4j.nn.layers.OutputLayer to public setLabels(labels INDArray) : void from class org.deeplearning4j.nn.layers.BaseOutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;403;2
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;404;2
+--------------------
+99aeb26c989ea5bcfdbbcce624ca43f3c32ee393;Move Method;Move Method	public numParams() : int from class org.deeplearning4j.nn.BaseMultiLayerNetwork to public numParams() : int from class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/BaseMultiLayerNetwork.java;768;16
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;219;11
+--------------------
+c0122a2208a7499da2ba2022e3258fed42516e80;Rename Variable;Rename Variable	sigmaPrimeZ : INDArray to activationDerivative : INDArray in method public backwardGradient(gradient Gradient, weights INDArray) : Pair<Gradient,INDArray> in class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;152;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;152;0
+--------------------
+322f2572c70fbf13aaab96cc5fe760c7e65a496b;Pull Up Attribute;Pull Up Attribute	protected updaterStateViewArray : INDArray from class org.deeplearning4j.nn.updater.MultiLayerUpdater to class org.deeplearning4j.nn.updater.BaseMultiLayerUpdater
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/MultiLayerUpdater.java;36;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/BaseMultiLayerUpdater.java;36;0
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public tensorMmul(name String, x SDVariable, y SDVariable, dimensions int[][]) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public tensorMmul(name String, x SDVariable, y SDVariable, dimensions int[][]) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;8993;12
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2683;12
+--------------------
+31201affbfd450d5fdb8358e13eff26de2ea685b;Rename Variable;Rename Variable	backpropParamLength : int to paramLength : int in method public initGradientsView() : void in class org.deeplearning4j.nn.multilayer.MultiLayerNetwork
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java;597;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java;597;0
+--------------------
+31cc1e605b98d39f293d92a9fe7869bb9bbc7b36;Move Class;Move Class	org.nd4j.linalg.api.test.NDArrayTests moved to org.nd4j.linalg.api.NDArrayTests
+s;nd4j-api/src/main/java/org/nd4j/linalg/api/test/NDArrayTests.java;42;1671
+d;nd4j-api/src/test/java/org/nd4j/linalg/api/NDArrayTests.java;42;1671
+--------------------
+f543d70510a78583f246ec0c84b6514e5a7fcc7f;Extract Superclass;Extract Superclass	org.deeplearning4j.nn.layers.BaseOutputLayer from classes [org.deeplearning4j.nn.layers.OutputLayer]
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;25;16
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;48;374
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;25;16
+--------------------
+ffd7303118dc5445996d9829df779653afd262d0;Rename Parameter;Rename Parameter	stride : int[] to sparseOffsets : int[] in method public createSparseCOO(values DataBuffer, indices DataBuffer, sparseOffsets int[], fixed int[], shape int[], ordering char) : INDArray in class org.nd4j.linalg.factory.Nd4j
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;5231;0
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/factory/Nd4j.java;5234;0
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public max(i_x ArrayField, dimensions int[]) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;137;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;139;3
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.FloatLogicOp renamed to org.nd4j.nativeblas.Nd4jCpu.LogicOp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;11701;17
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;10661;17
+--------------------
+c1cd4f8c7c178660e62a994d67ef821d2546d561;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.Dilation2D moved to org.nd4j.linalg.api.ops.impl.transforms.custom.Dilation2D
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/Dilation2D.java;39;154
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/custom/Dilation2D.java;39;154
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public segmentMin(name String, data SDVariable, segmentIds SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public segmentMin(name String, data SDVariable, segmentIds SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;5643;16
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2192;16
+--------------------
+383bdce0186f7f3ed114c5cabab5b2d6f02a8bd5;Rename Variable;Rename Variable	next : DataSet to mnist : DataSet in method public testSubSampleLayer() : void in class org.deeplearning4j.nn.layers.convolution.SubsampleTests
+s;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/layers/convolution/SubsampleTests.java;34;0
+d;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/layers/convolution/SubsampleTests.java;27;0
+--------------------
+339a93d107c6928886915c7d7dac68a0497d287a;Rename Method;Rename Method	public importSequentialModelConfigFromFile(configJsonFilename String) : MultiLayerConfiguration renamed to public importSequentialModelConfigFromJsonFile(modelJsonFilename String) : MultiLayerConfiguration in class org.deeplearning4j.nn.modelimport.keras.ModelConfiguration
+s;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/ModelConfiguration.java;33;11
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/ModelConfiguration.java;56;11
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.IsFinite moved to org.nd4j.linalg.api.ops.impl.transforms.bool.IsFinite
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/IsFinite.java;27;63
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/bool/IsFinite.java;27;63
+--------------------
+a8bbb9dd6b46fa4ba064d4d7449a399773d26ca2;Extract Method;Extract Method	public rdiv(varName String, sameDiffVariable SDVariable) : SDVariable extracted from public rdiv(sameDiffVariable SDVariable) : SDVariable in class org.nd4j.autodiff.samediff.impl.SDVariable
+s;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;449;15
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;695;15
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;343;8
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public normmax(name String, x SDVariable, keepDims boolean, dimensions int[]) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public normmax(name String, x SDVariable, keepDims boolean, dimensions int[]) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;8815;20
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1383;20
+--------------------
+9df8de43d7c7ebf97d46845bdd43e6b226749d50;Move And Rename Class;Move And Rename Class	org.nd4j.linalg.MmulBug moved and renamed to org.nd4j.linalg.blas.BlasTests
+s;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/MmulBug.java;29;29
+d;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/blas/BlasTests.java;35;182
+--------------------
+f4b23fedef40dcba360d6d2be59936575e48f0ba;Move Attribute;Move Attribute	private hostPointer : Pointer from class org.nd4j.linalg.jcublas.buffer.BaseCudaDataBuffer to class org.nd4j.linalg.jcublas.CublasPointer
+s;nd4j-jcublas-parent/nd4j-jcublas-7.5/src/main/java/org/nd4j/linalg/jcublas/buffer/BaseCudaDataBuffer.java;84;0
+d;nd4j-jcublas-parent/nd4j-jcublas-7.5/src/main/java/org/nd4j/linalg/jcublas/CublasPointer.java;50;0
+--------------------
+0e655b78d5a8ff7f5ca7ba75cff4955044e2a0c3;Inline Method;Inline Method	protected helperAddLossLayers(kerasLossObj Object) : void inlined to protected helperImportTrainingConfiguration(trainingConfigJson String) : void in class org.deeplearning4j.nn.modelimport.keras.KerasModel
+s;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasModel.java;139;16
+s;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasModel.java;293;39
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasModel.java;164;50
+--------------------
+12816f2d188e48d1adaf1a20466c7ce08a48d94f;Rename Method;Rename Method	public testBuildSubsamplingLayer() : void renamed to public buildSubsamplingLayer(conf KerasLayerConfiguration, kerasVersion Integer) : void in class org.deeplearning4j.nn.modelimport.keras.KerasLayerTest
+s;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/KerasLayerTest.java;157;25
+d;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/KerasLayerTest.java;166;24
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_sru_logic renamed to org.nd4j.nativeblas.Nd4jCpu.sru_logic
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15157;29
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14117;29
+--------------------
+76a8b3457671c9acd210c69ddd110cdfd423d159;Rename Class;Rename Class	org.deeplearning4j.nn.modelimport.keras.LayerBuildTest renamed to org.deeplearning4j.nn.modelimport.keras.LayerConfigurationTest
+s;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/LayerBuildTest.java;12;146
+d;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/LayerConfigurationTest.java;12;146
+--------------------
+1429169d76e74147d65e9bbbb720f847830ba8b4;Move Method;Move Method	public transform(data INDArray) : INDArray from class org.deeplearning4j.models.classifiers.sae.StackedAutoEncoder to public transform(data INDArray) : INDArray from class org.deeplearning4j.nn.layers.ConvolutionDownSampleLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/models/classifiers/sae/StackedAutoEncoder.java;28;3
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/ConvolutionDownSampleLayer.java;47;3
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public exp(iX DifferentialFunction<ArrayField>) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;299;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;299;3
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public scatterMul(name String, ref SDVariable, indices SDVariable, updates SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public scatterMul(name String, ref SDVariable, indices SDVariable, updates SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;9755;16
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2065;16
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public replaceWhere(update SDVariable, from SDVariable, condition Condition) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public replaceWhere(update SDVariable, from SDVariable, condition Condition) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;4819;12
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1644;12
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public stack(axis int, values SDVariable[]) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public stack(axis int, values SDVariable[]) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;6081;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2455;5
+--------------------
+b6aad1575dae890e935b5ec61d28a6c6f544be04;Rename Variable;Rename Variable	d : DBN to dbn : DBN in method public testDbn() : void in class org.deeplearning4j.models.classifiers.dbn.DBNTest
+s;deeplearning4j-core/src/test/java/org/deeplearning4j/models/classifiers/dbn/DBNTest.java;94;2
+d;deeplearning4j-core/src/test/java/org/deeplearning4j/models/classifiers/dbn/DBNTest.java;85;2
+--------------------
+322f2572c70fbf13aaab96cc5fe760c7e65a496b;Extract Superclass;Extract Superclass	org.deeplearning4j.nn.updater.BaseMultiLayerUpdater from classes [org.deeplearning4j.nn.updater.MultiLayerUpdater, org.deeplearning4j.nn.updater.graph.ComputationGraphUpdater]
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/MultiLayerUpdater.java;14;50
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/graph/ComputationGraphUpdater.java;13;60
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/BaseMultiLayerUpdater.java;25;250
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/MultiLayerUpdater.java;14;50
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/updater/graph/ComputationGraphUpdater.java;13;60
+--------------------
+b5ba07fe7c8044655f33a5b8a04e02ad338be3cf;Rename Variable;Rename Variable	idx2 : int to offset : int in method public tensorAlongDimension(index int, dimension int[]) : INDArray in class org.nd4j.linalg.api.ndarray.BaseNDArray
+s;nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseNDArray.java;740;0
+d;nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseNDArray.java;721;0
+--------------------
+378e4580637ad1e1bbc39ae3011db54f04ca3be7;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.LogSoftMax moved to org.nd4j.linalg.api.ops.impl.transforms.strict.LogSoftMax
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/LogSoftMax.java;29;93
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/strict/LogSoftMax.java;30;93
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_pnormpool2d renamed to org.nd4j.nativeblas.Nd4jCpu.pnormpool2d
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14273;31
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13233;31
+--------------------
+76a4d9e5755ce1f3c3db65b4f641667d5c32e3c5;Move Attribute;Move Attribute	private cuPool : Map<Integer,CUcontext> from class org.nd4j.jita.allocator.context.ContextPool to class org.nd4j.jita.allocator.context.impl.BasicContextPool
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/ContextPool.java;36;0
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/impl/BasicContextPool.java;32;0
+--------------------
+02bed42417ae5c3ffaa53e0fef8c02f045b2ff9c;Rename Method;Rename Method	public destroy() : void renamed to public close() : void in class org.nd4j.linalg.jcublas.buffer.BaseCudaDataBuffer
+s;nd4j-jcublas-parent/nd4j-jcublas-common/src/main/java/org/nd4j/linalg/jcublas/buffer/BaseCudaDataBuffer.java;360;21
+d;nd4j-jcublas-parent/nd4j-jcublas-common/src/main/java/org/nd4j/linalg/jcublas/buffer/BaseCudaDataBuffer.java;351;19
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_lrn_old renamed to org.nd4j.nativeblas.Nd4jCpu.lrn_old
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;19592;27
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;18552;27
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public scalarMax(name String, in SDVariable, value Number) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public scalarMax(name String, in SDVariable, value Number) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;7057;11
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1897;11
+--------------------
+e1c54678961bed13b4ea7cff7d58ecc8bdf13e04;Rename Method;Rename Method	public getIterationListeners() : Collection<IterationListener> renamed to public getListeners() : Collection<IterationListener> in class org.deeplearning4j.nn.layers.convolution.subsampling.SubsamplingLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/convolution/subsampling/SubsamplingLayer.java;182;3
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/convolution/subsampling/SubsamplingLayer.java;182;3
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_triu renamed to org.nd4j.nativeblas.Nd4jCpu.triu
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16258;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15218;14
+--------------------
+fd6ffe3b8faec7cb0b843cb55df3300b39232d04;Move Attribute;Move Attribute	protected rho : double from class org.deeplearning4j.nn.conf.NeuralNetConfiguration to class org.deeplearning4j.nn.conf.layers.Layer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/NeuralNetConfiguration.java;68;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/layers/Layer.java;70;0
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.SigmoidDerivative moved to org.nd4j.linalg.api.ops.impl.transforms.strict.SigmoidDerivative
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/SigmoidDerivative.java;27;68
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/strict/SigmoidDerivative.java;27;68
+--------------------
+76a4d9e5755ce1f3c3db65b4f641667d5c32e3c5;Move Method;Move Method	public getContextForDevice(deviceId Integer) : CudaContext from class org.nd4j.jita.allocator.context.ContextPool to public getContextForDevice(deviceId Integer) : CudaContext from class org.nd4j.jita.allocator.context.impl.BasicContextPool
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/ContextPool.java;54;2
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/impl/BasicContextPool.java;50;2
+--------------------
+38e75c85f984c586c0f2b7b849d07de9a3f5a7d3;Move Method;Move Method	public testOtherReshape() : void from class org.nd4j.linalg.Nd4jTestsC to public testOtherReshape() : void from class org.nd4j.linalg.shape.ShapeTestsC
+s;nd4j-tests/src/test/java/org/nd4j/linalg/Nd4jTestsC.java;157;8
+d;nd4j-tests/src/test/java/org/nd4j/linalg/shape/ShapeTestsC.java;130;11
+--------------------
+f4b23fedef40dcba360d6d2be59936575e48f0ba;Move Class;Move Class	org.nd4j.linalg.util.ReflectionUtil moved to org.nd4j.org.nd4j.linalg.util.ReflectionUtil
+s;nd4j-api/src/main/java/org/nd4j/linalg/util/ReflectionUtil.java;22;22
+d;nd4j-common/src/main/java/org/nd4j/org/nd4j/linalg/util/ReflectionUtil.java;22;22
+--------------------
+b45f228696fe31b27c1d8c66eb1f46f220c96cea;Rename Variable;Rename Variable	kX : int to kW : int in method public initFromTensorFlow(nodeDef NodeDef, initWith SameDiff, attributesForNode Map<String,AttrValue>, graph GraphDef) : void in class org.nd4j.linalg.api.ops.impl.layers.convolution.AvgPooling2D
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/AvgPooling2D.java;174;0
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/AvgPooling2D.java;174;0
+--------------------
+f4b23fedef40dcba360d6d2be59936575e48f0ba;Move Class;Move Class	org.nd4j.linalg.util.Rational moved to org.nd4j.org.nd4j.linalg.util.Rational
+s;nd4j-api/src/main/java/org/nd4j/linalg/util/Rational.java;32;575
+d;nd4j-common/src/main/java/org/nd4j/org/nd4j/linalg/util/Rational.java;32;575
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.accum.SquaredNorm moved to org.nd4j.linalg.api.ops.impl.accum.floating.SquaredNorm
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/accum/SquaredNorm.java;27;27
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/accum/floating/SquaredNorm.java;28;27
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_in_top_k renamed to org.nd4j.nativeblas.Nd4jCpu.top_k
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;17773;22
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16706;24
+--------------------
+e4927afea6fdd95c3eb739caf9b0cdcdae0db6d3;Extract Method;Extract Method	public mmul(x DifferentialFunction<ArrayField>, y DifferentialFunction<ArrayField>, mMulTranspose MMulTranspose) : DifferentialFunction<ArrayField> extracted from public mmul(x DifferentialFunction<ArrayField>, y DifferentialFunction<ArrayField>) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;910;6
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;912;7
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;921;4
+--------------------
+78bce2a076731bb9aa69dd9c971225d0ea64d42a;Extract Variable;Extract Variable	testFeature : INDArray in method public testIris() : void from class org.deeplearning4j.eval.EvalTest
+d;deeplearning4j-core/src/test/java/org/deeplearning4j/eval/EvalTest.java;109;0
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.Sqrt moved to org.nd4j.linalg.api.ops.impl.transforms.floating.Sqrt
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/Sqrt.java;27;65
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/floating/Sqrt.java;27;65
+--------------------
+4d6f351ad05d5a2776afa304420e90b01a7c974d;Rename Variable;Rename Variable	params : INDArray to parameters : INDArray in method public optimize() : boolean in class org.deeplearning4j.optimize.solvers.BaseOptimizer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/BaseOptimizer.java;149;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/BaseOptimizer.java;151;0
+--------------------
+f543d70510a78583f246ec0c84b6514e5a7fcc7f;Pull Up Attribute;Pull Up Attribute	private fullNetworkL1 : double from class org.deeplearning4j.nn.layers.OutputLayer to class org.deeplearning4j.nn.layers.BaseOutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;62;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;63;0
+--------------------
+99aeb26c989ea5bcfdbbcce624ca43f3c32ee393;Move Method;Move Method	public batchSize() : int from class org.deeplearning4j.nn.BaseMultiLayerNetwork to public batchSize() : int from class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/BaseMultiLayerNetwork.java;174;3
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;114;3
+--------------------
+bc1b79b14f6b4531923553959bb930c313e0f644;Move Method;Move Method	public testDepthWiseConv2dBasic() : void from class org.nd4j.autodiff.samediff.SameDiffTests to public testDepthWiseConv2dBasic() : void from class org.nd4j.autodiff.opvalidation.LayerOpValidation
+s;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/samediff/SameDiffTests.java;1855;39
+d;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/opvalidation/LayerOpValidation.java;582;41
+--------------------
+0fff490f2d32350eab18d5ec4ead8f2b6ca09582;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.broadcast.BroadcastGreaterThanOrEqual moved to org.nd4j.linalg.api.ops.impl.broadcast.bool.BroadcastGreaterThanOrEqual
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/broadcast/BroadcastGreaterThanOrEqual.java;26;62
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/broadcast/bool/BroadcastGreaterThanOrEqual.java;27;62
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_minimum_bp renamed to org.nd4j.nativeblas.Nd4jCpu.minimum_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13106;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12066;14
+--------------------
+ea97ab933998f9e113fae09aa1f2cd3c6241ac5b;Rename Variable;Rename Variable	activationForSlice : INDArray to activationForFeatureMap : INDArray in method public activate(input INDArray, training boolean) : INDArray in class org.deeplearning4j.nn.layers.convolution.ConvolutionLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/convolution/ConvolutionLayer.java;186;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/convolution/ConvolutionLayer.java;194;0
+--------------------
+fc2a9fb6ef64645140d1729fe13d69009074879f;Pull Up Method;Pull Up Method	public pretrain(input INDArray, otherParams Object[]) : void from class org.deeplearning4j.models.classifiers.dbn.DBN to public iterate(input INDArray) : void from class org.deeplearning4j.nn.BaseMultiLayerNetwork
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/models/classifiers/dbn/DBN.java;74;4
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/BaseMultiLayerNetwork.java;1365;3
+--------------------
+690bc9f2f230604197f3575ef37a67f1045a6f18;Extract Method;Extract Method	protected buildReport(score double, grad Map<String,INDArray>, params Map<String,INDArray>) : void extracted from public iterationDone(model Model, iteration int) : void in class org.deeplearning4j.ui.weights.HistogramIterationListener
+s;deeplearning4j-ui/src/main/java/org/deeplearning4j/ui/weights/HistogramIterationListener.java;100;120
+d;deeplearning4j-ui/src/main/java/org/deeplearning4j/ui/weights/HistogramIterationListener.java;104;114
+d;deeplearning4j-ui/src/main/java/org/deeplearning4j/ui/weights/HistogramIterationListener.java;220;19
+--------------------
+3f47403b8f52e524f2ce3f338a6733c60c6fa316;Rename Variable;Rename Variable	extendedFixed : int[] to extendedFlags : int[] in method private updateFlags(viewFlags int[], newShape int[]) : int[] in class org.nd4j.linalg.api.ndarray.BaseSparseNDArrayCOO
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseSparseNDArrayCOO.java;795;0
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseSparseNDArrayCOO.java;882;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_reverse renamed to org.nd4j.nativeblas.Nd4jCpu.reverse
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16042;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15002;14
+--------------------
+bdbf81a84aaa728a3d80c5b76f1dce73c0fbeb21;Move Method;Move Method	public testRowMean() : void from class org.nd4j.linalg.Nd4jTestsC to public testRowMean() : void from class org.nd4j.linalg.shape.ShapeTestsC
+s;nd4j-tests/src/test/java/org/nd4j/linalg/Nd4jTestsC.java;1142;8
+d;nd4j-tests/src/test/java/org/nd4j/linalg/shape/ShapeTestsC.java;174;8
+--------------------
+db0b3da311f4280b08e88fbf833896804c156206;Extract Method;Extract Method	public activate(input INDArray, training boolean) : INDArray extracted from public activate(input INDArray) : INDArray in class org.deeplearning4j.nn.layers.convolution.ConvolutionLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/convolution/ConvolutionLayer.java;148;28
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/convolution/ConvolutionLayer.java;155;28
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/convolution/ConvolutionLayer.java;190;3
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public unsortedSegmentMean(data SDVariable, segmentIds SDVariable, numSegments int) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public unsortedSegmentMean(data SDVariable, segmentIds SDVariable, numSegments int) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;5711;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2774;5
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.FloatVariableSpace renamed to org.nd4j.nativeblas.Nd4jCpu.VariableSpace
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;6711;115
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;5468;115
+--------------------
+bdbf81a84aaa728a3d80c5b76f1dce73c0fbeb21;Move Method;Move Method	public testColumnStd() : void from class org.nd4j.linalg.Nd4jTestsC to public testColumnStd() : void from class org.nd4j.linalg.ops.OpExecutionerTestsC
+s;nd4j-tests/src/test/java/org/nd4j/linalg/Nd4jTestsC.java;985;9
+d;nd4j-tests/src/test/java/org/nd4j/linalg/ops/OpExecutionerTestsC.java;415;9
+--------------------
+61d8a38a294b63b2425242896a9574917594c1b3;Rename Method;Rename Method	public backwardGradient(nextGradient Gradient, weights INDArray) : Pair<Gradient,INDArray> renamed to public backpropGradient(nextGradient Gradient, layer Layer) : Gradient in class org.deeplearning4j.nn.layers.OutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;110;10
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;111;10
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_embedding_lookup renamed to org.nd4j.nativeblas.Nd4jCpu.embedding_lookup
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;17825;19
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16785;19
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_static_bidirectional_rnn renamed to org.nd4j.nativeblas.Nd4jCpu.static_bidirectional_rnn
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15604;34
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14564;34
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public permute(iX DifferentialFunction<ArrayField>, dimensions int[]) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;235;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;235;3
+--------------------
+5862f2059daede76635bc84ea57cc7cc520881f2;Move Attribute;Move Attribute	private baseIterator : DataSetIterator from class org.deeplearning4j.datasets.iterator.AsyncDataSetIterator to class org.deeplearning4j.datasets.iterator.LegacyAsyncDataSetIterator
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/datasets/iterator/AsyncDataSetIterator.java;40;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/datasets/iterator/LegacyAsyncDataSetIterator.java;41;0
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public unsortedSegmentSum(name String, data SDVariable, segmentIds SDVariable, numSegments int) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public unsortedSegmentSum(name String, data SDVariable, segmentIds SDVariable, numSegments int) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;5817;16
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2878;16
+--------------------
+b5ba07fe7c8044655f33a5b8a04e02ad338be3cf;Rename Variable;Rename Variable	move : INDArray to permuted : INDArray in method public tensorAlongDimension(index int, dimension int[]) : INDArray in class org.nd4j.linalg.api.ndarray.BaseNDArray
+s;nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseNDArray.java;726;0
+d;nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseNDArray.java;714;0
+--------------------
+9f3b6d0a0d22e3c60ec153a7e26aead426b9953c;Rename Parameter;Rename Parameter	iterator : MultiDataSetIterator to baseIterator : MultiDataSetIterator in method public AsyncMultiDataSetIterator(baseIterator MultiDataSetIterator, queueSize int, useWorkspace boolean) in class org.deeplearning4j.datasets.iterator.AsyncMultiDataSetIterator
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/datasets/iterator/AsyncMultiDataSetIterator.java;43;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/datasets/iterator/AsyncMultiDataSetIterator.java;52;0
+--------------------
+a06105b8dcbfaf665aa390da233d5b00ff702687;Pull Up Method;Pull Up Method	public computeScore(fullNetworkL1 double, fullNetworkL2 double) : double from class org.deeplearning4j.nn.layers.OutputLayer to public computeScore(fullNetworkL1 double, fullNetworkL2 double) : double from class org.deeplearning4j.nn.layers.BaseOutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;73;9
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;74;9
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_identity_bp renamed to org.nd4j.nativeblas.Nd4jCpu.identity_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12497;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;11457;14
+--------------------
+fc2a9fb6ef64645140d1729fe13d69009074879f;Pull Up Method;Pull Up Method	public pretrain(input INDArray, otherParams Object[]) : void from class org.deeplearning4j.models.classifiers.dbn.DBN to public iterate(input INDArray) : void from class org.deeplearning4j.nn.BaseMultiLayerNetwork
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/models/classifiers/dbn/DBN.java;74;4
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/BaseMultiLayerNetwork.java;1365;3
+--------------------
+27c322dcab65ea5f0737f9a2d89b2a42c20a4741;Rename Method;Rename Method	public learningRateScoreDecay(lrScoreDecay double) : Builder renamed to public learningRateScoreBasedDecayRate(lrScoreBasedDecay double) : Builder in class org.deeplearning4j.nn.conf.NeuralNetConfiguration.Builder
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/NeuralNetConfiguration.java;413;3
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/NeuralNetConfiguration.java;413;3
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_log_softmax renamed to org.nd4j.nativeblas.Nd4jCpu.tensormmul
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;19836;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;18893;25
+--------------------
+64945612ac2858b2b8267a9a7ac39f9b5d280fb3;Pull Up Method;Pull Up Method	public pretrain(input INDArray, otherParams Object[]) : void from class org.deeplearning4j.models.classifiers.sda.StackedDenoisingAutoEncoder to public iterate(input INDArray) : void from class org.deeplearning4j.nn.BaseMultiLayerNetwork
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/models/classifiers/sda/StackedDenoisingAutoEncoder.java;128;5
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/BaseMultiLayerNetwork.java;1365;3
+--------------------
+bc251e9299f3927aa6f6c4b190b5c3005ed002dd;Extract Superclass;Extract Superclass	org.nd4j.jita.conf.Environment from classes [org.nd4j.jita.conf.CudaEnvironment]
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/conf/CudaEnvironment.java;18;118
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/conf/Environment.java;3;4
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/conf/CudaEnvironment.java;18;118
+--------------------
+bcf83b429846631d23c7a0f583f8cc79db299c4b;Move Method;Move Method	public testSlice() : void from class org.nd4j.linalg.NDArrayTestsFortran to public testSlice() : void from class org.nd4j.linalg.slicing.SlicingTests
+s;nd4j-tests/src/test/java/org/nd4j/linalg/NDArrayTestsFortran.java;962;12
+d;nd4j-tests/src/test/java/org/nd4j/linalg/slicing/SlicingTests.java;43;21
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public mmul(name String, x SDVariable, y SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public mmul(name String, x SDVariable, y SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;8592;10
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1232;10
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public range(name String, from double, to double, step double, dataType DataType) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public range(name String, from double, to double, step double, dataType DataType) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;2033;13
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1591;14
+--------------------
+7d4c8591adcbaa92af92bfbdb6817964d932f2f9;Rename Variable;Rename Variable	iterations : int to iteration : int in method public testLrScoreDecay() : void in class org.deeplearning4j.nn.updater.TestUpdaters
+s;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/updater/TestUpdaters.java;355;0
+d;deeplearning4j-core/src/test/java/org/deeplearning4j/nn/updater/TestUpdaters.java;360;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_slice_bp renamed to org.nd4j.nativeblas.Nd4jCpu.slice_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;17148;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16108;14
+--------------------
+18ac731704b6d244cdc609cc8d9f02524c3fe90f;Pull Up Method;Pull Up Method	private getJsonText() : String from class org.datavec.spark.transform.ImageSparkTransformServer to protected getJsonText() : String from class org.datavec.spark.transform.SparkTransformServer
+s;datavec-spark-inference-parent/datavec-spark-inference-server/src/main/java/org/datavec/spark/transform/ImageSparkTransformServer.java;162;6
+d;datavec-spark-inference-parent/datavec-spark-inference-server/src/main/java/org/datavec/spark/transform/SparkTransformServer.java;34;6
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.Cube moved to org.nd4j.linalg.api.ops.impl.transforms.same.Cube
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/Cube.java;28;67
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/same/Cube.java;28;67
+--------------------
+a4b1bebb9906063979852326d96c97f6426dca31;Inline Method;Inline Method	public optimize(numIterations int) : boolean inlined to public optimize() : boolean in class org.deeplearning4j.optimize.solvers.StochasticHessianFree
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/StochasticHessianFree.java;86;2
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/StochasticHessianFree.java;234;43
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/StochasticHessianFree.java;223;44
+--------------------
+18ac731704b6d244cdc609cc8d9f02524c3fe90f;Rename Method;Rename Method	public setTransformProcess(transformProcess TransformProcess) : void renamed to public setCSVTransformProcess(transformProcess TransformProcess) : void in class org.datavec.spark.transform.client.DataVecTransformClient
+s;datavec-spark-inference-parent/datavec-spark-inference-client/src/main/java/org/datavec/spark/transform/client/DataVecTransformClient.java;47;13
+d;datavec-spark-inference-parent/datavec-spark-inference-client/src/main/java/org/datavec/spark/transform/client/DataVecTransformClient.java;46;13
+--------------------
+af52dff46ae8d79733483ac03b6729f97e80d5b6;Rename Variable;Rename Variable	prevMemActivationDerivative : INDArray to sigmahPrimeOfS : INDArray in method public backpropGradient(epsilon INDArray, gradient Gradient, layer Layer) : Pair<Gradient,INDArray> in class org.deeplearning4j.nn.layers.recurrent.GravesLSTM
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/recurrent/GravesLSTM.java;166;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/recurrent/GravesLSTM.java;171;0
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public segmentProd(data SDVariable, segmentIds SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public segmentProd(data SDVariable, segmentIds SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;5736;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2210;5
+--------------------
+12816f2d188e48d1adaf1a20466c7ce08a48d94f;Rename Method;Rename Method	public testBuildSubsamplingLayer() : void renamed to public buildSubsamplingLayer(conf KerasLayerConfiguration, kerasVersion Integer) : void in class org.deeplearning4j.nn.modelimport.keras.KerasLayerTest
+s;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/KerasLayerTest.java;157;25
+d;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/KerasLayerTest.java;166;24
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public reverseSequence(x SDVariable, seq_lengths SDVariable, seqDim int, batchDim int) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public reverseSequence(x SDVariable, seq_lengths SDVariable, seqDim int, batchDim int) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;8007;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1823;5
+--------------------
+53c64ccf14407466b16d98b0e880b02c49696691;Extract Method;Extract Method	private getNewScore(oldParameters INDArray) : double extracted from public optimize(initialStep double, parameters INDArray, gradients INDArray) : double in class org.deeplearning4j.optimize.solvers.BackTrackLineSearch
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/BackTrackLineSearch.java;132;154
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/BackTrackLineSearch.java;132;4
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/optimize/solvers/BackTrackLineSearch.java;138;144
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public euclideanDistance(iX DifferentialFunction<ArrayField>, i_y DifferentialFunction<ArrayField>, dimensions int[]) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;482;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;482;3
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public scatterMax(name String, ref SDVariable, indices SDVariable, updates SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public scatterMax(name String, ref SDVariable, indices SDVariable, updates SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;9830;16
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2015;16
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public sequenceMask(lengths SDVariable, dataType DataType) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public sequenceMask(lengths SDVariable, dataType DataType) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;8065;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2283;5
+--------------------
+5862f2059daede76635bc84ea57cc7cc520881f2;Rename Variable;Rename Variable	ds : DataSet to temp : DataSet in method public next() : DataSet in class org.deeplearning4j.datasets.iterator.AsyncDataSetIterator
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/datasets/iterator/AsyncDataSetIterator.java;273;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/datasets/iterator/AsyncDataSetIterator.java;303;0
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public sequenceMask(lengths SDVariable, maxLen int, dataType DataType) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public sequenceMask(lengths SDVariable, maxLen int, dataType DataType) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;8050;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;2260;5
+--------------------
+c1cd4f8c7c178660e62a994d67ef821d2546d561;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.Trace moved to org.nd4j.linalg.api.ops.impl.transforms.custom.Trace
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/Trace.java;27;29
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/custom/Trace.java;27;29
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public or(iX DifferentialFunction<ArrayField>, i_y DifferentialFunction<ArrayField>) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;311;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;311;3
+--------------------
+300b0afe5fc6be63167374b7a87348c7bd020aa6;Rename Method;Rename Method	public createSparse(data DataBuffer, columns int[], pointerB int[], pointerE int[], shape int[]) : INDArray renamed to public createSparseCSR(data DataBuffer, columns int[], pointerB int[], pointerE int[], shape int[]) : INDArray in class org.nd4j.linalg.cpu.nativecpu.CpuSparseNDArrayFactory
+s;nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/linalg/cpu/nativecpu/CpuSparseNDArrayFactory.java;36;3
+d;nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/linalg/cpu/nativecpu/CpuSparseNDArrayFactory.java;36;3
+--------------------
+bc97806a82ad75c9cf138a77b89116cb14cd8bc3;Pull Up Attribute;Pull Up Attribute	protected stride : int[] from class org.deeplearning4j.nn.conf.layers.SubsamplingLayer.Builder to class org.deeplearning4j.nn.conf.layers.SubsamplingLayer.BaseSubsamplingBuilder
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/layers/SubsamplingLayer.java;155;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/layers/SubsamplingLayer.java;241;0
+--------------------
+00a521bf394d490b21a8f0eff0b613cc8c2b9f36;Pull Up Attribute;Pull Up Attribute	private workerID : String from class org.deeplearning4j.ui.stats.StatsListener to class org.deeplearning4j.ui.stats.BaseStatsListener
+s;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/StatsListener.java;55;0
+d;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/BaseStatsListener.java;51;0
+--------------------
+bc1b79b14f6b4531923553959bb930c313e0f644;Move Method;Move Method	public testStridedSliceNewAxisMask() : void from class org.nd4j.autodiff.samediff.SameDiffTests to public testStridedSliceNewAxisMask() : void from class org.nd4j.autodiff.opvalidation.ShapeOpValidation
+s;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/samediff/SameDiffTests.java;2675;11
+d;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/opvalidation/ShapeOpValidation.java;1324;12
+--------------------
+00a521bf394d490b21a8f0eff0b613cc8c2b9f36;Pull Up Attribute;Pull Up Attribute	private router : StatsStorageRouter from class org.deeplearning4j.ui.stats.StatsListener to class org.deeplearning4j.ui.stats.BaseStatsListener
+s;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/StatsListener.java;51;0
+d;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/BaseStatsListener.java;47;0
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.Negative moved to org.nd4j.linalg.api.ops.impl.transforms.same.Negative
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/Negative.java;28;64
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/same/Negative.java;28;64
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_sru_bp renamed to org.nd4j.nativeblas.Nd4jCpu.sru_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15225;34
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14185;34
+--------------------
+f543d70510a78583f246ec0c84b6514e5a7fcc7f;Pull Up Attribute;Pull Up Attribute	private solver : Solver from class org.deeplearning4j.nn.layers.OutputLayer to class org.deeplearning4j.nn.layers.BaseOutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;60;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;61;0
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.RSqrt moved to org.nd4j.linalg.api.ops.impl.transforms.floating.RSqrt
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/RSqrt.java;28;64
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/floating/RSqrt.java;28;64
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_softplus_bp renamed to org.nd4j.nativeblas.Nd4jCpu.softplus_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12131;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;11091;14
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_reversemod renamed to org.nd4j.nativeblas.Nd4jCpu.reversemod
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13246;23
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12206;23
+--------------------
+12816f2d188e48d1adaf1a20466c7ce08a48d94f;Rename Method;Rename Method	public testBuildGravesLstmLayer() : void renamed to public buildGravesLstmLayer(conf KerasLayerConfiguration, kerasVersion Integer) : void in class org.deeplearning4j.nn.modelimport.keras.KerasLayerTest
+s;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/KerasLayerTest.java;184;31
+d;deeplearning4j-modelimport/src/test/java/org/deeplearning4j/nn/modelimport/keras/KerasLayerTest.java;192;35
+--------------------
+633f9c79ebf1345b81d8157491643f4fb95d36b2;Extract Variable;Extract Variable	output : INDArray in method public output(iterator DataSetIterator, train boolean) : INDArray from class org.deeplearning4j.nn.multilayer.MultiLayerNetwork
+d;deeplearning4j/deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java;2380;0
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public gte(x SDVariable, y SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public gte(x SDVariable, y SDVariable) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;3846;12
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;684;12
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public asinh(x ArrayField) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;274;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;279;3
+--------------------
+cd72aded21540efbc16a9cbb416fb9b330ba8d96;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.strict.TimesOneMinus moved to org.nd4j.linalg.api.ops.impl.transforms.same.TimesOneMinus
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/strict/TimesOneMinus.java;27;58
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/same/TimesOneMinus.java;27;58
+--------------------
+e64c92f6498b118c592b80cc48fed309b6b1c884;Move Attribute;Move Attribute	protected constantOffsets : Map<Integer,AtomicLong> from class org.nd4j.jita.constant.CudaConstantHandler to class org.nd4j.jita.constant.ProtectedCudaConstantHandler
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/constant/CudaConstantHandler.java;37;0
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/constant/ProtectedCudaConstantHandler.java;31;0
+--------------------
+f543d70510a78583f246ec0c84b6514e5a7fcc7f;Pull Up Method;Pull Up Method	public fit(data DataSet) : void from class org.deeplearning4j.nn.layers.OutputLayer to public fit(data DataSet) : void from class org.deeplearning4j.nn.layers.BaseOutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;330;8
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;331;8
+--------------------
+f98f688a917e06d41969d45a87c118bebc691aae;Push Down Method;Push Down Method	public eps(eps double) : Builder from class org.deeplearning4j.nn.conf.layers.SubsamplingLayer.Builder to public eps(eps double) : T from class org.deeplearning4j.nn.conf.layers.SubsamplingLayer.BaseSubsamplingBuilder
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/layers/SubsamplingLayer.java;280;4
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/conf/layers/SubsamplingLayer.java;322;4
+--------------------
+76a4d9e5755ce1f3c3db65b4f641667d5c32e3c5;Move Method;Move Method	public getContextForDevice(deviceId Integer) : CudaContext from class org.nd4j.jita.allocator.context.ContextPool to public getContextForDevice(deviceId Integer) : CudaContext from class org.nd4j.jita.allocator.context.impl.BasicContextPool
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/ContextPool.java;54;2
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/main/java/org/nd4j/jita/allocator/context/impl/BasicContextPool.java;50;2
+--------------------
+2b339a83f39d160169df9ed14fb54c7652970a19;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.convolution.SConv2DDerivative moved to org.nd4j.linalg.api.ops.impl.layers.convolution.SConv2DDerivative
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/convolution/SConv2DDerivative.java;12;29
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/layers/convolution/SConv2DDerivative.java;12;29
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public neq(name String, x SDVariable, y double) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public neq(name String, x SDVariable, y double) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;3803;13
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1257;13
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public hardTanh(iX DifferentialFunction<ArrayField>) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;363;4
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;363;4
+--------------------
+bc1b79b14f6b4531923553959bb930c313e0f644;Move Method;Move Method	public testStridedSliceBeginEndMask() : void from class org.nd4j.autodiff.samediff.SameDiffTests to public testStridedSliceBeginEndMask() : void from class org.nd4j.autodiff.opvalidation.ShapeOpValidation
+s;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/samediff/SameDiffTests.java;2643;13
+d;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/autodiff/opvalidation/ShapeOpValidation.java;1292;13
+--------------------
+4d3a3ab641f8d652e87c8c56e59995afcd9667fa;Pull Up Method;Pull Up Method	public onForwardPass(model Model, activations List<INDArray>) : void from class org.deeplearning4j.ui.stats.StatsListener to public onForwardPass(model Model, activations List<INDArray>) : void from class org.deeplearning4j.ui.stats.BaseStatsListener
+s;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/StatsListener.java;208;13
+d;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/BaseStatsListener.java;216;13
+--------------------
+89446182b58e3dba5a09a9faa7ce6319b9b66783;Extract Variable;Extract Variable	expR : val in method public testExpandDims() : void from class org.nd4j.linalg.factory.Nd4jTest
+d;nd4j/nd4j-backends/nd4j-tests/src/test/java/org/nd4j/linalg/factory/Nd4jTest.java;181;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_rectifiedtanh_bp renamed to org.nd4j.nativeblas.Nd4jCpu.rectifiedtanh_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12351;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;11311;14
+--------------------
+e2aa2c305870d920d5cd692211103723d874ef4f;Rename Variable;Rename Variable	gradient : Gradient to retGradient : Gradient in method public backpropGradient(epsilon INDArray) : Pair<Gradient,INDArray> in class org.deeplearning4j.nn.layers.recurrent.LSTM
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/recurrent/LSTM.java;176;0
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/recurrent/LSTM.java;159;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_upsampling3d renamed to org.nd4j.nativeblas.Nd4jCpu.upsampling3d
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14491;24
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13451;24
+--------------------
+a8bbb9dd6b46fa4ba064d4d7449a399773d26ca2;Extract Method;Extract Method	public sub(varName String, sameDiffVariable double) : SDVariable extracted from public sub(sameDiffVariable double) : SDVariable in class org.nd4j.autodiff.samediff.impl.SDVariable
+s;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;261;16
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;507;16
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;237;8
+--------------------
+44d76e3bc1d7ab58812d81466b72c0a748b5a9e2;Rename Variable;Rename Variable	results : Pointer[] to params : Pointer[] in method private invoke(op TransformOp, extraArgs Object[]) : void in class org.nd4j.linalg.jcublas.ops.executioner.JCudaExecutioner
+s;nd4j-jcublas-parent/nd4j-jcublas-common/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;404;0
+d;nd4j-jcublas-parent/nd4j-jcublas-common/src/main/java/org/nd4j/linalg/jcublas/ops/executioner/JCudaExecutioner.java;375;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_sru_bp renamed to org.nd4j.nativeblas.Nd4jCpu.sru_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15225;34
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;14185;34
+--------------------
+140606d3b62fc22f5040bfd98002f456934b0257;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.ACos moved to org.nd4j.linalg.api.ops.impl.transforms.floating.ACos
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/ACos.java;28;66
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/floating/ACos.java;28;66
+--------------------
+621e3275086e23556f82b2a947e92e856ed0f348;Move Method;Move Method	public testPinnedCosineSim() : void from class jcuda.jcublas.ops.CudaAccumTests to public testPinnedCosineSim() : void from class jcuda.jcublas.ops.CudaReduce3Tests
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/test/java/jcuda/jcublas/ops/CudaAccumTests.java;19;18
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda-7.5/src/test/java/jcuda/jcublas/ops/CudaReduce3Tests.java;26;18
+--------------------
+a5bffbdd36bcd3e525f6211745c942c2bd3662fb;Rename Method;Rename Method	public getrf(M int, N int, A INDArray, lda int, IPIV INDArray, INFO INDArray) : void renamed to public sgetrf(M int, N int, A INDArray, lda int, IPIV INDArray, INFO INDArray) : void in class org.nd4j.linalg.jcublas.blas.JcublasLapack
+s;nd4j-backends/nd4j-backend-impls/nd4j-cuda/src/main/java/org/nd4j/linalg/jcublas/blas/JcublasLapack.java;52;112
+d;nd4j-backends/nd4j-backend-impls/nd4j-cuda/src/main/java/org/nd4j/linalg/jcublas/blas/JcublasLapack.java;53;69
+--------------------
+00a521bf394d490b21a8f0eff0b613cc8c2b9f36;Pull Up Method;Pull Up Method	private getSessionID(model Model) : String from class org.deeplearning4j.ui.stats.StatsListener to private getSessionID(model Model) : String from class org.deeplearning4j.ui.stats.BaseStatsListener
+s;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/StatsListener.java;177;9
+d;deeplearning4j-ui-parent/deeplearning4j-ui-model/src/main/java/org/deeplearning4j/ui/stats/BaseStatsListener.java;185;9
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public mean(x SDVariable, dimension int[]) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public mean(x SDVariable, dimension int[]) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;6755;9
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1111;9
+--------------------
+a8bbb9dd6b46fa4ba064d4d7449a399773d26ca2;Extract Method;Extract Method	public subi(varName String, sameDiffVariable SDVariable) : SDVariable extracted from public subi(sameDiffVariable SDVariable) : SDVariable in class org.nd4j.autodiff.samediff.impl.SDVariable
+s;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;604;20
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;849;20
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/impl/SDVariable.java;424;8
+--------------------
+216094a6d391b87de785e43d07e2a37d7269564f;Rename Variable;Rename Variable	guesses : INDArray to predictions2d : INDArray in method public eval(labels INDArray, predictions INDArray, mask INDArray, recordMetaData List<? extends Serializable>) : void in class org.nd4j.evaluation.classification.Evaluation
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/evaluation/classification/Evaluation.java;331;0
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/evaluation/classification/Evaluation.java;365;0
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_reversedivide_bp renamed to org.nd4j.nativeblas.Nd4jCpu.reversedivide_bp
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;13435;14
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;12395;14
+--------------------
+37ebb5b67d8d019bd5b1a2fb47d1322bc54c955b;Move And Rename Class;Move And Rename Class	org.deeplearning4j.models.abstractvectors.AbstractVectors moved and renamed to org.deeplearning4j.models.sequencevectors.SequenceVectors
+s;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/abstractvectors/AbstractVectors.java;35;709
+d;deeplearning4j-scaleout/deeplearning4j-nlp/src/main/java/org/deeplearning4j/models/sequencevectors/SequenceVectors.java;28;709
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public reverse(x SDVariable, dimensions int[]) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public reverse(x SDVariable, dimensions int[]) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;7955;5
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1794;5
+--------------------
+841eca09bb389518986fdd479f8cb5fa850904c1;Rename Class;Rename Class	org.nd4j.nativeblas.Nd4jCpu.float_betainc renamed to org.nd4j.nativeblas.Nd4jCpu.betainc
+s;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;16506;31
+d;nd4j/nd4j-backends/nd4j-backend-impls/nd4j-native/src/main/java/org/nd4j/nativeblas/Nd4jCpu.java;15466;31
+--------------------
+11f61de76bf1766d6a81d5f143f8b7dc39a2d894;Move Method;Move Method	public setPretrainEpochs(pretrainEpochs int) : void from class org.deeplearning4j.scaleout.conf.Conf to public setPretrainEpochs(pretrainEpochs int) : void from class org.deeplearning4j.nn.conf.NeuralNetConfiguration
+s;deeplearning4j-scaleout/deeplearning4j-scaleout-api/src/main/java/org/deeplearning4j/scaleout/conf/Conf.java;372;2
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/conf/NeuralNetConfiguration.java;438;2
+--------------------
+99aeb26c989ea5bcfdbbcce624ca43f3c32ee393;Pull Up Method;Pull Up Method	public batchSize() : int from class org.deeplearning4j.nn.BaseNeuralNetwork to public batchSize() : int from class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/BaseNeuralNetwork.java;73;3
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;114;3
+--------------------
+3f47403b8f52e524f2ce3f338a6733c60c6fa316;Rename Parameter;Rename Parameter	viewFixed : int[] to viewFlags : int[] in method private updateFlags(viewFlags int[], newShape int[]) : int[] in class org.nd4j.linalg.api.ndarray.BaseSparseNDArrayCOO
+s;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseSparseNDArrayCOO.java;777;0
+d;nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ndarray/BaseSparseNDArrayCOO.java;864;0
+--------------------
+6576b251fc647df0391527bf30e75ff2ed8c11a4;Rename Variable;Rename Variable	xLinear : INDArray to canDoDirectly : boolean in method private doAccumulationOp(op Accumulation) : void in class org.nd4j.linalg.api.ops.executioner.DefaultOpExecutioner
+s;nd4j-api/src/main/java/org/nd4j/linalg/api/ops/executioner/DefaultOpExecutioner.java;625;0
+d;nd4j-api/src/main/java/org/nd4j/linalg/api/ops/executioner/DefaultOpExecutioner.java;613;0
+--------------------
+8c1efee49c013035f1bfb51c40d975cc7691bbd9;Move Method;Move Method	private mapLossFunction(kerasLoss String) : LossFunctions.LossFunction from class org.deeplearning4j.nn.modelimport.keras.ModelConfiguration to private mapLossFunction(kerasLoss String) : LossFunctions.LossFunction from class org.deeplearning4j.nn.modelimport.keras.KerasLayer
+s;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/ModelConfiguration.java;292;53
+d;deeplearning4j-modelimport/src/main/java/org/deeplearning4j/nn/modelimport/keras/KerasLayer.java;442;53
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public pow(x ArrayField, y ArrayField) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;400;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;416;3
+--------------------
+f64d179cfbcfc033feae879c9bc6b62caf6c3dcf;Rename Method;Rename Method	public backwardGradient(gradient Gradient, weights INDArray) : Pair<Gradient,INDArray> renamed to public backpropGradient(gradient Gradient, layer Layer) : Gradient in class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;148;18
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;148;17
+--------------------
+544cc35bbfd1a85d6cbf5b8f75b2354f5a0be9e7;Move Class;Move Class	org.nd4j.linalg.api.ops.impl.transforms.LogicalXor moved to org.nd4j.linalg.api.ops.impl.transforms.custom.LogicalXor
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/LogicalXor.java;26;24
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/linalg/api/ops/impl/transforms/custom/LogicalXor.java;26;24
+--------------------
+af52dff46ae8d79733483ac03b6729f97e80d5b6;Extract Method;Extract Method	private activateHelper(input INDArray, training boolean) : INDArray[] extracted from public activate(input INDArray, training boolean) : INDArray in class org.deeplearning4j.nn.layers.recurrent.GravesLSTM
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/recurrent/GravesLSTM.java;271;117
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/recurrent/GravesLSTM.java;279;110
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/recurrent/GravesLSTM.java;273;4
+--------------------
+1a0edf990a39e34e8648c32a32685122e3449c7d;Pull Up Method;Pull Up Method	public mean(x SDVariable, dimension int[]) : SDVariable from class org.nd4j.autodiff.samediff.SameDiff to public mean(x SDVariable, dimension int[]) : SDVariable from class org.nd4j.autodiff.samediff.ops.SDBaseOps
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;6755;9
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/ops/SDBaseOps.java;1111;9
+--------------------
+8d589e850ede503532b5287e5622c375a695c3f2;Extract And Move Method;Extract And Move Method	public backwardGradient(derivative INDArray, nextLayer Layer, nextGradient Gradient, activation INDArray) : Gradient extracted from protected doBackWard(input INDArray, labels INDArray) : void in class org.deeplearning4j.nn.multilayer.MultiLayerNetwork & moved to class org.deeplearning4j.nn.layers.OutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java;1041;80
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;90;16
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java;1041;71
+--------------------
+09d4251e4694b5c16d8ee74a8520c8b834950f6c;Move Class;Move Class	org.nd4j.paramterserver.parameteraveraging.ParameterAveragingSubscriber moved to org.nd4j.parameterserver.parameteraveraging.ParameterAveragingSubscriber
+s;nd4j-parameter-server/src/main/java/org/nd4j/paramterserver/parameteraveraging/ParameterAveragingSubscriber.java;9;21
+d;nd4j-parameter-server/src/main/java/org/nd4j/parameterserver/parameteraveraging/ParameterAveragingSubscriber.java;9;20
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupFunction(function X) : X extracted from public euclideanDistance(iX DifferentialFunction<ArrayField>, i_y DifferentialFunction<ArrayField>, dimensions int[]) : DifferentialFunction<ArrayField> in class org.nd4j.autodiff.functions.DifferentialFunctionFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;482;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;301;32
+d;samediff/src/main/java/org/nd4j/autodiff/functions/DifferentialFunctionFactory.java;482;3
+--------------------
+47e0308e7a5f9913faa2349b281d5087459bf054;Rename Parameter;Rename Parameter	inputVertexName : String to from : int in method public UnstackVertex(graph ComputationGraph, name String, vertexIndex int, from int) in class org.deeplearning4j.nn.graph.vertex.impl.UnstackVertex
+s;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/graph/vertex/impl/UnstackVertex.java;50;0
+d;deeplearning4j-nn/src/main/java/org/deeplearning4j/nn/graph/vertex/impl/UnstackVertex.java;48;0
+--------------------
+0bdbea1bc5a459221d02ed7567d847c637abacda;Extract And Move Method;Extract And Move Method	public setupArrayField(arrayField ArrayField) : ArrayField extracted from public sin(x ArrayField) : ArrayField in class org.nd4j.autodiff.ArrayFactory & moved to class org.nd4j.autodiff.samediff.SameDiff
+s;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;259;3
+d;samediff/src/main/java/org/nd4j/autodiff/samediff/SameDiff.java;336;32
+d;samediff/src/main/java/org/nd4j/autodiff/ArrayFactory.java;264;3
+--------------------
+a06105b8dcbfaf665aa390da233d5b00ff702687;Pull Up Method;Pull Up Method	public f1Score(examples INDArray, labels INDArray) : double from class org.deeplearning4j.nn.layers.OutputLayer to public f1Score(examples INDArray, labels INDArray) : double from class org.deeplearning4j.nn.layers.BaseOutputLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/OutputLayer.java;251;15
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseOutputLayer.java;252;15
+--------------------
+dfa18100bf8d8842e4cb072a8b26c693ab7f5b29;Rename Parameter;Rename Parameter	sameDiffVariable : SDVariable to x : SDVariable in method public squaredDifference(x SDVariable) : SDVariable in class org.nd4j.autodiff.samediff.SDVariable
+s;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SDVariable.java;484;0
+d;nd4j/nd4j-backends/nd4j-api-parent/nd4j-api/src/main/java/org/nd4j/autodiff/samediff/SDVariable.java;1171;0
+--------------------
+18ac731704b6d244cdc609cc8d9f02524c3fe90f;Rename Method;Rename Method	public setTransformProcess(transformProcess TransformProcess) : void renamed to public setCSVTransformProcess(transformProcess TransformProcess) : void in class org.datavec.spark.transform.CSVSparkTransformServer
+s;datavec-spark-inference-parent/datavec-spark-inference-server/src/main/java/org/datavec/spark/transform/CSVSparkTransformServer.java;168;6
+d;datavec-spark-inference-parent/datavec-spark-inference-server/src/main/java/org/datavec/spark/transform/CSVSparkTransformServer.java;153;6
+--------------------
+db0b3da311f4280b08e88fbf833896804c156206;Extract Method;Extract Method	public activate(training boolean) : INDArray extracted from public activate() : INDArray in class org.deeplearning4j.nn.layers.BaseLayer
+s;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;338;11
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;319;10
+d;deeplearning4j-core/src/main/java/org/deeplearning4j/nn/layers/BaseLayer.java;365;3
+--------------------
+31cc1e605b98d39f293d92a9fe7869bb9bbc7b36;Move Class;Move Class	org.nd4j.linalg.api.test.ComplexNDArrayTests moved to org.nd4j.linalg.api.ComplexNDArrayTests
+s;nd4j-api/src/main/java/org/nd4j/linalg/api/test/ComplexNDArrayTests.java;36;755
+d;nd4j-api/src/test/java/org/nd4j/linalg/api/ComplexNDArrayTests.java;36;755

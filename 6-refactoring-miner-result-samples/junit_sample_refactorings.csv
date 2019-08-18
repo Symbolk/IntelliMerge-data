@@ -1,0 +1,77 @@
+junit: 14/143
+--------------------
+99a84a542f2ac532a8425fa0a77884902b1c01b0;Move Class;Move Class	org.junit.experimental.rules.ExpectedException moved to org.junit.rules.ExpectedException
+s;src/main/java/org/junit/experimental/rules/ExpectedException.java;14;116
+d;src/main/java/org/junit/rules/ExpectedException.java;14;116
+--------------------
+97afc5e205e1c6ac0f5a9aefabed92d58d88ab81;Move And Rename Class;Move And Rename Class	org.junit.tests.experimental.interceptor.TempFolderInterceptorTest moved and renamed to org.junit.tests.experimental.rules.TempFolderRuleTest
+s;src/test/java/org/junit/tests/experimental/interceptor/TempFolderInterceptorTest.java;16;-17
+d;src/test/java/org/junit/tests/experimental/rules/TempFolderRuleTest.java;16;-17
+--------------------
+128553fc50758932f02fc6e13a3e25ef6a711152;Move Class;Move Class	org.junit.tests.experimental.rules.ExpectedExceptionRuleTest.HasWrongMessage moved to org.junit.tests.experimental.rules.ExpectedExceptionTest.HasWrongMessage
+s;src/test/java/org/junit/tests/experimental/rules/ExpectedExceptionRuleTest.java;63;9
+d;src/test/java/org/junit/tests/experimental/rules/ExpectedExceptionTest.java;141;9
+--------------------
+6589127231db19458b696785bab3b839f9bde90f;Rename Parameter;Rename Parameter	description : Description to plan : Plan in method package createTestSuite(plan Plan) : Test in class junit.framework.JUnit4TestAdapterCache
+s;src/main/java/junit/framework/JUnit4TestAdapterCache.java;34;0
+d;src/main/java/junit/framework/JUnit4TestAdapterCache.java;43;0
+--------------------
+077d4657cce12a38d4f34266fc62c190b28235a9;Extract And Move Method;Extract And Move Method	public assertEmpty(errors List<Throwable>) : void extracted from public evaluate() : void in class org.junit.internal.runners.statements.RunAfters & moved to class org.junit.internal.runners.model.MultipleFailureException
+s;src/main/java/org/junit/internal/runners/statements/RunAfters.java;26;21
+d;src/main/java/org/junit/internal/runners/model/MultipleFailureException.java;18;6
+d;src/main/java/org/junit/internal/runners/statements/RunAfters.java;26;17
+--------------------
+077d4657cce12a38d4f34266fc62c190b28235a9;Extract And Move Method;Extract And Move Method	public assertEmpty(errors List<Throwable>) : void extracted from public evaluate() : void in class org.junit.internal.runners.statements.RunAfters & moved to class org.junit.internal.runners.model.MultipleFailureException
+s;src/main/java/org/junit/internal/runners/statements/RunAfters.java;26;21
+d;src/main/java/org/junit/internal/runners/model/MultipleFailureException.java;18;6
+d;src/main/java/org/junit/internal/runners/statements/RunAfters.java;26;17
+--------------------
+9d3821f6411ad85a683b8d38e4d42411229f2eec;Move Method;Move Method	public validatorIsCalledForAField() : void from class org.junit.tests.running.classes.ParentRunnerTest to public validatorIsCalledForAField() : void from class org.junit.validator.AnnotationsValidatorTest
+s;src/test/java/org/junit/tests/running/classes/ParentRunnerTest.java;214;4
+d;src/test/java/org/junit/validator/AnnotationsValidatorTest.java;83;4
+--------------------
+229490bbf8731ec07fd7ce6d68f0e22b502b9caf;Rename Variable;Rename Variable	filteredSet : Set<Class<?>> to filteredList : List<Class<?>> in method private filterAbstractClasses(classes Class<?>[]) : Class<?>[] in class org.junit.experimental.runners.Enclosed
+s;src/main/java/org/junit/experimental/runners/Enclosed.java;37;0
+d;src/main/java/org/junit/experimental/runners/Enclosed.java;36;0
+--------------------
+df00d5eced3a7737b88de0f6f9e3673f0cf88f88;Rename Variable;Rename Variable	filteredChildren : List<T> to children : List<T> in method public filter(filter Filter) : void in class org.junit.runners.ParentRunner
+s;src/main/java/org/junit/runners/ParentRunner.java;379;0
+d;src/main/java/org/junit/runners/ParentRunner.java;379;0
+--------------------
+7a2b0460c7abd7573faa9d7845a5b1169dcdcb7f;Rename Parameter;Rename Parameter	description : Description to plan : Plan in method public asTest(plan Plan) : Test in class junit.framework.JUnit4TestAdapterCache
+s;src/main/java/junit/framework/JUnit4TestAdapterCache.java;24;0
+d;src/main/java/junit/framework/JUnit4TestAdapterCache.java;26;0
+--------------------
+df00d5eced3a7737b88de0f6f9e3673f0cf88f88;Rename Parameter;Rename Parameter	unit : TimeUnit to timeUnit : TimeUnit in method public Timeout(timeout long, timeUnit TimeUnit) in class org.junit.rules.Timeout
+s;src/main/java/org/junit/rules/Timeout.java;71;0
+d;src/main/java/org/junit/rules/Timeout.java;71;0
+--------------------
+7a2b0460c7abd7573faa9d7845a5b1169dcdcb7f;Extract Method;Extract Method	private addMultipleFailureException(mfe MultipleFailureException) : void extracted from public addFailure(targetException Throwable) : void in class org.junit.internal.runners.model.EachTestNotifier
+s;src/main/java/org/junit/internal/runners/model/EachTestNotifier.java;22;8
+d;src/main/java/org/junit/internal/runners/model/EachTestNotifier.java;30;3
+d;src/main/java/org/junit/internal/runners/model/EachTestNotifier.java;21;7
+--------------------
+97afc5e205e1c6ac0f5a9aefabed92d58d88ab81;Change Package;Change Package	org.junit.experimental.interceptor to org.junit.experimental.rules
+s;src/main/java/org/junit/experimental/interceptor/ErrorCollector.java;15;-16
+s;src/main/java/org/junit/experimental/interceptor/ExpectedException.java;14;116
+s;src/main/java/org/junit/experimental/interceptor/ExternalResource.java;6;60
+s;src/main/java/org/junit/experimental/interceptor/MethodRule.java;6;-7
+s;src/main/java/org/junit/experimental/interceptor/TemporaryFolder.java;6;-7
+s;src/main/java/org/junit/experimental/interceptor/TestName.java;5;34
+s;src/main/java/org/junit/experimental/interceptor/TestWatchman.java;6;87
+s;src/main/java/org/junit/experimental/interceptor/Timeout.java;10;-11
+s;src/main/java/org/junit/experimental/interceptor/Verifier.java;6;40
+d;src/main/java/org/junit/experimental/rules/ErrorCollector.java;15;-16
+d;src/main/java/org/junit/experimental/rules/ExpectedException.java;14;116
+d;src/main/java/org/junit/experimental/rules/ExternalResource.java;6;60
+d;src/main/java/org/junit/experimental/rules/MethodRule.java;6;-7
+d;src/main/java/org/junit/experimental/rules/TemporaryFolder.java;6;-7
+d;src/main/java/org/junit/experimental/rules/TestName.java;5;34
+d;src/main/java/org/junit/experimental/rules/TestWatchman.java;6;87
+d;src/main/java/org/junit/experimental/rules/Timeout.java;10;-11
+d;src/main/java/org/junit/experimental/rules/Verifier.java;6;40
+--------------------
+c610a49727858597d9a10289bed0a0174053a69f;Extract Method;Extract Method	private toString(clazz Class<?>, methods Method[]) : String extracted from private declaredMethods(c Class<?>) : String in class org.junit.internal.MethodSorterTest
+s;src/test/java/org/junit/internal/MethodSorterTest.java;15;2
+d;src/test/java/org/junit/internal/MethodSorterTest.java;27;2
+d;src/test/java/org/junit/internal/MethodSorterTest.java;31;2

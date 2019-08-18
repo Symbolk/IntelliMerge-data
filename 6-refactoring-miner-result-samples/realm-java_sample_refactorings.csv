@@ -1,0 +1,507 @@
+realm-java: 119/1194
+--------------------
+a005e96dda2dfb90569e44099ec4e6bb73c8d7d6;Extract Method;Extract Method	private emitRealmList(writer JavaWriter, field VariableElement, fieldName String, fieldTypeCanonicalName String) : void extracted from private emitAccessors(writer JavaWriter) : void in class io.realm.processor.RealmProxyClassGenerator
+s;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;235;218
+d;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;422;69
+d;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;246;18
+--------------------
+b93ea899b31eca9f040b673a0437fe7f5c62720f;Rename Method;Rename Method	public insertToRealm_list() : void renamed to public insert_list() : void in class io.realm.BulkInsertTests
+s;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;371;19
+d;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;399;19
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public addChangeListener() : void in class io.realm.RealmResultsTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;983;17
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;983;17
+--------------------
+9355cf68351be91373d13dc47f5ffec0a9975f18;Rename Variable;Rename Variable	columnInfo : long[][] to fd : FieldDescriptor in method public notEqualTo(fieldName String, value Integer) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;782;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;783;0
+--------------------
+b899cdbcb4711251291c5a247bfe8f75a89b312d;Rename Method;Rename Method	public notEqual(value String, caseSensitive boolean) : Query renamed to public notEqualTo(value String, caseSensitive boolean) : Query in class com.tightdb.typed.StringQueryColumn
+s;tightdb-java-core/src/main/java/com/tightdb/typed/StringQueryColumn.java;35;2
+d;tightdb-java-core/src/main/java/com/tightdb/typed/StringQueryColumn.java;26;2
+--------------------
+698a7cd5ef16cef344a6a2fa0e0acf6a4f31c5bf;Rename Method;Rename Method	public getSubTableDefinition(columnIndex long) : SubTableDefinition renamed to public getSubTableSchema(columnIndex long) : SubTableSchema in class com.tightdb.SubTableSchema
+s;tightdb-java-core/src/main/java/com/tightdb/SubTableDefinition.java;14;8
+d;tightdb-java-core/src/main/java/com/tightdb/SubTableSchema.java;14;8
+--------------------
+8509a096974caf30382639c5f228bbef2867af34;Move Method;Move Method	public compileBacklinks() : void from class io.realm.processor.RealmProcessorTest to public compileBacklinks() : void from class io.realm.processor.RealmBacklinkProcessorTest
+s;realm/realm-annotations-processor/src/test/java/io/realm/processor/RealmProcessorTest.java;527;6
+d;realm/realm-annotations-processor/src/test/java/io/realm/processor/RealmBacklinkProcessorTest.java;37;6
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public lessThanOrEqualTo(fieldName String, value int) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1147;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1143;0
+--------------------
+34f85d0909b50c6c564e520b30189a0a6ee2c655;Rename Method;Rename Method	public partialSync_namedSubscription() : void renamed to public namedSubscription() : void in class io.realm.objectserver.PartialSyncTests
+s;realm/realm-library/src/syncIntegrationTest/java/io/realm/objectserver/PartialSyncTests.java;149;42
+d;realm/realm-library/src/syncIntegrationTest/java/io/realm/objectserver/PartialSyncTests.java;149;42
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Rename Variable;Rename Variable	columnIndices : long[] to columnInfo : long[][] in method public notEqualTo(fieldName String, value Float) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;847;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;842;0
+--------------------
+58e5ae6faf0df2f8cb62c279688dd0fdf666d6ef;Rename Variable;Rename Variable	javaFileObject : RealmSyntheticTestClass to targetClass : RealmSyntheticTestClass in method public failOnLinkingObjectsWithNonFinalField() : void in class io.realm.processor.RealmBacklinkProcessorTest
+s;realm/realm-annotations-processor/src/test/java/io/realm/processor/RealmBacklinkProcessorTest.java;71;3
+d;realm/realm-annotations-processor/src/test/java/io/realm/processor/RealmBacklinkProcessorTest.java;69;3
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Rename Variable;Rename Variable	columnIndices : long[] to columnInfo : long[][] in method public lessThanOrEqualTo(fieldName String, value long) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1163;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1158;0
+--------------------
+429eaf8e8c2620aff1c75a9aecb71ac08f79965e;Extract Method;Extract Method	public getInstance(config RealmConfiguration, realmNotifier RealmNotifier) : SharedRealm extracted from public getInstance(config RealmConfiguration) : SharedRealm in class io.realm.internal.SharedRealm
+s;realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java;134;14
+d;realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java;142;14
+d;realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java;138;2
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public returnedDynamicRealmObjectIsNotNull() : void in class io.realm.RealmChangeListenerTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;180;23
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;180;23
+--------------------
+66b6baf0d2134df925d4c079805c199e6c3c92b3;Rename Method;Rename Method	private closeSharedGroupAndSendMessageToHandler(sharedGroup SharedGroup, weakHandler WeakReference<Handler>, what int, obj Object) : void renamed to private closeSharedRealmAndSendMessageToHandler(sharedRealm SharedRealm, weakHandler WeakReference<Handler>, what int, obj Object) : void in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;2205;8
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;2188;9
+--------------------
+d7a093ba3393f622506ebb559762e0f5cd9c4fa2;Extract And Move Method;Extract And Move Method	public aggregate(aggregateMethod Aggregate, columnIndex long) : Object extracted from public max(fieldName String) : Number in class io.realm.RealmResults & moved to class io.realm.internal.Collection
+s;realm/realm-library/src/main/java/io/realm/RealmResults.java;554;20
+d;realm/realm-library/src/main/java/io/realm/internal/Collection.java;76;2
+d;realm/realm-library/src/main/java/io/realm/RealmResults.java;525;7
+--------------------
+58e5ae6faf0df2f8cb62c279688dd0fdf666d6ef;Rename Class;Rename Class	io.realm.SimpleRealmProxy renamed to io.realm.some_test_SimpleRealmProxy
+s;realm/realm-annotations-processor/src/test/resources/io/realm/SimpleRealmProxy.java;33;337
+d;realm/realm-annotations-processor/src/test/resources/io/realm/some_test_SimpleRealmProxy.java;33;337
+--------------------
+a005e96dda2dfb90569e44099ec4e6bb73c8d7d6;Extract Method;Extract Method	public createConfiguration(subDir String, name String, module Object, key byte[]) : RealmConfiguration extracted from public createConfiguration(name String, key byte[]) : RealmConfiguration in class io.realm.rule.TestRealmConfigurationFactory
+s;realm/realm-library/src/androidTest/java/io/realm/rule/TestRealmConfigurationFactory.java;128;9
+d;realm/realm-library/src/androidTest/java/io/realm/rule/TestRealmConfigurationFactory.java;127;26
+d;realm/realm-library/src/androidTest/java/io/realm/rule/TestRealmConfigurationFactory.java;119;2
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from private checkChangedField(allTypes AllTypes, fieldNames String[]) : void in class io.realm.ObjectChangeSetTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/ObjectChangeSetTests.java;82;18
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/ObjectChangeSetTests.java;82;18
+--------------------
+72b1df1cff469ffebb1c87209e9c3f4276b08264;Rename Parameter;Rename Parameter	config : RealmConfiguration to path : String in method private RealmCache(path String) in class io.realm.RealmCache
+s;realm/realm-library/src/main/java/io/realm/RealmCache.java;93;0
+d;realm/realm-library/src/main/java/io/realm/RealmCache.java;114;0
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public findAllSortedAsync_listOnSubObjectField() : void in class io.realm.RealmQueryTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;3029;24
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;3029;24
+--------------------
+b60509c7558f26193d4187f9240c1ed61353d876;Rename Method;Rename Method	public insertToRealm(realm Realm, objects Collection<? extends RealmModel>) : void renamed to public insert(realm Realm, objects Collection<? extends RealmModel>) : void in class io.realm.internal.modules.CompositeMediator
+s;realm/realm-library/src/main/java/io/realm/internal/modules/CompositeMediator.java;107;4
+d;realm/realm-library/src/main/java/io/realm/internal/modules/CompositeMediator.java;107;4
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Rename Variable;Rename Variable	columnIndices : long[] to columnInfo : long[][] in method public notEqualTo(fieldName String, value Float) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;847;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;842;0
+--------------------
+e1d80239428192b55ef565452a1b24ba9bf136ec;Push Down Method;Push Down Method	private addModifiers(fieldName String, attributes FieldAttribute[]) : void from class io.realm.RealmObjectSchema to private addModifiers(fieldName String, attributes FieldAttribute[]) : void from class io.realm.MutableRealmObjectSchema
+s;realm/realm-library/src/main/java/io/realm/RealmObjectSchema.java;611;25
+d;realm/realm-library/src/main/java/io/realm/MutableRealmObjectSchema.java;253;25
+--------------------
+a005e96dda2dfb90569e44099ec4e6bb73c8d7d6;Rename Class;Rename Class	some.test.ValidModelPojo_3 renamed to some.test.InvalidModelRealmModel_3
+s;realm/realm-annotations-processor/src/test/resources/some/test/InvalidModelRealmModel_3.java;24;3
+d;realm/realm-annotations-processor/src/test/resources/some/test/InvalidModelRealmModel_3.java;24;3
+--------------------
+725e85414857db09a12999cba600c288e1c3942c;Rename Method;Rename Method	public emitFillJavaTypeFieldWithJsonValue(fieldName String, fieldType String, writer JavaWriter) : void renamed to public emitFillJavaTypeWithJsonValue(fieldName String, fieldType String, writer JavaWriter) : void in class io.realm.processor.RealmJsonTypeHelper
+s;realm-annotations-processor/src/main/java/io/realm/processor/RealmJsonTypeHelper.java;60;6
+d;realm-annotations-processor/src/main/java/io/realm/processor/RealmJsonTypeHelper.java;60;6
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public multiple_callbacks_should_be_invoked_realmobject_async() : void in class io.realm.TypeBasedNotificationsTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/TypeBasedNotificationsTests.java;679;36
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/TypeBasedNotificationsTests.java;679;36
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Parameter;Rename Parameter	schemaNativePointer : long to schemaNativePtr : long in method public updateSchema(schemaNativePtr long, version long) : void in class io.realm.internal.SharedRealm
+s;realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java;346;0
+d;realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java;355;0
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public callback_should_trigger_for_createOrUpdateObjectFromJson_from_JSONObject() : void in class io.realm.TypeBasedNotificationsTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/TypeBasedNotificationsTests.java;395;48
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/TypeBasedNotificationsTests.java;395;48
+--------------------
+42b50752f0f1f047c937b702098dfcba3569a6a3;Move Method;Move Method	public insertSubTable(columnIndex long, rowIndex long, values Object[][]) : void from class com.tightdb.Table to public insertSubTable(columnIndex long, rowIndex long, values Object[][]) : void from class com.tightdb.Table.InternalMethods
+s;tightdb-java-core/src/main/java/com/tightdb/Table.java;518;4
+d;tightdb-java-core/src/main/java/com/tightdb/Table.java;512;4
+--------------------
+11b1d9e124de48f52a833d7c8c9776062356c79b;Rename Method;Rename Method	public setFirst(first long) : void renamed to public setByteInt(byteInt long) : void in class com.tightdb.generated.Test
+s;src/main/java/com/tightdb/generated/Test.java;32;2
+d;src/main/java/com/tightdb/generated/Test.java;48;2
+--------------------
+66b6baf0d2134df925d4c079805c199e6c3c92b3;Rename Method;Rename Method	public testMinimumDate() : void renamed to public minimumDate() : void in class io.realm.internal.JNITableTest
+s;realm/realm-library/src/androidTest/java/io/realm/internal/JNITableTest.java;402;11
+d;realm/realm-library/src/androidTest/java/io/realm/internal/JNITableTest.java;325;12
+--------------------
+e88c6e9b56fe69550650e230319dac9d9d340584;Move Method;Move Method	public shouldThrowExceptionWhenColumnNameIsTooLong() : void from class com.tightdb.typed.TableTest to public shouldThrowExceptionWhenColumnNameIsTooLong() : void from class com.tightdb.JNITableInsertTest
+s;tightdb-java-test/src/test/java/com/tightdb/typed/TableTest.java;104;5
+d;tightdb-java-test/src/test/java/com/tightdb/JNITableInsertTest.java;251;5
+--------------------
+ef192e02c2baeb60aaade9c8c46f112195511ae4;Rename Method;Rename Method	public endSubTable() : Query renamed to public endSubtable() : Query in class com.tightdb.typed.AbstractQuery
+s;tightdb-java-core/src/main/java/com/tightdb/typed/AbstractQuery.java;125;3
+d;tightdb-java-core/src/main/java/com/tightdb/typed/AbstractQuery.java;125;3
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public addChangeListener_twice() : void in class io.realm.RealmResultsTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;1002;40
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;1002;40
+--------------------
+19e45278726ecb90f1d37b39146753b46537c4bb;Extract Variable;Extract Variable	srcClassName : String in method package createDynamicBacklinkResults(realm DynamicRealm, row CheckedRow, srcTable Table, srcFieldName String) : RealmResults<DynamicRealmObject> from class io.realm.RealmResults
+d;realm/realm-library/src/main/java/io/realm/RealmResults.java;77;0
+--------------------
+66b6baf0d2134df925d4c079805c199e6c3c92b3;Rename Parameter;Rename Parameter	transaction : ImplicitTransaction to sharedRealm : SharedRealm in method public initTable(sharedRealm SharedRealm) : Table in class io.realm.AllTypesRealmProxy
+s;realm/realm-annotations-processor/src/test/resources/io/realm/AllTypesRealmProxy.java;238;0
+d;realm/realm-annotations-processor/src/test/resources/io/realm/AllTypesRealmProxy.java;238;0
+--------------------
+a005e96dda2dfb90569e44099ec4e6bb73c8d7d6;Extract Method;Extract Method	public createConfiguration(subDir String, name String, module Object, key byte[]) : RealmConfiguration extracted from public createConfiguration(subDir String, name String) : RealmConfiguration in class io.realm.rule.TestRealmConfigurationFactory
+s;realm/realm-library/src/androidTest/java/io/realm/rule/TestRealmConfigurationFactory.java;106;10
+d;realm/realm-library/src/androidTest/java/io/realm/rule/TestRealmConfigurationFactory.java;127;26
+d;realm/realm-library/src/androidTest/java/io/realm/rule/TestRealmConfigurationFactory.java;115;2
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public returnedRealmResultsIsNotNull() : void in class io.realm.RealmChangeListenerTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;96;17
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;96;17
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Method;Rename Method	public getNativeTablePointer() : long renamed to public getTable() : Table in class io.realm.internal.Table
+s;realm/realm-library/src/main/java/io/realm/internal/Table.java;105;2
+d;realm/realm-library/src/main/java/io/realm/internal/Table.java;107;2
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public addTestRealm(realm Realm) : void extracted from public errorHandler_clientResetReported() : void in class io.realm.SessionTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTestObjectServer/java/io/realm/SessionTests.java;65;30
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;132;10
+d;realm/realm-library/src/androidTestObjectServer/java/io/realm/SessionTests.java;65;30
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Extract Method;Extract Method	package haveColumnInfo() : boolean extracted from private checkIndices() : void in class io.realm.RealmSchema
+s;realm/realm-library/src/main/java/io/realm/RealmSchema.java;143;4
+d;realm/realm-library/src/main/java/io/realm/RealmSchema.java;190;2
+d;realm/realm-library/src/main/java/io/realm/RealmSchema.java;209;4
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public combiningAsyncAndSync() : void in class io.realm.RealmAsyncQueryTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmAsyncQueryTests.java;735;21
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmAsyncQueryTests.java;735;21
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public addChangeListener_twice() : void in class io.realm.RealmResultsTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;1002;40
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;1002;40
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Rename Variable;Rename Variable	columnIndices : long[] to columnInfo : long[][] in method public lessThanOrEqualTo(fieldName String, value double) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1179;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1174;0
+--------------------
+230317e3367bd67da1e6ef49f58f4cf92d9b46c8;Extract Variable;Extract Variable	nativeViewPtr : long in method public findAllLong(columnIndex long, value long) : TableView from class com.tightdb.TableView
+d;tightdb-java-core/src/main/java/com/tightdb/TableView.java;570;0
+--------------------
+6100fd2e4d331b2b312a5bd6ebfa19ec52231ff4;Rename Variable;Rename Variable	observer : Observer to observerPair : RowObserverPair in method private clearRowRefs() : void in class io.realm.internal.RowNotifier
+s;realm/realm-library/src/main/java/io/realm/internal/RowNotifier.java;78;0
+d;realm/realm-library/src/main/java/io/realm/internal/RowNotifier.java;130;0
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public findAllSortedAsync_onSubObjectField() : void in class io.realm.RealmQueryTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;2994;16
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;2994;16
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public returnedRealmModelIsNotNull() : void in class io.realm.RealmChangeListenerTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;158;20
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;158;20
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Rename Variable;Rename Variable	columnIndices : long[] to columnInfo : long[][] in method public lessThan(fieldName String, value Date) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1131;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1126;0
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public lessThan(fieldName String, value float) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1115;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1111;0
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public greaterThanOrEqualTo(fieldName String, value float) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1035;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1031;0
+--------------------
+9355cf68351be91373d13dc47f5ffec0a9975f18;Rename Variable;Rename Variable	columnInfo : long[][] to fd : FieldDescriptor in method public notEqualTo(fieldName String, value Boolean) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;862;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;863;0
+--------------------
+e3b2ce24354763fdaf2385163ff132921edea5d1;Move Attribute;Move Attribute	private SCHEMA_MODE_VALUE_READONLY : byte from class io.realm.internal.SharedRealm to class io.realm.internal.OsRealmConfig
+s;realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java;86;0
+d;realm/realm-library/src/main/java/io/realm/internal/OsRealmConfig.java;133;0
+--------------------
+fab23e3dcef7b7956bed4909931d1f6e1174ea21;Pull Up Method;Pull Up Method	public setUp() : void from class io.realm.RealmQueryTests to public setUp() : void from class io.realm.QueryTests
+s;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;81;4
+d;realm/realm-library/src/androidTest/java/io/realm/QueryTests.java;50;4
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public returnedRealmResultsIsNotNull() : void in class io.realm.RealmChangeListenerTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;96;17
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;96;17
+--------------------
+b93ea899b31eca9f040b673a0437fe7f5c62720f;Rename Method;Rename Method	public insertOrUpdateToRealm() : void renamed to public insertOrUpdate() : void in class io.realm.BulkInsertTests
+s;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;319;50
+d;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;347;50
+--------------------
+7aafe0f8284711a0dfc419edba8bd2cdce55e044;Extract Variable;Extract Variable	realm : Realm in method public findAllAsync_reusingQuery() : void from class io.realm.RealmAsyncQueryTests
+d;realm/realm-library/src/androidTest/java/io/realm/RealmAsyncQueryTests.java;356;0
+--------------------
+b60509c7558f26193d4187f9240c1ed61353d876;Rename Method;Rename Method	public insertOrUpdateToRealm(realm Realm, objects Collection<? extends RealmModel>) : void renamed to public insertOrUpdate(realm Realm, objects Collection<? extends RealmModel>) : void in class io.realm.DefaultRealmModuleMediator
+s;realm/realm-annotations-processor/src/test/resources/io/realm/RealmDefaultModuleMediator.java;155;21
+d;realm/realm-annotations-processor/src/test/resources/io/realm/RealmDefaultModuleMediator.java;159;25
+--------------------
+b60509c7558f26193d4187f9240c1ed61353d876;Rename Method;Rename Method	public insertToRealm(realm Realm, objects Collection<? extends RealmModel>) : void renamed to public insert(realm Realm, objects Collection<? extends RealmModel>) : void in class io.realm.DefaultRealmModuleMediator
+s;realm/realm-annotations-processor/src/test/resources/io/realm/RealmDefaultModuleMediator.java;119;21
+d;realm/realm-annotations-processor/src/test/resources/io/realm/RealmDefaultModuleMediator.java;119;25
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public distinctAsync_withNullValues() : void in class io.realm.RealmResultsTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;496;46
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmResultsTests.java;496;46
+--------------------
+66b6baf0d2134df925d4c079805c199e6c3c92b3;Rename Method;Rename Method	public testAddNegativeEmptyRows() : void renamed to public addNegativeEmptyRows() : void in class io.realm.internal.JNITableTest
+s;realm/realm-library/src/androidTest/java/io/realm/internal/JNITableTest.java;235;5
+d;realm/realm-library/src/androidTest/java/io/realm/internal/JNITableTest.java;196;6
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public findAllSortedAsync() : void in class io.realm.DynamicRealmTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/DynamicRealmTests.java;395;23
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/DynamicRealmTests.java;395;23
+--------------------
+1b70f8caf62df1912f25984b19d879fd8482b1d1;Rename Method;Rename Method	public distinct_async_withNullValues() : void renamed to public distinctAsync_withNullValues() : void in class io.realm.RealmQueryTests
+s;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;2863;41
+d;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;2875;41
+--------------------
+a137a819f99635962363fd481caabb2509a5a020;Rename Variable;Rename Variable	publicSession : SyncSession to session : SyncSession in method public getSession(syncConfiguration SyncConfiguration) : SyncSession in class io.realm.SyncManager
+s;realm/realm-library/src/objectServer/java/io/realm/SyncManager.java;195;0
+d;realm/realm-library/src/objectServer/java/io/realm/SyncManager.java;178;0
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Rename Variable;Rename Variable	columnIndices : long[] to columnInfo : long[][] in method public greaterThan(fieldName String, value float) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;955;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;950;0
+--------------------
+9f4f550a9024c39aab86648e31bdd9b51a8fed2d;Rename Method;Rename Method	public getTableName(clazz Class<? extends RealmModel>) : String renamed to public getSimpleClassNameImpl(clazz Class<? extends RealmModel>) : String in class io.realm.DefaultRealmModuleMediator
+s;realm/realm-annotations-processor/src/test/resources/io/realm/RealmDefaultModuleMediator.java;63;8
+d;realm/realm-annotations-processor/src/test/resources/io/realm/RealmDefaultModuleMediator.java;62;8
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Extract And Move Method;Extract And Move Method	package getTestInstance(table Table, columnIndices long[]) : SortDescriptor extracted from public indexOf_long() : void in class io.realm.internal.CollectionTests & moved to class io.realm.internal.SortDescriptor
+s;realm/realm-library/src/androidTest/java/io/realm/internal/CollectionTests.java;223;6
+d;realm/realm-library/src/main/java/io/realm/internal/SortDescriptor.java;99;2
+d;realm/realm-library/src/androidTest/java/io/realm/internal/CollectionTests.java;225;6
+--------------------
+e4cbe944c57d9fbc392d4f06ad293a6f455a6bbd;Rename Method;Rename Method	public is(value long) : Query renamed to public eq(value long) : Query in class com.tightdb.lib.LongQueryColumn
+s;src/main/java/com/tightdb/lib/LongQueryColumn.java;31;2
+d;src/main/java/com/tightdb/lib/LongQueryColumn.java;14;2
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Pull Up Method;Pull Up Method	private createIsEmptyDataSet(realm Realm) : void from class io.realm.RealmQueryTests to protected createIsEmptyDataSet(realm Realm) : void from class io.realm.QueryTests
+s;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;2725;20
+d;realm/realm-library/src/androidTest/java/io/realm/QueryTests.java;86;20
+--------------------
+b60509c7558f26193d4187f9240c1ed61353d876;Rename Variable;Rename Variable	realmObject : CyclicType to realmObjects : RealmResults<CyclicType> in method public insertToRealm_CyclicType() : void in class io.realm.BulkInsertTests
+s;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;246;0
+d;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;247;0
+--------------------
+429eaf8e8c2620aff1c75a9aecb71ac08f79965e;Rename Parameter;Rename Parameter	message : int to event : NotifyEvent in method private QueryUpdateTask(mode int, realmConfiguration RealmConfiguration, listOfRealmResults List<Builder.QueryEntry>, realmObject Builder.QueryEntry, notifier WeakReference<RealmNotifier>, event NotifyEvent) in class io.realm.internal.async.QueryUpdateTask
+s;realm/realm-library/src/main/java/io/realm/internal/async/QueryUpdateTask.java;57;0
+d;realm/realm-library/src/main/java/io/realm/internal/async/QueryUpdateTask.java;63;0
+--------------------
+dd28cef4666e42ced50ef626c93d7e08480d788e;Extract And Move Method;Extract And Move Method	public setColumnString(columnString String) : void extracted from public insertOrUpdate_mixingPrimaryAndNoPrimaryKeyList() : void in class io.realm.BulkInsertTests & moved to class io.realm.entities.NoPrimaryKeyWithPrimaryKeyObjectRelation
+s;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;454;36
+d;realm/realm-library/src/androidTest/java/io/realm/entities/NoPrimaryKeyWithPrimaryKeyObjectRelation.java;36;2
+d;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;454;36
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Extract And Move Method;Extract And Move Method	protected getColumnIndices(fieldDescription String, validColumnTypes RealmFieldType[]) : long[][] extracted from public between(fieldName String, from int, to int) : RealmQuery<E> in class io.realm.RealmQuery & moved to class io.realm.RealmObjectSchema
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1216;15
+d;realm/realm-library/src/main/java/io/realm/RealmObjectSchema.java;279;12
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1211;15
+--------------------
+b73a0a5ea5e5c67615995c423846e1acb1ebd361;Rename Method;Rename Method	public realmListener_localChangeShouldBeSendAtFrontOfTheQueueWithLoadedAsync() : void renamed to public realmListener_reattachResultsShouldHappenFirstWithReturnedAsync() : void in class io.realm.NotificationsTest
+s;realm/realm-library/src/androidTest/java/io/realm/NotificationsTest.java;1008;42
+d;realm/realm-library/src/androidTest/java/io/realm/NotificationsTest.java;1008;42
+--------------------
+d9e0ae4ac083286c5440cc4bdb0f18d9c70fdb45;Move Class;Move Class	io.realm.internal.Collection.Callback moved to io.realm.internal.ObservableCollection.Callback
+s;realm/realm-library/src/main/java/io/realm/internal/Collection.java;82;12
+d;realm/realm-library/src/main/java/io/realm/internal/ObservableCollection.java;55;12
+--------------------
+d9e0ae4ac083286c5440cc4bdb0f18d9c70fdb45;Rename Parameter;Rename Parameter	object : E to element : E in method public add(location int, element E) : void in class io.realm.RealmList
+s;realm/realm-library/src/main/java/io/realm/RealmList.java;177;0
+d;realm/realm-library/src/main/java/io/realm/RealmList.java;182;0
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public greaterThanOrEqualTo(fieldName String, value long) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1003;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;999;0
+--------------------
+e1d80239428192b55ef565452a1b24ba9bf136ec;Push Down Method;Push Down Method	public removeIndex(fieldName String) : RealmObjectSchema from class io.realm.RealmObjectSchema to public removeIndex(fieldName String) : RealmObjectSchema from class io.realm.MutableRealmObjectSchema
+s;realm/realm-library/src/main/java/io/realm/RealmObjectSchema.java;325;17
+d;realm/realm-library/src/main/java/io/realm/MutableRealmObjectSchema.java;164;11
+--------------------
+818737d3d582cdb990a9dc0701b6e48a897c9bfe;Move Attribute;Move Attribute	private refreshToken : Token from class io.realm.internal.objectserver.ObjectServerUser to class io.realm.SyncUser
+s;realm/realm-library/src/objectServer/java/io/realm/internal/objectserver/ObjectServerUser.java;41;0
+d;realm/realm-library/src/objectServer/java/io/realm/SyncUser.java;64;0
+--------------------
+8509a096974caf30382639c5f228bbef2867af34;Move Method;Move Method	public failsOnLinkingObjectsWithLinkedFields() : void from class io.realm.processor.RealmProcessorTest to public failsOnLinkingObjectsWithLinkedFields() : void from class io.realm.processor.RealmBacklinkProcessorTest
+s;realm/realm-annotations-processor/src/test/java/io/realm/processor/RealmProcessorTest.java;571;13
+d;realm/realm-annotations-processor/src/test/java/io/realm/processor/RealmBacklinkProcessorTest.java;81;13
+--------------------
+a005e96dda2dfb90569e44099ec4e6bb73c8d7d6;Extract Method;Extract Method	private emitValidateRealmListType(writer JavaWriter, field VariableElement, fieldIndex long, fieldName String) : void extracted from private emitValidateTableMethod(writer JavaWriter) : void in class io.realm.processor.RealmProxyClassGenerator
+s;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;615;186
+d;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;878;22
+d;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;673;104
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public notEqualTo(fieldName String, value byte[]) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;747;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;743;0
+--------------------
+386ae1dafc51d76fbf92636f07b96edbc2d42c50;Rename Method;Rename Method	public addRow(values Object[]) : void renamed to public add(values Object[]) : void in class com.tightdb.TableBase
+s;tightdb-java-core/src/main/java/com/tightdb/TableBase.java;249;2
+d;tightdb-java-core/src/main/java/com/tightdb/TableBase.java;249;2
+--------------------
+66b6baf0d2134df925d4c079805c199e6c3c92b3;Rename Variable;Rename Variable	sharedGroup : SharedGroup to sharedRealm : SharedRealm in method public run() : void in class io.realm.internal.async.QueryUpdateTask
+s;realm/realm-library/src/main/java/io/realm/internal/async/QueryUpdateTask.java;72;0
+d;realm/realm-library/src/main/java/io/realm/internal/async/QueryUpdateTask.java;72;0
+--------------------
+9355cf68351be91373d13dc47f5ffec0a9975f18;Rename Variable;Rename Variable	columnInfo : long[][] to fd : FieldDescriptor in method public isNotEmpty(fieldName String) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1511;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1512;0
+--------------------
+b93ea899b31eca9f040b673a0437fe7f5c62720f;Rename Method;Rename Method	public insertToRealm_NullPrimaryKey() : void renamed to public insert_nullPrimaryKey() : void in class io.realm.BulkInsertTests
+s;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;292;25
+d;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;294;25
+--------------------
+cf6b81fd42392063658073afdf2368d5abd9e85d;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public findAllAsync_forceLoad() : void in class io.realm.RealmAsyncQueryTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmAsyncQueryTests.java;507;29
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmAsyncQueryTests.java;507;29
+--------------------
+c6e75db668e01687b87f2656d8da87e9a5c29540;Rename Method;Rename Method	protected nativeMinimum(nativeViewPtr long, columnIndex long) : long renamed to protected nativeMinimumInt(nativeViewPtr long, columnIndex long) : long in class com.tightdb.TableView
+s;tightdb-java-core/src/main/java/com/tightdb/TableView.java;611;0
+d;tightdb-java-core/src/main/java/com/tightdb/TableView.java;611;0
+--------------------
+ef192e02c2baeb60aaade9c8c46f112195511ae4;Rename Method;Rename Method	public clearSubTable(columnIndex long, rowIndex long) : void renamed to public clearSubtable(columnIndex long, rowIndex long) : void in class com.tightdb.Table
+s;tightdb-java-core/src/main/java/com/tightdb/Table.java;779;3
+d;tightdb-java-core/src/main/java/com/tightdb/Table.java;779;3
+--------------------
+dd28cef4666e42ced50ef626c93d7e08480d788e;Extract And Move Method;Extract And Move Method	public setColumnInt(columnInt int) : void extracted from public insertOrUpdate_mixingPrimaryKeyAndNoPrimaryKeyModels() : void in class io.realm.BulkInsertTests & moved to class io.realm.entities.NoPrimaryKeyWithPrimaryKeyObjectRelation
+s;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;366;36
+d;realm/realm-library/src/androidTest/java/io/realm/entities/NoPrimaryKeyWithPrimaryKeyObjectRelation.java;52;2
+d;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;366;36
+--------------------
+5947f2b9c51bb47a49915c4f8560e490d34417f2;Inline Method;Inline Method	private populateSimpleGraph() : void inlined to public query_distinct() : void in class io.realm.LinkingObjectsQueryTests
+s;realm/realm-library/src/androidTest/java/io/realm/LinkingObjectsQueryTests.java;36;9
+s;realm/realm-library/src/androidTest/java/io/realm/LinkingObjectsQueryTests.java;326;16
+d;realm/realm-library/src/androidTest/java/io/realm/LinkingObjectsQueryTests.java;47;22
+--------------------
+ef192e02c2baeb60aaade9c8c46f112195511ae4;Rename Method;Rename Method	public endSubTable() : TableQuery renamed to public endSubtable() : TableQuery in class com.tightdb.TableQuery
+s;tightdb-java-core/src/main/java/com/tightdb/TableQuery.java;85;4
+d;tightdb-java-core/src/main/java/com/tightdb/TableQuery.java;85;4
+--------------------
+7aafe0f8284711a0dfc419edba8bd2cdce55e044;Extract Variable;Extract Variable	realm : Realm in method public executeTransactionAsync_NoCallbacks() : void from class io.realm.RealmAsyncQueryTests
+d;realm/realm-library/src/androidTest/java/io/realm/RealmAsyncQueryTests.java;152;0
+--------------------
+66b6baf0d2134df925d4c079805c199e6c3c92b3;Rename Parameter;Rename Parameter	transaction : ImplicitTransaction to sharedRealm : SharedRealm in method public initTable(sharedRealm SharedRealm) : Table in class io.realm.SimpleRealmProxy
+s;realm/realm-annotations-processor/src/test/resources/io/realm/SimpleRealmProxy.java;88;0
+d;realm/realm-annotations-processor/src/test/resources/io/realm/SimpleRealmProxy.java;88;0
+--------------------
+c6e75db668e01687b87f2656d8da87e9a5c29540;Rename Method;Rename Method	protected nativeNotEqualDate(nativeQueryPtr long, columnIndex long, value long) : void renamed to protected nativeNotEqualDateTime(nativeQueryPtr long, columnIndex long, value long) : void in class com.tightdb.TableQuery
+s;tightdb-java-core/src/main/java/com/tightdb/TableQuery.java;317;0
+d;tightdb-java-core/src/main/java/com/tightdb/TableQuery.java;317;0
+--------------------
+dda715900232b3dd0a77a49b3ee1eb8bed572e6c;Rename Method;Rename Method	public createObjectFromJson_primaryKey_isNullOrAbsent_fromJsonObject() : void renamed to public createObjectFromJson_primaryKey_isNull_fromJsonObject() : void in class io.realm.RealmJsonNullPrimaryKeyTests
+s;realm/realm-library/src/androidTest/java/io/realm/RealmJsonNullPrimaryKeyTests.java;88;20
+d;realm/realm-library/src/androidTest/java/io/realm/RealmJsonNullPrimaryKeyTests.java;83;20
+--------------------
+f3f8ab2e1ad8cd911e785a05964649e0eea50d59;Extract And Move Method;Extract And Move Method	public keepStrongReference(obj Object) : void extracted from public returnedDynamicRealmResultsIsNotNull() : void in class io.realm.RealmChangeListenerTests & moved to class io.realm.rule.RunInLooperThread
+s;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;205;22
+d;realm/realm-library/src/androidTest/java/io/realm/rule/RunInLooperThread.java;119;11
+d;realm/realm-library/src/androidTest/java/io/realm/RealmChangeListenerTests.java;205;22
+--------------------
+a005e96dda2dfb90569e44099ec4e6bb73c8d7d6;Extract Method;Extract Method	private emitValidateRealmModelType(writer JavaWriter, field VariableElement, fieldIndex long, fieldName String) : void extracted from private emitValidateTableMethod(writer JavaWriter) : void in class io.realm.processor.RealmProxyClassGenerator
+s;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;615;186
+d;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;853;23
+d;realm/realm-annotations-processor/src/main/java/io/realm/processor/RealmProxyClassGenerator.java;673;104
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public greaterThan(fieldName String, value double) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;939;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;935;0
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public notEqualTo(fieldName String, value Float) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;847;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;843;0
+--------------------
+dd28cef4666e42ced50ef626c93d7e08480d788e;Extract And Move Method;Extract And Move Method	public setColumnRealmObjectPK(columnRealmObjectPK AllTypesPrimaryKey) : void extracted from public insertOrUpdate_mixingPrimaryAndNoPrimaryKeyList() : void in class io.realm.BulkInsertTests & moved to class io.realm.entities.NoPrimaryKeyWithPrimaryKeyObjectRelation
+s;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;454;36
+d;realm/realm-library/src/androidTest/java/io/realm/entities/NoPrimaryKeyWithPrimaryKeyObjectRelation.java;44;2
+d;realm/realm-library/src/androidTest/java/io/realm/BulkInsertTests.java;454;36
+--------------------
+58dbfeead497efedb79bdd7c7edcd02fff76196d;Extract Method;Extract Method	public methodWrongThread(method int) : boolean extracted from public testAverageWrongThread() : void in class io.realm.RealmResultsTest
+s;realm/src/androidTest/java/io/realm/RealmResultsTest.java;243;17
+d;realm/src/androidTest/java/io/realm/RealmResultsTest.java;76;34
+d;realm/src/androidTest/java/io/realm/RealmResultsTest.java;240;2
+--------------------
+e4cbe944c57d9fbc392d4f06ad293a6f455a6bbd;Rename Method;Rename Method	public is(value String) : Query renamed to public eq(value String) : Query in class com.tightdb.lib.StringQueryColumn
+s;src/main/java/com/tightdb/lib/StringQueryColumn.java;11;2
+d;src/main/java/com/tightdb/lib/StringQueryColumn.java;14;2
+--------------------
+09e545bfba65e917377a6cbbf6e5862ab5d098a6;Rename Variable;Rename Variable	nativeSubtablePointer : long to nativeSubtablePtr : long in method private getSubTableDuringInsert(columnIndex long, rowIndex long) : Table in class com.tightdb.Table
+s;tightdb-java-core/src/main/java/com/tightdb/Table.java;802;0
+d;tightdb-java-core/src/main/java/com/tightdb/Table.java;802;0
+--------------------
+9355cf68351be91373d13dc47f5ffec0a9975f18;Move Method;Move Method	private getNativeTablePtr(targetTable String) : long from class io.realm.StandardRealmSchema to public getNativeTablePtr(targetTable String) : long from class io.realm.RealmObjectSchema.SchemaProxy
+s;realm/realm-library/src/main/java/io/realm/StandardRealmSchema.java;416;2
+d;realm/realm-library/src/main/java/io/realm/RealmObjectSchema.java;337;3
+--------------------
+e3b2ce24354763fdaf2385163ff132921edea5d1;Move Attribute;Move Attribute	private SCHEMA_MODE_VALUE_MANUAL : byte from class io.realm.internal.SharedRealm to class io.realm.internal.OsRealmConfig
+s;realm/realm-library/src/main/java/io/realm/internal/SharedRealm.java;89;0
+d;realm/realm-library/src/main/java/io/realm/internal/OsRealmConfig.java;136;0
+--------------------
+fab23e3dcef7b7956bed4909931d1f6e1174ea21;Pull Up Attribute;Pull Up Attribute	public configFactory : TestRealmConfigurationFactory from class io.realm.RealmQueryTests to class io.realm.QueryTests
+s;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;68;0
+d;realm/realm-library/src/androidTest/java/io/realm/QueryTests.java;42;0
+--------------------
+c6e75db668e01687b87f2656d8da87e9a5c29540;Rename Method;Rename Method	protected nativeAverage(nativePtr long, columnIndex long) : double renamed to protected nativeAverageInt(nativePtr long, columnIndex long) : double in class com.tightdb.TableView
+s;tightdb-java-core/src/main/java/com/tightdb/TableView.java;617;0
+d;tightdb-java-core/src/main/java/com/tightdb/TableView.java;617;0
+--------------------
+58dbfeead497efedb79bdd7c7edcd02fff76196d;Rename Method;Rename Method	protected checkThread() : void renamed to protected assertThread() : void in class io.realm.Realm
+s;realm/src/main/java/io/realm/Realm.java;109;4
+d;realm/src/main/java/io/realm/Realm.java;108;4
+--------------------
+fab23e3dcef7b7956bed4909931d1f6e1174ea21;Pull Up Method;Pull Up Method	private createIsEmptyDataSet(realm Realm) : void from class io.realm.RealmQueryTests to protected createIsEmptyDataSet(realm Realm) : void from class io.realm.QueryTests
+s;realm/realm-library/src/androidTest/java/io/realm/RealmQueryTests.java;2924;20
+d;realm/realm-library/src/androidTest/java/io/realm/QueryTests.java;103;20
+--------------------
+c35285ba6f5612a406abc3ec231123ae3fa63447;Rename Variable;Rename Variable	columnIndices : long[] to columnInfo : long[][] in method public lessThanOrEqualTo(fieldName String, value int) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1147;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1142;0
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method public like(fieldName String, value String, casing Case) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1421;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;1417;0
+--------------------
+deb25a87d08d93ebc77c5c8d9e81b8a632485b83;Rename Variable;Rename Variable	columnIndices : long[] to fd : FieldDescriptor in method private equalToWithoutThreadValidation(fieldName String, value String, casing Case) : RealmQuery<E> in class io.realm.RealmQuery
+s;realm/realm-library/src/main/java/io/realm/RealmQuery.java;259;0
+d;realm/realm-library/src/main/java/io/realm/RealmQuery.java;255;0
+--------------------
+d9e0ae4ac083286c5440cc4bdb0f18d9c70fdb45;Rename Method;Rename Method	public getLinkList(columnIndex long) : OsList renamed to public getList(columnIndex long) : OsList in class io.realm.internal.PendingRow
+s;realm/realm-library/src/main/java/io/realm/internal/PendingRow.java;136;3
+d;realm/realm-library/src/main/java/io/realm/internal/PendingRow.java;136;3
+--------------------
+b899cdbcb4711251291c5a247bfe8f75a89b312d;Rename Method;Rename Method	public notEqual(value String, caseSensitive boolean) : Query renamed to public notEqualTo(value String, caseSensitive boolean) : Query in class com.tightdb.typed.StringQueryColumn
+s;tightdb-java-core/src/main/java/com/tightdb/typed/StringQueryColumn.java;35;2
+d;tightdb-java-core/src/main/java/com/tightdb/typed/StringQueryColumn.java;26;2
+--------------------
+1b53fbfeffb416c57d09042804d095e3da8294df;Rename Parameter;Rename Parameter	columnIndices : ColumnIndices to globalCacheArray : ColumnIndices[] in method package createInstance(configuration RealmConfiguration, globalCacheArray ColumnIndices[]) : Realm in class io.realm.Realm
+s;realm/realm-library/src/main/java/io/realm/Realm.java;209;0
+d;realm/realm-library/src/main/java/io/realm/Realm.java;210;0
+--------------------
+e1d80239428192b55ef565452a1b24ba9bf136ec;Push Down Attribute;Push Down Attribute	private schema : RealmSchema from class io.realm.BaseRealm to class io.realm.Realm
+s;realm/realm-library/src/main/java/io/realm/BaseRealm.java;77;0
+d;realm/realm-library/src/main/java/io/realm/Realm.java;141;0
+--------------------
+72b1df1cff469ffebb1c87209e9c3f4276b08264;Extract Method;Extract Method	private getTotalGlobalRefCount() : int extracted from package release(realm BaseRealm) : void in class io.realm.RealmCache
+s;realm/realm-library/src/main/java/io/realm/RealmCache.java;180;66
+d;realm/realm-library/src/main/java/io/realm/RealmCache.java;503;10
+d;realm/realm-library/src/main/java/io/realm/RealmCache.java;224;58

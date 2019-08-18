@@ -1,0 +1,72 @@
+error-prone: 18/179
+--------------------
+4147425bcae55b942e8270a5774d1b2bc61b4bb9;Rename Class;Rename Class	com.google.errorprone.bugpatterns.NonStaticInnerClassPositiveCase3 renamed to com.google.errorprone.bugpatterns.ClassCanBeStaticPositiveCase3
+s;core/src/test/resources/com/google/errorprone/bugpatterns/NonStaticInnerClassPositiveCase3.java;19;14
+d;core/src/test/resources/com/google/errorprone/bugpatterns/ClassCanBeStaticPositiveCase3.java;19;14
+--------------------
+bf623976e0fbfe9abc685646b63ad5d50368de97;Rename Method;Rename Method	public refactor(t MethodInvocationTree, state VisitorState) : Refactor renamed to public describe(t MethodInvocationTree, state VisitorState) : Description in class com.google.errorprone.bugpatterns.orderingfrom.OrderingFrom
+s;core/src/main/java/com/google/errorprone/refactors/orderingfrom/OrderingFrom.java;68;16
+d;core/src/main/java/com/google/errorprone/bugpatterns/orderingfrom/OrderingFrom.java;69;16
+--------------------
+481dba79f084f18a050342b6cc0ec597eea9d1d3;Extract Interface;Extract Interface	com.google.errorprone.matchers.Matchers.VariableTreeMatcher from classes [com.google.errorprone.bugpatterns.SelfAssignmentChecker]
+s;core/src/main/java/com/google/errorprone/bugpatterns/SelfAssignmentChecker.java;45;234
+d;core/src/main/java/com/google/errorprone/matchers/Matchers.java;730;2
+d;core/src/main/java/com/google/errorprone/bugpatterns/SelfAssignmentChecker.java;45;234
+--------------------
+78cf5869c867674615da6bb7038ef4b226a9e65f;Extract Variable;Extract Variable	exitCode : int in method public assertCompileSucceeds(source File) : void from class com.google.errorprone.CompilationTestHelper
+d;core/src/test/java/com/google/errorprone/CompilationTestHelper.java;56;0
+--------------------
+96eb0a3c7627c9a0cd2adcc905541a424e50b213;Rename Method;Rename Method	public refactor(annotationTree AnnotationTree, state RefactoringVisitorState) : Refactor renamed to public createRefactor(annotationTree AnnotationTree, state VisitorState) : Refactor in class com.google.errorprone.refactors.FallThroughSuppression
+s;core/src/main/java/com/google/errorprone/refactors/FallThroughSuppression.java;48;6
+d;core/src/main/java/com/google/errorprone/refactors/FallThroughSuppression.java;51;6
+--------------------
+96eb0a3c7627c9a0cd2adcc905541a424e50b213;Rename Method;Rename Method	public refactor(annotationTree AnnotationTree, state RefactoringVisitorState) : Refactor renamed to public createRefactor(annotationTree AnnotationTree, state VisitorState) : Refactor in class com.google.errorprone.refactors.FallThroughSuppression
+s;core/src/main/java/com/google/errorprone/refactors/FallThroughSuppression.java;48;6
+d;core/src/main/java/com/google/errorprone/refactors/FallThroughSuppression.java;51;6
+--------------------
+f701f2aa8d1078e506c1b41e3f280204dd41c2bb;Move Class;Move Class	com.google.errorprone.matchers.Matchers.ForLoopTreeMatcher moved to com.google.errorprone.bugpatterns.BugChecker.ForLoopTreeMatcher
+s;core/src/main/java/com/google/errorprone/matchers/Matchers.java;655;2
+d;core/src/main/java/com/google/errorprone/bugpatterns/BugChecker.java;194;2
+--------------------
+f701f2aa8d1078e506c1b41e3f280204dd41c2bb;Move Class;Move Class	com.google.errorprone.matchers.Matchers.ParenthesizedTreeMatcher moved to com.google.errorprone.bugpatterns.BugChecker.ParenthesizedTreeMatcher
+s;core/src/main/java/com/google/errorprone/matchers/Matchers.java;700;2
+d;core/src/main/java/com/google/errorprone/bugpatterns/BugChecker.java;254;2
+--------------------
+f701f2aa8d1078e506c1b41e3f280204dd41c2bb;Move Class;Move Class	com.google.errorprone.matchers.Matchers.BreakTreeMatcher moved to com.google.errorprone.bugpatterns.BugChecker.BreakTreeMatcher
+s;core/src/main/java/com/google/errorprone/matchers/Matchers.java;615;2
+d;core/src/main/java/com/google/errorprone/bugpatterns/BugChecker.java;141;2
+--------------------
+481dba79f084f18a050342b6cc0ec597eea9d1d3;Rename Method;Rename Method	public describe(methodTree MethodTree, state VisitorState) : Description renamed to public matchMethod(methodTree MethodTree, state VisitorState) : Description in class com.google.errorprone.bugpatterns.JUnit4TestNotRun
+s;core/src/main/java/com/google/errorprone/bugpatterns/JUnit4TestNotRun.java;161;24
+d;core/src/main/java/com/google/errorprone/bugpatterns/JUnit4TestNotRun.java;129;43
+--------------------
+f701f2aa8d1078e506c1b41e3f280204dd41c2bb;Move Class;Move Class	com.google.errorprone.matchers.Matchers.AssertTreeMatcher moved to com.google.errorprone.bugpatterns.BugChecker.AssertTreeMatcher
+s;core/src/main/java/com/google/errorprone/matchers/Matchers.java;603;2
+d;core/src/main/java/com/google/errorprone/bugpatterns/BugChecker.java;125;2
+--------------------
+481dba79f084f18a050342b6cc0ec597eea9d1d3;Rename Method;Rename Method	public describe(methodInvocationTree MethodInvocationTree, state VisitorState) : Description renamed to public matchMethodInvocation(methodInvocationTree MethodInvocationTree, state VisitorState) : Description in class com.google.errorprone.bugpatterns.PreconditionsExpensiveString
+s;core/src/main/java/com/google/errorprone/bugpatterns/PreconditionsExpensiveString.java;82;16
+d;core/src/main/java/com/google/errorprone/bugpatterns/PreconditionsExpensiveString.java;76;19
+--------------------
+bf623976e0fbfe9abc685646b63ad5d50368de97;Rename Method;Rename Method	public refactor(scanner Scanner) : Builder renamed to public report(scanner Scanner) : Builder in class com.google.errorprone.ErrorProneCompiler.Builder
+s;core/src/main/java/com/google/errorprone/ErrorProneCompiler.java;92;4
+d;core/src/main/java/com/google/errorprone/ErrorProneCompiler.java;92;4
+--------------------
+f701f2aa8d1078e506c1b41e3f280204dd41c2bb;Extract Variable;Extract Variable	matches : boolean in method public matchMethod(methodTree MethodTree, state VisitorState) : Description from class com.google.errorprone.bugpatterns.JUnit4TestNotRun
+d;core/src/main/java/com/google/errorprone/bugpatterns/JUnit4TestNotRun.java;141;6
+--------------------
+bf623976e0fbfe9abc685646b63ad5d50368de97;Rename Method;Rename Method	public refactor(methodTree MethodTree, state VisitorState) : Refactor renamed to public describe(methodTree MethodTree, state VisitorState) : Description in class com.google.errorprone.bugpatterns.covariant_equals.CovariantEquals
+s;core/src/main/java/com/google/errorprone/refactors/covariant_equals/CovariantEquals.java;66;4
+d;core/src/main/java/com/google/errorprone/bugpatterns/covariant_equals/CovariantEquals.java;67;4
+--------------------
+d3cc7c042cb9ec1256c7b6613898d256e3ce1cc0;Move Method;Move Method	public describe(assignmentTree AssignmentTree, state VisitorState) : Description from class com.google.errorprone.bugpatterns.SelfAssignmentChecker to public describe(tree AssignmentTree, state VisitorState) : Description from class com.google.errorprone.bugpatterns.SelfAssignmentChecker.AssignmentTreeMatcher
+s;core/src/main/java/com/google/errorprone/bugpatterns/SelfAssignmentChecker.java;74;106
+d;core/src/main/java/com/google/errorprone/bugpatterns/SelfAssignmentChecker.java;116;113
+--------------------
+f701f2aa8d1078e506c1b41e3f280204dd41c2bb;Move Class;Move Class	com.google.errorprone.matchers.Matchers.ArrayTypeTreeMatcher moved to com.google.errorprone.bugpatterns.BugChecker.ArrayTypeTreeMatcher
+s;core/src/main/java/com/google/errorprone/matchers/Matchers.java;600;2
+d;core/src/main/java/com/google/errorprone/bugpatterns/BugChecker.java;121;2
+--------------------
+063f0e52f3e6ae46b3098b833eed9a391b1af960;Rename Method;Rename Method	public ownFail() : void renamed to public codeCatch_staticImportedFail() : void in class com.google.errorprone.bugpatterns.TryFailWithEmptyCatchThrowableNegativeCases
+s;core/src/test/resources/com/google/errorprone/bugpatterns/TryFailWithEmptyCatchThrowableNegativeCases.java;76;7
+d;core/src/test/resources/com/google/errorprone/bugpatterns/TryFailWithEmptyCatchThrowableNegativeCases.java;117;7

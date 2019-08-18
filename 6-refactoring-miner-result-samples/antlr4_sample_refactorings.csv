@@ -1,0 +1,267 @@
+antlr4: 62/622
+--------------------
+d67d924b0d36a4f84494b79abbb000833749f130;Rename Variable;Rename Variable	h : int to hash : int in method public hashCode() : int in class org.antlr.v4.runtime.misc.FlexibleHashMap
+s;runtime/Java/src/org/antlr/v4/runtime/misc/FlexibleHashMap.java;186;0
+d;runtime/Java/src/org/antlr/v4/runtime/misc/FlexibleHashMap.java;186;0
+--------------------
+347097874998b076937daeba3d165e780637cea6;Rename Parameter;Rename Parameter	invokingState : int to returnState : int in method package SingletonPredictionContext(parent PredictionContext, returnState int) in class org.antlr.v4.runtime.atn.SingletonPredictionContext
+s;runtime/Java/src/org/antlr/v4/runtime/atn/SingletonPredictionContext.java;11;0
+d;runtime/Java/src/org/antlr/v4/runtime/atn/SingletonPredictionContext.java;11;0
+--------------------
+0b53c164d7ef24ef43b105fbca8860db3c28252b;Rename Parameter;Rename Parameter	conflictingAlts : BitSet to conflictInfo : ConflictInfo in method public setConflictInfo(conflictInfo ConflictInfo) : void in class org.antlr.v4.runtime.atn.ATNConfigSet
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfigSet.java;505;0
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfigSet.java;510;0
+--------------------
+bd91dc166dd8b26dbf48229fe19bb99dec7bd376;Rename Parameter;Rename Parameter	name : String to grammarName : String in method public getPatternMatcher(grammarName String) : ParseTreePatternMatcher in class org.antlr.v4.test.TestParseTreeMatcher
+s;tool/test/org/antlr/v4/test/TestParseTreeMatcher.java;337;0
+d;tool/test/org/antlr/v4/test/TestParseTreeMatcher.java;352;0
+--------------------
+cb09dd6d0971e22f03ac1ccf8a1304237efb8ed7;Move Class;Move Class	org.antlr.v4.runtime.tree.ParseTree.ErrorNodeImpl moved to org.antlr.v4.runtime.tree.ErrorNodeImpl
+s;runtime/Java/src/org/antlr/v4/runtime/tree/ParseTree.java;112;18
+d;runtime/Java/src/org/antlr/v4/runtime/tree/ErrorNodeImpl.java;34;18
+--------------------
+b255509e961bfa798e209c4656738b2937d2b1c3;Rename Method;Rename Method	protected processAcceptStates(input CharStream, reach ATNConfigSet) : void renamed to protected processAcceptConfigs(input CharStream, reach ATNConfigSet) : void in class org.antlr.v4.runtime.atn.LexerATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;392;28
+d;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;396;38
+--------------------
+809bac259100b7020e0bff23b0ee8b3372624d42;Move Class;Move Class	org.antlr.v4.test.TestATNLexerInterpreter moved to org.antlr.v4.test.tool.TestATNLexerInterpreter
+s;tool/test/org/antlr/v4/test/TestATNLexerInterpreter.java;46;279
+d;tool/test/org/antlr/v4/test/tool/TestATNLexerInterpreter.java;46;279
+--------------------
+d2f503a4584fb237e07a67cc353e1da6588af902;Rename Parameter;Rename Parameter	configs : ATNConfigSet to acceptState : SimulatorState in method protected reportContextSensitivity(dfa DFA, prediction int, acceptState SimulatorState, startIndex int, stopIndex int) : void in class org.antlr.v4.runtime.atn.ProfilingATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ProfilingATNSimulator.java;202;0
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ProfilingATNSimulator.java;224;0
+--------------------
+08e9776a4ac507d931e8f3e282b2778cd7640af0;Rename Method;Rename Method	public setUp() : void renamed to public testSetUp() : void in class org.antlr.v4.test.runtime.javascript.browser.BaseBrowserTest
+s;runtime-testsuite/test/org/antlr/v4/test/runtime/javascript/browser/BaseBrowserTest.java;131;12
+d;runtime-testsuite/test/org/antlr/v4/test/runtime/javascript/browser/BaseBrowserTest.java;136;12
+--------------------
+07b7a4b334b9c9b93a11928a6009103ec5ba43ea;Inline Method;Inline Method	public toolError(errorType ErrorType, offendingToken Token, args Object[]) : void inlined to public toolError(errorType ErrorType, args Object[]) : void in class org.antlr.v4.tool.ErrorManager
+s;tool/src/org/antlr/v4/tool/ErrorManager.java;160;8
+s;tool/src/org/antlr/v4/tool/ErrorManager.java;170;2
+d;tool/src/org/antlr/v4/tool/ErrorManager.java;160;8
+--------------------
+08e9776a4ac507d931e8f3e282b2778cd7640af0;Move And Rename Class;Move And Rename Class	org.antlr.v4.test.runtime.javascript.firefox.BaseTest moved and renamed to org.antlr.v4.test.runtime.legacy.javascript.safari.BaseSafariTest
+s;runtime-testsuite/test/org/antlr/v4/test/runtime/javascript/firefox/BaseTest.java;35;12
+d;runtime-testsuite-legacy/test/org/antlr/v4/test/runtime/legacy/javascript/safari/BaseSafariTest.java;37;12
+--------------------
+fd9d707d95c667b226732d7fde59966271eb8d12;Rename Method;Rename Method	public testRecursiveLexerRuleRefWithWildcardStar() : void renamed to public testRecursiveLexerRuleRefWithWildcardStar1() : void in class org.antlr.v4.test.TestLexerExec
+s;tool/test/org/antlr/v4/test/TestLexerExec.java;227;36
+d;tool/test/org/antlr/v4/test/TestLexerExec.java;227;22
+--------------------
+f3ca54d3509dcd0d31ba31ee2245cff0d90f4b58;Move Method;Move Method	public hashCode(o ATNConfig) : int from class org.antlr.v4.runtime.atn.ATNConfigSet.ConfigHashSet to public hashCode(o ATNConfig) : int from class org.antlr.v4.runtime.atn.ATNConfigSet.ConfigEqualityComparator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfigSet.java;245;7
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfigSet.java;253;7
+--------------------
+78f44a961be3e786fa4049731e8adf5baa87976d;Extract And Move Method;Extract And Move Method	public setActionIndex(actionIndex int) : void extracted from public getEpsilonTarget(config ATNConfig, t Transition, configs ATNConfigSet) : ATNConfig in class org.antlr.v4.runtime.atn.LexerATNSimulator & moved to class org.antlr.v4.runtime.atn.ATNConfig
+s;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;570;53
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;160;2
+d;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;570;53
+--------------------
+588e30bfe17b017ff6fd2128d04b62cd2826610e;Rename Method;Rename Method	public toString(start Token, stop Token) : String renamed to public getText(start Token, stop Token) : String in class org.antlr.v4.test.BaseTest.IntTokenStream
+s;tool/test/org/antlr/v4/test/BaseTest.java;1104;3
+d;tool/test/org/antlr/v4/test/BaseTest.java;1104;3
+--------------------
+3b82dd9e2428198036d9ad1cb720bdf2c876ddf3;Rename Parameter;Rename Parameter	recog : Parser to ruleNames : List<String> in method public getPS(t Tree, ruleNames List<String>) : String in class org.antlr.v4.runtime.tree.Trees
+s;runtime/Java/src/org/antlr/v4/runtime/tree/Trees.java;59;0
+d;runtime/Java/src/org/antlr/v4/runtime/tree/Trees.java;59;0
+--------------------
+08e9776a4ac507d931e8f3e282b2778cd7640af0;Move Class;Move Class	org.antlr.v4.test.runtime.javascript.node.BaseTest.IntTokenStream moved to org.antlr.v4.test.runtime.javascript.node.BaseNodeTest.IntTokenStream
+s;runtime-testsuite/test/org/antlr/v4/test/runtime/javascript/node/BaseTest.java;932;89
+d;runtime-testsuite/test/org/antlr/v4/test/runtime/javascript/node/BaseNodeTest.java;956;89
+--------------------
+ca0b0ae74c04713122182d30fbf0d8bc098d7123;Extract Method;Extract Method	protected computeTargetState(dfa DFA, previousD DFAState, t int) : DFAState extracted from protected execATN(dfa DFA, s0 DFAState, input TokenStream, startIndex int, outerContext ParserRuleContext) : int in class org.antlr.v4.runtime.atn.ParserATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;386;183
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;544;59
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;386;135
+--------------------
+09aee18b06116f0c0f6e051bb2e0ba601bd4191e;Pull Up Method;Pull Up Method	public accept(visitor ParseTreeVisitor<? super Symbol,? extends Result>) : Result from class org.antlr.v4.runtime.ParserRuleContext to public accept(visitor ParseTreeVisitor<? super Symbol,? extends T>) : T from class org.antlr.v4.runtime.RuleContext
+s;runtime/Java/src/org/antlr/v4/runtime/ParserRuleContext.java;148;0
+d;runtime/Java/src/org/antlr/v4/runtime/RuleContext.java;131;3
+--------------------
+d31cf098cfd05f0df435d3de3b56c19b357fecb4;Extract Variable;Extract Variable	target : Target in method public writeVocabFile() : void from class org.antlr.v4.codegen.CodeGenerator
+d;tool/src/org/antlr/v4/codegen/CodeGenerator.java;256;0
+--------------------
+d98d464d4ff447ff8dcd5e40c4b8597eb4f8a074;Extract Method;Extract Method	public transform(state ATNState, semanticContext SemanticContext) : ATNConfig extracted from public appendContext(context PredictionContext, contextCache PredictionContextCache) : ATNConfig in class org.antlr.v4.runtime.atn.ATNConfig
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;175;4
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;169;2
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;191;4
+--------------------
+347097874998b076937daeba3d165e780637cea6;Rename Method;Rename Method	protected calculateInvokingStatesHashCode(invokingStates int[]) : int renamed to protected calculateReturnStatesHashCode(returnStates int[]) : int in class org.antlr.v4.runtime.atn.ArrayPredictionContext
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ArrayPredictionContext.java;67;7
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ArrayPredictionContext.java;67;7
+--------------------
+07b7a4b334b9c9b93a11928a6009103ec5ba43ea;Inline Method;Inline Method	public toolError(errorType ErrorType, offendingToken Token, args Object[]) : void inlined to public toolError(errorType ErrorType, args Object[]) : void in class org.antlr.v4.tool.ErrorManager
+s;tool/src/org/antlr/v4/tool/ErrorManager.java;160;8
+s;tool/src/org/antlr/v4/tool/ErrorManager.java;170;2
+d;tool/src/org/antlr/v4/tool/ErrorManager.java;160;8
+--------------------
+809bac259100b7020e0bff23b0ee8b3372624d42;Move Class;Move Class	org.antlr.v4.test.TestParseErrors moved to org.antlr.v4.test.tool.TestParseErrors
+s;tool/test/org/antlr/v4/test/TestParseErrors.java;38;338
+d;tool/test/org/antlr/v4/test/tool/TestParseErrors.java;38;338
+--------------------
+be57daa108cc6d8468b17307f0f9b1b5756871d5;Rename Variable;Rename Variable	decisionToDFAField : Field to previousParser : Parser in method protected getParserFactory(lexerName String, parserName String, listenerName String, entryPoint String) : ParserFactory in class org.antlr.v4.test.TestPerformance
+s;tool/test/org/antlr/v4/test/TestPerformance.java;758;0
+d;tool/test/org/antlr/v4/test/TestPerformance.java;856;0
+--------------------
+72331774413cae69a5b80a696168ec4c26e7d7ca;Pull Up Attribute;Pull Up Attribute	public EMPTY : ParserRuleContext<Token> from class org.antlr.v4.runtime.ParserRuleContext to class org.antlr.v4.runtime.RuleContext
+s;runtime/Java/src/org/antlr/v4/runtime/ParserRuleContext.java;66;0
+d;runtime/Java/src/org/antlr/v4/runtime/RuleContext.java;62;0
+--------------------
+4e0f6830baae00df852aad43e1d8c17559162852;Inline Method;Inline Method	private keepContext(ruleIndex int) : boolean inlined to public getEpsilonTarget(config ATNConfig, t Transition, configs ATNConfigSet) : ATNConfig in class org.antlr.v4.runtime.atn.LexerATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;625;85
+s;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;712;2
+d;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;604;72
+--------------------
+c7d73d66f0cce0b84eddf94a82041407e554e8de;Move Method;Move Method	public getCachedContext(context PredictionContext) : PredictionContext from class org.antlr.v4.runtime.atn.ATNSimulator to public getCachedContext(context PredictionContext) : PredictionContext from class org.antlr.v4.runtime.atn.ATN
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNSimulator.java;64;2
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATN.java;113;2
+--------------------
+0cfd4434575ea136e56de2dfec09c3929b796a96;Extract Method;Extract Method	protected notifyErrorListeners(recognizer Parser<T>, message String, e RecognitionException) : void extracted from public reportError(recognizer Parser<T>, e RecognitionException) : void in class org.antlr.v4.runtime.DefaultErrorStrategy
+s;runtime/Java/src/org/antlr/v4/runtime/DefaultErrorStrategy.java;74;28
+d;runtime/Java/src/org/antlr/v4/runtime/DefaultErrorStrategy.java;102;4
+d;runtime/Java/src/org/antlr/v4/runtime/DefaultErrorStrategy.java;74;26
+--------------------
+dce72dcbfb3a3d5efc48b405bf48a879f968badb;Rename Variable;Rename Variable	pl : ANTLRErrorListener<? super Integer> to listener : ANTLRErrorListener<? super Integer> in method public notifyListeners(e LexerNoViableAltException) : void in class org.antlr.v4.runtime.Lexer
+s;runtime/Java/src/org/antlr/v4/runtime/Lexer.java;319;0
+d;runtime/Java/src/org/antlr/v4/runtime/Lexer.java;313;0
+--------------------
+4e8931519c760aaf1e6940c340c1047e34579233;Extract Variable;Extract Variable	parser : ST in method public process() : void from class org.antlr.v4.codegen.CodeGenPipeline
+d;tool/src/org/antlr/v4/codegen/CodeGenPipeline.java;51;0
+--------------------
+588e30bfe17b017ff6fd2128d04b62cd2826610e;Rename Method;Rename Method	public toString(start int, stop int) : String renamed to public getText(interval Interval) : String in class org.antlr.v4.runtime.UnbufferedTokenStream
+s;runtime/Java/src/org/antlr/v4/runtime/UnbufferedTokenStream.java;80;3
+d;runtime/Java/src/org/antlr/v4/runtime/UnbufferedTokenStream.java;81;3
+--------------------
+b255509e961bfa798e209c4656738b2937d2b1c3;Rename Method;Rename Method	public testMatchNChar() : void renamed to public testIDnotEnum() : void in class org.antlr.v4.test.TestSemPredEvalLexer
+s;tool/test/org/antlr/v4/test/TestSemPredEvalLexer.java;69;13
+d;tool/test/org/antlr/v4/test/TestSemPredEvalLexer.java;51;14
+--------------------
+44ae1dad0b5df3e4963cd34f23e46ff4572eb801;Extract Method;Extract Method	private x() : SingletonPredictionContext extracted from public test_aex_bfx() : void in class org.antlr.v4.test.TestGraphNodes
+s;tool/test/org/antlr/v4/test/TestGraphNodes.java;208;26
+d;tool/test/org/antlr/v4/test/TestGraphNodes.java;695;2
+d;tool/test/org/antlr/v4/test/TestGraphNodes.java;366;26
+--------------------
+daa462206af9fd06f167a634e1113b991333238e;Pull Up Attribute;Pull Up Attribute	public rules : Collection<Rule> from class org.antlr.v4.codegen.model.Parser to class org.antlr.v4.codegen.model.Recognizer
+s;tool/src/org/antlr/v4/codegen/model/Parser.java;56;0
+d;tool/src/org/antlr/v4/codegen/model/Recognizer.java;52;0
+--------------------
+40e19e5d3751872d83365ce1ac3ad1c9e245973d;Extract And Move Method;Extract And Move Method	public getBaseVisitorFileName(header boolean) : String extracted from public getBaseVisitorFileName() : String in class org.antlr.v4.codegen.CodeGenerator & moved to class org.antlr.v4.codegen.Target
+s;tool/src/org/antlr/v4/codegen/CodeGenerator.java;278;8
+d;tool/src/org/antlr/v4/codegen/Target.java;434;8
+d;tool/src/org/antlr/v4/codegen/CodeGenerator.java;243;0
+--------------------
+fc7977e0d9aa29761ebf69c443513d40cca4a720;Rename Method;Rename Method	protected closureCheckingStopStateAndLoopRecursion(config ATNConfig, configs ATNConfigSet, closureBusy Set<ATNConfig>, collectPredicates boolean, fullCtx boolean, depth int) : void renamed to protected closureCheckingStopState(config ATNConfig, configs ATNConfigSet, closureBusy Set<ATNConfig>, collectPredicates boolean, fullCtx boolean, depth int) : void in class org.antlr.v4.runtime.atn.ParserATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;1092;47
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;1092;47
+--------------------
+ca0b0ae74c04713122182d30fbf0d8bc098d7123;Extract Method;Extract Method	protected computeTargetState(input CharStream, s DFAState, t int) : DFAState extracted from protected execATN(input CharStream, ds0 DFAState) : int in class org.antlr.v4.runtime.atn.LexerATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;187;80
+d;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;272;30
+d;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;187;57
+--------------------
+daa462206af9fd06f167a634e1113b991333238e;Pull Up Attribute;Pull Up Attribute	public ruleNames : Set<String> from class org.antlr.v4.codegen.model.Lexer to class org.antlr.v4.codegen.model.Recognizer
+s;tool/src/org/antlr/v4/codegen/model/Lexer.java;54;0
+d;tool/src/org/antlr/v4/codegen/model/Recognizer.java;51;0
+--------------------
+01b8b8381de431147cfb6851748f6198ba817e8f;Extract Method;Extract Method	public adaptivePredict(input SymbolStream<? extends Symbol>, decision int, outerContext ParserRuleContext<?>, useContext boolean) : int extracted from public adaptivePredict(input SymbolStream<? extends Symbol>, decision int, outerContext ParserRuleContext) : int in class org.antlr.v4.runtime.atn.ParserATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;271;35
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;285;51
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;279;4
+--------------------
+d31cf098cfd05f0df435d3de3b56c19b357fecb4;Extract Variable;Extract Variable	target : Target in method public writeListener(outputFileST ST) : void from class org.antlr.v4.codegen.CodeGenerator
+d;tool/src/org/antlr/v4/codegen/CodeGenerator.java;204;0
+--------------------
+dba3aaf7400d3126ffc4d5b76365605ee1048b4d;Rename Parameter;Rename Parameter	outerContext : RuleContext to parserCallStack : RuleContext in method public eval(parser Recognizer<?,?>, parserCallStack RuleContext) : boolean in class org.antlr.v4.runtime.atn.SemanticContext.OR
+s;runtime/Java/src/org/antlr/v4/runtime/atn/SemanticContext.java;369;0
+d;runtime/Java/src/org/antlr/v4/runtime/atn/SemanticContext.java;369;0
+--------------------
+78f44a961be3e786fa4049731e8adf5baa87976d;Extract Method;Extract Method	public getContext() : PredictionContext extracted from public contains(subconfig ATNConfig) : boolean in class org.antlr.v4.runtime.atn.ATNConfig
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;136;40
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;124;3
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;181;40
+--------------------
+0b53c164d7ef24ef43b105fbca8860db3c28252b;Rename Parameter;Rename Parameter	conflictingAlts : BitSet to conflictInfo : ConflictInfo in method public setConflictInfo(conflictInfo ConflictInfo) : void in class org.antlr.v4.runtime.atn.ATNConfigSet
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfigSet.java;505;0
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfigSet.java;510;0
+--------------------
+fd9d707d95c667b226732d7fde59966271eb8d12;Rename Method;Rename Method	public testRecursiveLexerRuleRefWithWildcardPlus() : void renamed to public testRecursiveLexerRuleRefWithWildcardPlus1() : void in class org.antlr.v4.test.TestLexerExec
+s;tool/test/org/antlr/v4/test/TestLexerExec.java;265;36
+d;tool/test/org/antlr/v4/test/TestLexerExec.java;276;22
+--------------------
+f7eeca274f33b17dee29e1d35ff95fb7d07c8774;Extract Method;Extract Method	protected closureCheckingStopStateAndLoopRecursion(config ATNConfig, configs ATNConfigSet, closureBusy Set<ATNConfig>, collectPredicates boolean, greedy boolean, loopsSimulateTailRecursion boolean, depth int) : void extracted from protected closure_(config ATNConfig, configs ATNConfigSet, closureBusy Set<ATNConfig>, collectPredicates boolean, greedy boolean, loopsSimulateTailRecursion boolean, depth int) : void in class org.antlr.v4.runtime.atn.ParserATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;939;106
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;939;73
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ParserATNSimulator.java;1014;51
+--------------------
+3b82dd9e2428198036d9ad1cb720bdf2c876ddf3;Extract Method;Extract Method	public save(ruleNames List<String>, fileName String, fontName String, fontSize int) : void extracted from public save(parser Parser, fileName String, fontName String, fontSize int) : void in class org.antlr.v4.runtime.RuleContext
+s;runtime/Java/src/org/antlr/v4/runtime/RuleContext.java;169;6
+d;runtime/Java/src/org/antlr/v4/runtime/RuleContext.java;189;6
+d;runtime/Java/src/org/antlr/v4/runtime/RuleContext.java;173;7
+--------------------
+d98d464d4ff447ff8dcd5e40c4b8597eb4f8a074;Extract Method;Extract Method	public transform(state ATNState, semanticContext SemanticContext) : ATNConfig extracted from public appendContext(context PredictionContext, contextCache PredictionContextCache) : ATNConfig in class org.antlr.v4.runtime.atn.ATNConfig
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;175;4
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;169;2
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;191;4
+--------------------
+78f44a961be3e786fa4049731e8adf5baa87976d;Extract And Move Method;Extract And Move Method	public setActionIndex(actionIndex int) : void extracted from public getEpsilonTarget(config ATNConfig, t Transition, configs ATNConfigSet) : ATNConfig in class org.antlr.v4.runtime.atn.LexerATNSimulator & moved to class org.antlr.v4.runtime.atn.ATNConfig
+s;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;570;53
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNConfig.java;160;2
+d;runtime/Java/src/org/antlr/v4/runtime/atn/LexerATNSimulator.java;570;53
+--------------------
+fd9d707d95c667b226732d7fde59966271eb8d12;Extract Method;Extract Method	public testCtxSensitiveDFA(input String) : String extracted from public testCtxSensitiveDFA() : void in class org.antlr.v4.test.TestFullContextParsing
+s;tool/test/org/antlr/v4/test/TestFullContextParsing.java;65;32
+d;tool/test/org/antlr/v4/test/TestFullContextParsing.java;65;12
+d;tool/test/org/antlr/v4/test/TestFullContextParsing.java;79;11
+--------------------
+d2f503a4584fb237e07a67cc353e1da6588af902;Rename Method;Rename Method	protected computeTargetState(dfa DFA, previousD DFAState, t int) : DFAState renamed to protected computeStartState(dfa DFA, globalContext ParserRuleContext, useContext boolean) : SimulatorState in class org.antlr.v4.runtime.atn.ProfilingATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ProfilingATNSimulator.java;124;5
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ProfilingATNSimulator.java;117;5
+--------------------
+d2f503a4584fb237e07a67cc353e1da6588af902;Rename Parameter;Rename Parameter	configs : ATNConfigSet to state : SimulatorState in method public ContextSensitivityInfo(decision int, state SimulatorState, input TokenStream, startIndex int, stopIndex int) in class org.antlr.v4.runtime.atn.ContextSensitivityInfo
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ContextSensitivityInfo.java;66;0
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ContextSensitivityInfo.java;66;0
+--------------------
+531afe5af8ca9768d55779c3db87db48ecdacf1e;Rename Method;Rename Method	public setTokenAssoc(t GrammarAST, alt int) : void renamed to public setAltAssoc(t AltAST, alt int) : void in class org.antlr.v4.analysis.LeftRecursiveRuleAnalyzer
+s;tool/src/org/antlr/v4/analysis/LeftRecursiveRuleAnalyzer.java;117;26
+d;tool/src/org/antlr/v4/analysis/LeftRecursiveRuleAnalyzer.java;117;24
+--------------------
+40e19e5d3751872d83365ce1ac3ad1c9e245973d;Extract And Move Method;Extract And Move Method	public getListenerFileName(header boolean) : String extracted from public getListenerFileName() : String in class org.antlr.v4.codegen.CodeGenerator & moved to class org.antlr.v4.codegen.Target
+s;tool/src/org/antlr/v4/codegen/CodeGenerator.java;248;8
+d;tool/src/org/antlr/v4/codegen/Target.java;404;8
+d;tool/src/org/antlr/v4/codegen/CodeGenerator.java;240;0
+--------------------
+34932997a167f417bee8b87909b10a60092516e8;Extract Method;Extract Method	public deserialize(data char[], optimize boolean) : ATN extracted from public deserialize(data char[]) : ATN in class org.antlr.v4.runtime.atn.ATNSimulator
+s;runtime/Java/src/org/antlr/v4/runtime/atn/ATNSimulator.java;76;229
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNSimulator.java;80;231
+d;runtime/Java/src/org/antlr/v4/runtime/atn/ATNSimulator.java;76;2
+--------------------
+daa462206af9fd06f167a634e1113b991333238e;Pull Up Attribute;Pull Up Attribute	public ruleNames : Set<String> from class org.antlr.v4.codegen.model.Lexer to class org.antlr.v4.codegen.model.Recognizer
+s;tool/src/org/antlr/v4/codegen/model/Lexer.java;54;0
+d;tool/src/org/antlr/v4/codegen/model/Recognizer.java;51;0
+--------------------
+347097874998b076937daeba3d165e780637cea6;Rename Parameter;Rename Parameter	invokingState : int to returnState : int in method package SingletonPredictionContext(parent PredictionContext, returnState int) in class org.antlr.v4.runtime.atn.SingletonPredictionContext
+s;runtime/Java/src/org/antlr/v4/runtime/atn/SingletonPredictionContext.java;11;0
+d;runtime/Java/src/org/antlr/v4/runtime/atn/SingletonPredictionContext.java;11;0
+--------------------
+fa3e6e5867dd4a7bef36e2a8da8e59b08eb0683d;Move Attribute;Move Attribute	public EOF : int from class org.antlr.v4.runtime.CharStream to class org.antlr.v4.runtime.IntStream
+s;runtime/Java/src/org/antlr/v4/runtime/CharStream.java;35;0
+d;runtime/Java/src/org/antlr/v4/runtime/IntStream.java;39;0
+--------------------
+60d99e62dcc413406b8ccb0197e832141d5280ed;Rename Method;Rename Method	public enterNonLRRule(ctx ParserRuleContext<Token>) : void renamed to public enterEveryRule(ctx ParserRuleContext<Token>) : void in class org.antlr.v4.runtime.Parser.TraceListener
+s;runtime/Java/src/org/antlr/v4/runtime/Parser.java;46;3
+d;runtime/Java/src/org/antlr/v4/runtime/Parser.java;51;4
+--------------------
+595f92fe5ee58c7d108d54c5e58234b1d6fe41b8;Extract Method;Extract Method	protected lazyInit() : void extracted from public fill() : void in class org.antlr.v4.runtime.BufferedTokenStream
+s;runtime/Java/src/org/antlr/v4/runtime/BufferedTokenStream.java;266;11
+d;runtime/Java/src/org/antlr/v4/runtime/BufferedTokenStream.java;185;4
+d;runtime/Java/src/org/antlr/v4/runtime/BufferedTokenStream.java;269;11
+--------------------
+daa462206af9fd06f167a634e1113b991333238e;Pull Up Attribute;Pull Up Attribute	public tokens : Map<String,Integer> from class org.antlr.v4.codegen.model.Parser to class org.antlr.v4.codegen.model.Recognizer
+s;tool/src/org/antlr/v4/codegen/model/Parser.java;53;0
+d;tool/src/org/antlr/v4/codegen/model/Recognizer.java;49;0
+--------------------
+588e30bfe17b017ff6fd2128d04b62cd2826610e;Extract Method;Extract Method	public getText() : String extracted from public toString() : String in class org.antlr.v4.runtime.TokenRewriteStream
+s;runtime/Java/src/org/antlr/v4/runtime/TokenRewriteStream.java;356;4
+d;runtime/Java/src/org/antlr/v4/runtime/TokenRewriteStream.java;368;4
+d;runtime/Java/src/org/antlr/v4/runtime/TokenRewriteStream.java;360;1

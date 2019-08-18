@@ -1,0 +1,916 @@
+gradle: 224/2239
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.OutputEvent moved to org.gradle.internal.logging.internal.OutputEvent
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/OutputEvent.java;21;9
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/OutputEvent.java;21;9
+--------------------
+0247f8b627ebb8660ad2c3d16ee32cd997632d60;Move Class;Move Class	org.gradle.runtime.jvm.JvmLibrary moved to org.gradle.jvm.JvmLibrary
+s;subprojects/platform-jvm/src/main/java/org/gradle/runtime/jvm/JvmLibrary.java;22;5
+d;subprojects/platform-jvm/src/main/java/org/gradle/jvm/JvmLibrary.java;22;5
+--------------------
+2f94bfed05d248447439febefb45e841b7d73793;Rename Class;Rename Class	org.gradle.util.MockTimeProvider renamed to org.gradle.util.MockClock
+s;subprojects/core/src/testFixtures/groovy/org/gradle/util/MockTimeProvider.java;21;23
+d;subprojects/core/src/testFixtures/groovy/org/gradle/util/MockClock.java;21;23
+--------------------
+6ba7f4e6a5b5b37db9be831965498e648a303476;Extract Method;Extract Method	private remapClass(className String, bytes byte[]) : byte[] extracted from private processClassFile(outputStream ZipOutputStream, inputStream InputStream, zipEntry ZipEntry, buffer byte[]) : void in class org.gradle.api.internal.runtimeshaded.RuntimeShadedJarCreator
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/runtimeshaded/RuntimeShadedJarCreator.java;257;19
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/runtimeshaded/RuntimeShadedJarCreator.java;278;12
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/runtimeshaded/RuntimeShadedJarCreator.java;267;9
+--------------------
+f4708de21e88cd6467932ff82dbe8b18c15238d8;Rename Parameter;Rename Parameter	binaryResultDirs : Iterable<File> to providers : Iterable<TestResultsProvider> in method public AggregateTestResultsProvider(providers Iterable<TestResultsProvider>) in class org.gradle.api.internal.tasks.testing.junit.result.AggregateTestResultsProvider
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/AggregateTestResultsProvider.java;34;0
+d;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/AggregateTestResultsProvider.java;36;0
+--------------------
+d4cf231ce187ddf62d8598c36d245ee534b81edb;Rename Method;Rename Method	public writeOutputs(className String, destination TestOutputEvent.Destination, writer Writer) : void renamed to public writeAllOutput(className String, destination TestOutputEvent.Destination, writer Writer) : void in class org.gradle.api.internal.tasks.testing.junit.result.InMemoryTestResultsProvider
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/InMemoryTestResultsProvider.java;37;2
+d;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/InMemoryTestResultsProvider.java;37;2
+--------------------
+1c9f846b3885f4e599e2fd5a2e41f0253b40e9d9;Rename Class;Rename Class	org.gradle.internal.snapshot.PhysicalSnapshot renamed to org.gradle.internal.snapshot.FileSystemLocationSnapshot
+s;subprojects/core/src/main/java/org/gradle/internal/snapshot/PhysicalSnapshot.java;24;48
+d;subprojects/core/src/main/java/org/gradle/internal/snapshot/FileSystemLocationSnapshot.java;24;49
+--------------------
+a5517a187fba5f1683a1ba998b2035f6de8218fc;Pull Up Method;Pull Up Method	public onRealize(action Action<T>) : void from class org.gradle.api.internal.collections.IterationOrderRetainingSetElementSource to public onRealize(action Action<T>) : void from class org.gradle.api.internal.collections.AbstractIterationOrderRetainingElementSource
+s;subprojects/core/src/main/java/org/gradle/api/internal/collections/IterationOrderRetainingSetElementSource.java;166;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/collections/AbstractIterationOrderRetainingElementSource.java;140;3
+--------------------
+9734baa7ec6a231e84e015f45540e6ba12c1f4a6;Rename Parameter;Rename Parameter	injectedServices : List<Class<?>> to injectedServicesByType : List<Class<?>> in method public GeneratedClassImpl(generatedClass Class<?>, outerType Class<?>, injectedServicesByType List<Class<?>>, injectedServicesByAnnotation List<Class<? extends Annotation>>) in class org.gradle.internal.instantiation.AbstractClassGenerator.GeneratedClassImpl
+s;subprojects/model-core/src/main/java/org/gradle/internal/instantiation/AbstractClassGenerator.java;300;0
+d;subprojects/model-core/src/main/java/org/gradle/internal/instantiation/AbstractClassGenerator.java;302;0
+--------------------
+7cdae0d5eda30cf34fa1de8f09fe96b6ef752a1b;Push Down Method;Push Down Method	public getUnqualified() : PluginId from class org.gradle.plugin.use.PluginId to public getUnqualified() : PluginId from class org.gradle.plugin.use.internal.DefaultPluginId
+s;subprojects/core/src/main/java/org/gradle/plugin/use/PluginId.java;93;2
+d;subprojects/core/src/main/java/org/gradle/plugin/use/internal/DefaultPluginId.java;94;2
+--------------------
+b2828b69ec14f695c749e99faa9300b97bf585a4;Move Attribute;Move Attribute	private projectStateHandler : DomainObjectContextProjectStateHandler from class org.gradle.api.internal.artifacts.transform.AbstractTransformer to class org.gradle.api.internal.artifacts.transform.DefaultTransformer
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/AbstractTransformer.java;37;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformer.java;78;0
+--------------------
+4e43662b8294282adf1b0c999abe99f9622c5948;Rename Method;Rename Method	public allowPackage(packageName String) : SpecBuilder renamed to public exportPackage(packageName String) : SpecBuilder in class org.gradle.initialization.GradleApiSpecProvider.SpecBuilder
+s;subprojects/core/src/main/java/org/gradle/initialization/GradleApiSpecProvider.java;56;8
+d;subprojects/core/src/main/java/org/gradle/initialization/GradleApiSpecProvider.java;56;8
+--------------------
+d1f611d47f00ee78c4bff606701caf8d1f61085b;Move Method;Move Method	public named(name String, ruleSource Class<? extends RuleSource>) : void from class org.gradle.model.internal.core.DomainObjectCollectionBackedModelMap to public named(name String, ruleSource Class<? extends RuleSource>) : void from class org.gradle.model.internal.core.DomainObjectSetBackedModelMap
+s;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectCollectionBackedModelMap.java;113;3
+d;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectSetBackedModelMap.java;167;3
+--------------------
+e7e9502dbcf5bf8e4ca5e0c1763a301372a9ed83;Rename Parameter;Rename Parameter	buildExecutionTimer : BuildExecutionTimer to buildStartedTime : BuildStartedTime in method public DefaultBuildScanBuildStartedTime(buildStartedTime BuildStartedTime) in class org.gradle.internal.scan.time.DefaultBuildScanBuildStartedTime
+s;subprojects/core/src/main/java/org/gradle/internal/scan/time/DefaultBuildScanBuildStartedTime.java;25;0
+d;subprojects/core/src/main/java/org/gradle/internal/scan/time/DefaultBuildScanBuildStartedTime.java;25;0
+--------------------
+056c833850335a136e3ae30500780a1347775ead;Rename Parameter;Rename Parameter	languageRegistry : LanguageRegistry to languageTransforms : LanguageTransformContainer in method package createSourceTransformTasks(tasks TaskContainer, binaries BinaryContainer, languageTransforms LanguageTransformContainer) : void in class org.gradle.language.base.plugins.ComponentModelBasePlugin.Rules
+s;subprojects/platform-base/src/main/java/org/gradle/language/base/plugins/ComponentModelBasePlugin.java;111;0
+d;subprojects/platform-base/src/main/java/org/gradle/language/base/plugins/ComponentModelBasePlugin.java;119;0
+--------------------
+25fa7ed34ee6bf338cc1b1a6462dad0512febc3e;Rename Parameter;Rename Parameter	fileResolver : FileResolver to sourceDirectorySetFactory : SourceDirectorySetFactory in method public LanguageSourceSetFactory(displayName String, sourceDirectorySetFactory SourceDirectorySetFactory) in class org.gradle.language.base.internal.LanguageSourceSetFactory
+s;subprojects/platform-base/src/main/java/org/gradle/language/base/internal/LanguageSourceSetFactory.java;45;0
+d;subprojects/platform-base/src/main/java/org/gradle/language/base/internal/LanguageSourceSetFactory.java;45;0
+--------------------
+f72b67a4853194900cd3f516212e63de50638a0c;Move Attribute;Move Attribute	private projectStateRegistry : ProjectStateRegistry from class org.gradle.api.internal.artifacts.configurations.DefaultConfiguration to class org.gradle.api.internal.artifacts.transform.DomainObjectContextProjectStateHandler
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/DefaultConfiguration.java;216;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DomainObjectContextProjectStateHandler.java;29;0
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.TextArea moved to org.gradle.internal.logging.internal.TextArea
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/TextArea.java;21;1
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/TextArea.java;21;1
+--------------------
+845e4a8a207d21c026e25619bef8bdfc0e4a9924;Move Method;Move Method	protected createConfiguration(componentId ModuleComponentIdentifier, name String, transitive boolean, visible boolean, parents ImmutableList<MavenConfigurationMetadata>) : MavenConfigurationMetadata from class org.gradle.internal.component.external.model.DefaultMutableMavenModuleResolveMetadata to protected createConfiguration(componentId ModuleComponentIdentifier, name String, transitive boolean, visible boolean, parents ImmutableList<MavenConfigurationMetadata>) : MavenConfigurationMetadata from class org.gradle.internal.component.external.model.DefaultMavenModuleResolveMetadata
+s;subprojects/dependency-management/src/main/java/org/gradle/internal/component/external/model/DefaultMutableMavenModuleResolveMetadata.java;62;9
+d;subprojects/dependency-management/src/main/java/org/gradle/internal/component/external/model/DefaultMavenModuleResolveMetadata.java;70;9
+--------------------
+0b1d93759fd5b2bca126e5af8aa26794575ab9c3;Rename Parameter;Rename Parameter	buildOperationProcessor : BuildOperationProcessor to buildOperationExecutor : BuildOperationExecutor in method package CPCHCompiler(buildOperationExecutor BuildOperationExecutor, compilerOutputFileNamingSchemeFactory CompilerOutputFileNamingSchemeFactory, commandLineToolInvocationWorker CommandLineToolInvocationWorker, invocationContext CommandLineToolContext, specTransformer Transformer<CPCHCompileSpec,CPCHCompileSpec>, objectFileExtension String, useCommandFile boolean) in class org.gradle.nativeplatform.toolchain.internal.msvcpp.CPCHCompiler
+s;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/internal/msvcpp/CPCHCompiler.java;31;0
+d;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/internal/msvcpp/CPCHCompiler.java;31;0
+--------------------
+e7e9502dbcf5bf8e4ca5e0c1763a301372a9ed83;Push Down Method;Push Down Method	public getStartTime() : long from class org.gradle.internal.time.DefaultTimer to public getTimeoutMillis() : long from class org.gradle.internal.time.DefaultCountdownTimer
+s;subprojects/base-services/src/main/java/org/gradle/internal/time/DefaultTimer.java;48;3
+d;subprojects/base-services/src/main/java/org/gradle/internal/time/DefaultCountdownTimer.java;43;3
+--------------------
+f89db84bf58b7a85ee785b8ac836475120c5e788;Move Attribute;Move Attribute	private instantiator : Instantiator from class org.gradle.api.internal.plugins.DefaultPluginRegistry to class org.gradle.api.internal.plugins.DefaultPluginContainer
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultPluginRegistry.java;39;0
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultPluginContainer.java;32;0
+--------------------
+7cdae0d5eda30cf34fa1de8f09fe96b6ef752a1b;Push Down Method;Push Down Method	public getName() : String from class org.gradle.plugin.use.PluginId to public getName() : String from class org.gradle.plugin.use.internal.DefaultPluginId
+s;subprojects/core/src/main/java/org/gradle/plugin/use/PluginId.java;89;2
+d;subprojects/core/src/main/java/org/gradle/plugin/use/internal/DefaultPluginId.java;90;2
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Variable;Rename Variable	fileSnapshotKind : byte to fileKind : byte in method private readFileType(decoder Decoder) : FileType in class org.gradle.internal.fingerprint.impl.FingerprintMapSerializer
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/SnapshotMapSerializer.java;91;0
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/FingerprintMapSerializer.java;90;0
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.EmbeddedLoggingServices moved to org.gradle.internal.logging.internal.EmbeddedLoggingServices
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/EmbeddedLoggingServices.java;22;5
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/EmbeddedLoggingServices.java;22;5
+--------------------
+83202625d2f2b2dfcfe589faeadfc646b2ae2a1f;Rename Parameter;Rename Parameter	moduleMetaData : ModuleVersionMetaData to component : ComponentMetaData in method public resolveModuleArtifacts(component ComponentMetaData, context ArtifactResolveContext, result BuildableArtifactSetResolveResult) : void in class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.CachedRepository
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/memcache/CachedRepository.java;69;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/memcache/CachedRepository.java;72;0
+--------------------
+2f94bfed05d248447439febefb45e841b7d73793;Rename Parameter;Rename Parameter	timeProvider : TimeProvider to clock : Clock in method public TestMainAction(detector Runnable, processor TestClassProcessor, resultProcessor TestResultProcessor, clock Clock, testTaskOperationId Object, rootTestSuiteId Object, displayName String) in class org.gradle.api.internal.tasks.testing.processors.TestMainAction
+s;subprojects/testing-base/src/main/java/org/gradle/api/internal/tasks/testing/processors/TestMainAction.java;38;0
+d;subprojects/testing-base/src/main/java/org/gradle/api/internal/tasks/testing/processors/TestMainAction.java;38;0
+--------------------
+def883542ffe9a82f631af9484a4c4246aebb05d;Rename Parameter;Rename Parameter	buildIdentity : BuildIdentity to currentBuild : BuildIdentifier in method private configureRuntimeClasspath(testBinary JvmTestSuiteBinarySpecInternal, dependencyResolver ArtifactDependencyResolver, resolutionAwareRepositories List<ResolutionAwareRepository>, schema ModelSchema<? extends JvmTestSuiteBinarySpec>, attributesSchema AttributesSchemaInternal, moduleIdentifierFactory ImmutableModuleIdentifierFactory, buildOperationExecutor BuildOperationExecutor, currentBuild BuildIdentifier) : DependencyResolvingClasspath in class org.gradle.jvm.plugins.JvmTestSuiteBasePlugin
+s;subprojects/testing-jvm/src/main/java/org/gradle/jvm/plugins/JvmTestSuiteBasePlugin.java;125;0
+d;subprojects/testing-jvm/src/main/java/org/gradle/jvm/plugins/JvmTestSuiteBasePlugin.java;126;0
+--------------------
+75e00fdb7f0412b1024513dce8477cad4d195a3a;Rename Class;Rename Class	org.gradle.caching.internal.FinalizeBuildCacheConfigurationDetails.Result.BuildCache renamed to org.gradle.caching.internal.FinalizeBuildCacheConfigurationDetails.Result.BuildCacheDescription
+s;subprojects/core/src/main/java/org/gradle/caching/internal/FinalizeBuildCacheConfigurationDetails.java;35;12
+d;subprojects/core/src/main/java/org/gradle/caching/internal/FinalizeBuildCacheConfigurationDetails.java;40;10
+--------------------
+a3750c4cdf4eccb744a517882215d897eb37cacb;Rename Parameter;Rename Parameter	defaultMavenDeployment : DefaultMavenDeployment to mavenDeployment : MavenDeployment in method private addPomAndArtifact(installOrDeployTask InstallDeployTaskSupport, mavenDeployment MavenDeployment) : void in class org.gradle.api.internal.artifacts.publish.maven.deploy.AbstractMavenResolver
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/artifacts/publish/maven/deploy/AbstractMavenResolver.java;195;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/publish/maven/deploy/AbstractMavenResolver.java;195;0
+--------------------
+394d58069b62f354724dacb42b18a3685b8376fb;Push Down Attribute;Push Down Attribute	public environmentVariables : HashMap<String,String> from class org.gradle.foundation.ipc.basic.ExecutionInfo to class org.gradle.foundation.ipc.gradle.AbstractGradleServerProtocol.MyExecutionInfo
+s;subprojects/gradle-ui/src/main/java/org/gradle/foundation/ipc/basic/ExecutionInfo.java;31;0
+d;subprojects/gradle-ui/src/main/java/org/gradle/foundation/ipc/gradle/AbstractGradleServerProtocol.java;201;0
+--------------------
+61f0dcf6838455c2303b05c82fc12c700941a2ce;Rename Class;Rename Class	org.gradle.platform.base.internal.registry.TypeRuleDefinitionHandler renamed to org.gradle.platform.base.internal.registry.TypeModelRuleExtractor
+s;subprojects/platform-base/src/main/java/org/gradle/platform/base/internal/registry/TypeRuleDefinitionHandler.java;32;-33
+d;subprojects/platform-base/src/main/java/org/gradle/platform/base/internal/registry/TypeModelRuleExtractor.java;32;-33
+--------------------
+07416339d9f772ae767f7d19b0ea14135e99eb05;Rename Parameter;Rename Parameter	objectFiles : FileCollection to source : FileCollection in method public setSource(source FileCollection) : void in class org.gradle.plugins.cpp.gpp.DefaultLinkerSpec
+s;subprojects/cpp/src/main/groovy/org/gradle/plugins/cpp/gpp/DefaultLinkerSpec.java;38;0
+d;subprojects/cpp/src/main/groovy/org/gradle/plugins/cpp/gpp/DefaultLinkerSpec.java;38;0
+--------------------
+048c448a0224bb952b851bec09a6dd95535008be;Pull Up Method;Pull Up Method	public getClassifier() : String from class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.PomReader.PomDependencyData to public getClassifier() : String from class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.PomReader.PomDependencyMgtElement
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/PomReader.java;531;3
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/PomReader.java;436;3
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerProjectServices(registration ServiceRegistration) : void from class org.gradle.tooling.internal.provider.runner.ToolingBuilderServices to public registerProjectServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/tooling-api-builders/src/main/java/org/gradle/tooling/internal/provider/runner/ToolingBuilderServices.java;56;2
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;47;3
+--------------------
+b5045ac26e790804349578c8fe182b71d025b1ba;Rename Parameter;Rename Parameter	artifactTransformDependencies : ArtifactTransformDependencies to dependencies : ArtifactTransformDependencies in method public transform(primaryInput File, outputDir File, dependencies ArtifactTransformDependencies) : List<File> in class org.gradle.api.internal.artifacts.transform.DefaultTransformer
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformer.java;46;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformer.java;46;0
+--------------------
+8688c3c7bcf843d3b00c9ec62fa3617eba06b280;Move Attribute;Move Attribute	private mainSources : FunctionalSourceSet from class org.gradle.language.base.internal.LanguageSourceSetContainer to class org.gradle.platform.base.binary.BaseBinarySpec
+s;subprojects/platform-base/src/main/java/org/gradle/language/base/internal/LanguageSourceSetContainer.java;30;0
+d;subprojects/platform-base/src/main/java/org/gradle/platform/base/binary/BaseBinarySpec.java;55;0
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.StyledTextOutputBackedRenderer moved to org.gradle.internal.logging.internal.StyledTextOutputBackedRenderer
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/StyledTextOutputBackedRenderer.java;27;59
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/StyledTextOutputBackedRenderer.java;27;59
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.nativeplatform.internal.services.NativeBinaryServices to public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/internal/services/NativeBinaryServices.java;59;2
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;42;3
+--------------------
+0bc42609a91d112bfff9d2e571e3b73fc0dba52a;Rename Class;Rename Class	org.gradle.execution.TaskGraphExecuter renamed to org.gradle.execution.TaskExecutionGraphInternal
+s;subprojects/core/src/main/java/org/gradle/execution/TaskGraphExecuter.java;24;38
+d;subprojects/core/src/main/java/org/gradle/execution/TaskExecutionGraphInternal.java;24;38
+--------------------
+0b1d93759fd5b2bca126e5af8aa26794575ab9c3;Rename Parameter;Rename Parameter	buildOperationProcessor : BuildOperationProcessor to buildOperationExecutor : BuildOperationExecutor in method public ClangToolChain(name String, buildOperationExecutor BuildOperationExecutor, operatingSystem OperatingSystem, fileResolver FileResolver, execActionFactory ExecActionFactory, compilerOutputFileNamingSchemeFactory CompilerOutputFileNamingSchemeFactory, metaDataProviderFactory CompilerMetaDataProviderFactory, instantiator Instantiator) in class org.gradle.nativeplatform.toolchain.internal.clang.ClangToolChain
+s;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/internal/clang/ClangToolChain.java;33;0
+d;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/internal/clang/ClangToolChain.java;33;0
+--------------------
+d83772050796867c240c25418a62093a349a59f9;Rename Method;Rename Method	public resolveModuleArtifacts(component ComponentResolveMetadata, artifactType ArtifactType, result BuildableArtifactSetResolveResult) : void renamed to public resolveArtifactsWithType(component ComponentResolveMetadata, artifactType ArtifactType, result BuildableArtifactSetResolveResult) : void in class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.ErrorHandlingArtifactResolver
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/ErrorHandlingArtifactResolver.java;35;6
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/ErrorHandlingArtifactResolver.java;35;7
+--------------------
+0499f50b7b531bcfff07696b72a2c3300c7fab28;Rename Parameter;Rename Parameter	isScriptConfiguration : boolean to configurationUseSite : ConfigurationUseSite in method public DefaultConfiguration(identityPath Path, path Path, name String, configurationsProvider ConfigurationsProvider, resolver ConfigurationResolver, listenerManager ListenerManager, metaDataProvider DependencyMetaDataProvider, resolutionStrategyFactory Factory<ResolutionStrategyInternal>, projectAccessListener ProjectAccessListener, projectFinder ProjectFinder, fileCollectionFactory FileCollectionFactory, buildOperationExecutor BuildOperationExecutor, instantiator Instantiator, artifactNotationParser NotationParser<Object,ConfigurablePublishArtifact>, attributesFactory ImmutableAttributesFactory, rootComponentMetadataBuilder RootComponentMetadataBuilder, configurationUseSite ConfigurationUseSite) in class org.gradle.api.internal.artifacts.configurations.DefaultConfiguration
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/DefaultConfiguration.java;195;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/DefaultConfiguration.java;195;0
+--------------------
+2f94bfed05d248447439febefb45e841b7d73793;Rename Class;Rename Class	org.gradle.internal.time.OffsetTimeProvider renamed to org.gradle.internal.time.MonotonicClock
+s;subprojects/base-services/src/main/java/org/gradle/internal/time/OffsetTimeProvider.java;22;33
+d;subprojects/base-services/src/main/java/org/gradle/internal/time/MonotonicClock.java;24;63
+--------------------
+4e43662b8294282adf1b0c999abe99f9622c5948;Rename Method;Rename Method	public allowResources(resourcePrefix String) : SpecBuilder renamed to public exportResourcePrefix(resourcePrefix String) : SpecBuilder in class org.gradle.initialization.GradleApiSpecProvider.SpecBuilder
+s;subprojects/core/src/main/java/org/gradle/initialization/GradleApiSpecProvider.java;76;8
+d;subprojects/core/src/main/java/org/gradle/initialization/GradleApiSpecProvider.java;76;8
+--------------------
+0275396d54701ccf7d5efffffbce4c08df51c74d;Rename Class;Rename Class	org.gradle.api.internal.file.copy.CopySpecContentVisitor renamed to org.gradle.api.internal.file.copy.CopyAction
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/CopySpecContentVisitor.java;21;4
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/CopyAction.java;21;12
+--------------------
+dc83ae2badc8c3d6c9d5d816e0c46dc03f3b2f2f;Move Method;Move Method	public setGradleUserHomeDir(gradleUserHomeDir File) : Builder from class org.gradle.tooling.internal.consumer.AbstractConnectionParameters.Builder to public setGradleUserHomeDir(gradleUserHomeDir File) : Builder from class org.gradle.tooling.internal.consumer.DefaultConnectionParameters.Builder
+s;subprojects/tooling-api/src/main/java/org/gradle/tooling/internal/consumer/AbstractConnectionParameters.java;42;3
+d;subprojects/tooling-api/src/main/java/org/gradle/tooling/internal/consumer/DefaultConnectionParameters.java;60;3
+--------------------
+e7e9502dbcf5bf8e4ca5e0c1763a301372a9ed83;Push Down Method;Push Down Method	public getStartTime() : long from class org.gradle.internal.time.DefaultTimer to public getTimeoutMillis() : long from class org.gradle.internal.time.DefaultCountdownTimer
+s;subprojects/base-services/src/main/java/org/gradle/internal/time/DefaultTimer.java;48;3
+d;subprojects/base-services/src/main/java/org/gradle/internal/time/DefaultCountdownTimer.java;43;3
+--------------------
+e7e9502dbcf5bf8e4ca5e0c1763a301372a9ed83;Rename Parameter;Rename Parameter	buildTimer : Timer to buildStartedTime : BuildStartedTime in method public BuildResultLogger(textOutputFactory StyledTextOutputFactory, buildStartedTime BuildStartedTime, clock Clock, durationFormatter DurationFormatter) in class org.gradle.internal.buildevents.BuildResultLogger
+s;subprojects/core/src/main/java/org/gradle/internal/buildevents/BuildResultLogger.java;37;0
+d;subprojects/core/src/main/java/org/gradle/internal/buildevents/BuildResultLogger.java;39;0
+--------------------
+7141b00cd487e265b08aaef364477870ccb38655;Extract Interface;Extract Interface	org.gradle.plugin.PluginId from classes [org.gradle.plugin.internal.DefaultPluginId]
+s;subprojects/core/src/main/java/org/gradle/plugin/internal/DefaultPluginId.java;26;103
+d;subprojects/core/src/main/java/org/gradle/plugin/PluginId.java;21;9
+d;subprojects/core/src/main/java/org/gradle/plugin/internal/DefaultPluginId.java;26;103
+--------------------
+a5517a187fba5f1683a1ba998b2035f6de8218fc;Pull Up Method;Pull Up Method	public realizeExternal(provider ProviderInternal<? extends T>) : void from class org.gradle.api.internal.collections.IterationOrderRetainingSetElementSource to public realizeExternal(provider ProviderInternal<? extends T>) : void from class org.gradle.api.internal.collections.AbstractIterationOrderRetainingElementSource
+s;subprojects/core/src/main/java/org/gradle/api/internal/collections/IterationOrderRetainingSetElementSource.java;119;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/collections/AbstractIterationOrderRetainingElementSource.java;100;3
+--------------------
+a5517a187fba5f1683a1ba998b2035f6de8218fc;Pull Up Method;Pull Up Method	public isEmpty() : boolean from class org.gradle.api.internal.collections.IterationOrderRetainingSetElementSource to public isEmpty() : boolean from class org.gradle.api.internal.collections.AbstractIterationOrderRetainingElementSource
+s;subprojects/core/src/main/java/org/gradle/api/internal/collections/IterationOrderRetainingSetElementSource.java;40;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/collections/AbstractIterationOrderRetainingElementSource.java;42;3
+--------------------
+8033999eef837cf36a04958312dcef9e90e160f7;Pull Up Attribute;Pull Up Attribute	private metaClass : MetaClass from class org.gradle.nativeplatform.tasks.LinkExecutable to class org.gradle.nativeplatform.tasks.AbstractLinkTask
+s;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/tasks/LinkExecutable.java;34;0
+d;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/tasks/AbstractLinkTask.java;62;0
+--------------------
+e0155ee6918a417d2cc968b32017e6227f68cad7;Rename Method;Rename Method	public getDependenciesProvider() : ArtifactTransformDependenciesProvider renamed to public getArtifactDependenciesProvider() : ArtifactTransformDependenciesProvider in class org.gradle.api.internal.artifacts.transform.TransformationSubject.InitialFileTransformationSubject
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationSubject.java;138;3
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationSubject.java;138;3
+--------------------
+453270a1d1e8ee1071104a5f7cb3f7a35af998ca;Move Method;Move Method	package createTreeVisitor() : CachingTreeVisitor from class org.gradle.internal.service.scopes.TaskExecutionServices to package createTreeVisitor() : CachingTreeVisitor from class org.gradle.internal.service.scopes.GradleScopeServices
+s;subprojects/core/src/main/java/org/gradle/internal/service/scopes/TaskExecutionServices.java;93;2
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/GradleScopeServices.java;84;2
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerBuildSessionServices(registration ServiceRegistration) : void from class org.gradle.play.internal.toolchain.PlayToolChainServiceRegistry to public registerBuildSessionServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/platform-play/src/main/java/org/gradle/play/internal/toolchain/PlayToolChainServiceRegistry.java;35;2
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;27;3
+--------------------
+0247f8b627ebb8660ad2c3d16ee32cd997632d60;Move Class;Move Class	org.gradle.runtime.jvm.JvmComponentExtension moved to org.gradle.jvm.JvmComponentExtension
+s;subprojects/platform-jvm/src/main/java/org/gradle/runtime/jvm/JvmComponentExtension.java;23;14
+d;subprojects/platform-jvm/src/main/java/org/gradle/jvm/JvmComponentExtension.java;23;14
+--------------------
+16c71cdbf2a4e2bfd5744307bf5dbb80d918589a;Extract And Move Method;Extract And Move Method	protected isMetaDataArtifact(artifactType Class<? extends SoftwareArtifact>) : boolean extracted from private doResolveModuleArtifacts(component ModuleVersionMetaData, context ArtifactResolveContext, result BuildableArtifactSetResolveResult, localOnly boolean) : void in class org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver & moved to class org.gradle.api.internal.artifacts.repositories.resolver.IvyResolver
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/resolver/ExternalResourceResolver.java;271;21
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/resolver/IvyResolver.java;52;3
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/resolver/ExternalResourceResolver.java;270;24
+--------------------
+f89db84bf58b7a85ee785b8ac836475120c5e788;Move Attribute;Move Attribute	private instantiator : Instantiator from class org.gradle.api.internal.plugins.DefaultPluginRegistry to class org.gradle.api.internal.plugins.DefaultPluginContainer
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultPluginRegistry.java;39;0
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultPluginContainer.java;32;0
+--------------------
+f89db84bf58b7a85ee785b8ac836475120c5e788;Rename Variable;Rename Variable	typeForId : Class<?> to potentialPlugin : PotentialPlugin in method public withId(pluginId String, action Action<? super Plugin>) : void in class org.gradle.api.internal.plugins.DefaultPluginContainer
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultPluginContainer.java;125;0
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultPluginContainer.java;135;0
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerBuildServices(registration ServiceRegistration) : void from class org.gradle.jvm.test.internal.services.JvmTestingServices to public registerBuildServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/testing-jvm/src/main/java/org/gradle/jvm/test/internal/services/JvmTestingServices.java;34;3
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;37;3
+--------------------
+61f0dcf6838455c2303b05c82fc12c700941a2ce;Rename Class;Rename Class	org.gradle.model.internal.inspect.MutateRuleDefinitionHandler renamed to org.gradle.model.internal.inspect.MutateModelRuleExtractor
+s;subprojects/model-core/src/main/java/org/gradle/model/internal/inspect/MutateRuleDefinitionHandler.java;23;6
+d;subprojects/model-core/src/main/java/org/gradle/model/internal/inspect/MutateModelRuleExtractor.java;23;6
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.buildinit.plugins.internal.BuildInitServices to public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/build-init/src/main/groovy/org/gradle/buildinit/plugins/internal/BuildInitServices.java;38;1
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;42;3
+--------------------
+a579fbaa0787a147324564b8b50dcc6e5adbaa15;Move And Rename Class;Move And Rename Class	org.gradle.tooling.composite.internal.DefaultGradleBuild.Builder moved and renamed to org.gradle.tooling.composite.internal.DefaultGradleBuildBuilder
+s;subprojects/tooling-api/src/main/java/org/gradle/tooling/composite/internal/DefaultGradleBuild.java;28;47
+d;subprojects/tooling-api/src/main/java/org/gradle/tooling/composite/internal/DefaultGradleBuildBuilder.java;24;42
+--------------------
+86e9ba48f848ba3573b73340d041ea8ee6a9bb62;Pull Up Method;Pull Up Method	public awaitTermination(timeout long, unit TimeUnit) : boolean from class org.gradle.internal.concurrent.StoppableExecutorImpl to public awaitTermination(timeout long, unit TimeUnit) : boolean from class org.gradle.internal.concurrent.AbstractDelegatingExecutorService
+s;subprojects/base-services/src/main/java/org/gradle/internal/concurrent/StoppableExecutorImpl.java;107;2
+d;subprojects/base-services/src/main/java/org/gradle/internal/concurrent/AbstractDelegatingExecutorService.java;51;3
+--------------------
+0ae9da185d0df9b5831dce48eca21118d1fac5d7;Push Down Attribute;Push Down Attribute	private value : String from class org.gradle.plugin.use.PluginId to class org.gradle.plugin.use.internal.DefaultPluginId
+s;subprojects/core/src/main/java/org/gradle/plugin/use/PluginId.java;39;0
+d;subprojects/core/src/main/java/org/gradle/plugin/use/internal/DefaultPluginId.java;40;0
+--------------------
+195d4dade6072ae76c5e6648ddbfd37ba109c476;Rename Parameter;Rename Parameter	subject : TransformationSubject to subjectToTransform : TransformationSubject in method public hasCachedResult(subjectToTransform TransformationSubject, dependenciesProvider ArtifactTransformDependenciesProvider) : boolean in class org.gradle.api.internal.artifacts.transform.TransformationStep
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationStep.java;73;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationStep.java;74;0
+--------------------
+1efe1ad8225f29b3ff2778b4c7cfea4e323421c2;Rename Parameter;Rename Parameter	testTestExecutionSpec : XCTestTestExecutionSpec to testExecutionSpec : XCTestTestExecutionSpec in method public execute(testExecutionSpec XCTestTestExecutionSpec, testResultProcessor TestResultProcessor) : void in class org.gradle.nativeplatform.test.xctest.internal.XcTestExecuter
+s;subprojects/testing-native/src/main/java/org/gradle/nativeplatform/test/xctest/internal/XcTestExecuter.java;70;0
+d;subprojects/testing-native/src/main/java/org/gradle/nativeplatform/test/xctest/internal/XcTestExecuter.java;69;0
+--------------------
+9520a27c2abc18b37cccf046d9939f2262034e23;Move Attribute;Move Attribute	private logger : Logger from class org.gradle.logging.PrintStreamLoggingSystem to class org.gradle.logging.internal.LoggingBackedStyledTextOutput
+s;subprojects/gradle-core/src/main/groovy/org/gradle/logging/PrintStreamLoggingSystem.java;38;0
+d;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/LoggingBackedStyledTextOutput.java;23;0
+--------------------
+db9cfa9b84346fdb0430734928996bb52cb78698;Rename Method;Rename Method	private firstRunningTaskWithOverlappingMutations(candidateTaskMutations Set<String>) : Pair<TaskInfo,String> renamed to private hasTaskWithOverlappingMutations(candidateTaskMutations Set<String>) : boolean in class org.gradle.execution.taskgraph.DefaultTaskExecutionPlan
+s;subprojects/core/src/main/java/org/gradle/execution/taskgraph/DefaultTaskExecutionPlan.java;763;14
+d;subprojects/core/src/main/java/org/gradle/execution/taskgraph/DefaultTaskExecutionPlan.java;758;11
+--------------------
+f89db84bf58b7a85ee785b8ac836475120c5e788;Move Attribute;Move Attribute	private modelRuleSourceDetector : ModelRuleSourceDetector from class org.gradle.api.internal.plugins.DefaultObjectConfigurationAction to class org.gradle.api.internal.plugins.PluginInspector
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultObjectConfigurationAction.java;46;0
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/PluginInspector.java;24;0
+--------------------
+d1f611d47f00ee78c4bff606701caf8d1f61085b;Move Method;Move Method	public withType(type Class<S>, rules Class<? extends RuleSource>) : void from class org.gradle.model.internal.core.DomainObjectCollectionBackedModelMap to public withType(type Class<S>, rules Class<? extends RuleSource>) : void from class org.gradle.model.internal.core.DomainObjectSetBackedModelMap
+s;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectCollectionBackedModelMap.java;128;3
+d;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectSetBackedModelMap.java;182;3
+--------------------
+466ff5d291871b89c5935d2327b0aa56aac80dc0;Move Class;Move Class	org.gradle.runtime.base.internal.BinarySpecInternal moved to org.gradle.platform.base.internal.BinarySpecInternal
+s;subprojects/language-base/src/main/groovy/org/gradle/runtime/base/internal/BinarySpecInternal.java;21;4
+d;subprojects/language-base/src/main/groovy/org/gradle/platform/base/internal/BinarySpecInternal.java;21;4
+--------------------
+d83772050796867c240c25418a62093a349a59f9;Rename Method;Rename Method	public resolveModuleArtifacts(component ComponentResolveMetadata, artifactType ArtifactType, result BuildableArtifactSetResolveResult) : void renamed to public resolveArtifactsWithType(component ComponentResolveMetadata, artifactType ArtifactType, result BuildableArtifactSetResolveResult) : void in class org.gradle.api.internal.artifacts.ivyservice.projectmodule.ProjectDependencyResolver
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/projectmodule/ProjectDependencyResolver.java;78;4
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/projectmodule/ProjectDependencyResolver.java;80;5
+--------------------
+7c3a9e041430ffe7b6ceb7c2ce49cd34aa4fc454;Rename Method;Rename Method	protected doCopyFrom(from PatternSet) : PatternSet renamed to public copyFrom(from PatternSet) : PatternSet in class org.gradle.api.tasks.util.PatternSet
+s;subprojects/core/src/main/groovy/org/gradle/api/tasks/util/PatternSet.java;105;26
+d;subprojects/core/src/main/groovy/org/gradle/api/tasks/util/PatternSet.java;101;24
+--------------------
+44731bbec5aa64cfebeff4fa83e607e9a83b5a73;Rename Method;Rename Method	private determineHistoryRepository(producerProject ProjectInternal) : TransformerExecutionHistoryRepository renamed to private determineWorkspaceProvider(producerProject ProjectInternal) : CachingTransformationWorkspaceProvider in class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;156;5
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;157;5
+--------------------
+71b1411424f877cb559b3afce2fc8bd5adf0fd99;Rename Parameter;Rename Parameter	dependenciesProvider : ArtifactTransformDependenciesProvider to dependencies : ArtifactTransformDependencies in method public invoke(transformer Transformer, primaryInput File, subject TransformationSubject, dependencies ArtifactTransformDependencies) : Try<ImmutableList<File>> in class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;98;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;99;0
+--------------------
+1f4387a0bc68b4de7bce2145ba1c2ed3229b9de3;Parameterize Variable;Parameterize Variable	stat : FileMetadataSnapshot to metadata : FileMetadataSnapshot in method private snapshot(absolutePath String, patternSet PatternSet, file File, metadata FileMetadataSnapshot, hasBeenFiltered MutableBoolean) : PhysicalSnapshot in class org.gradle.api.internal.changedetection.state.DefaultFileSystemSnapshotter
+s;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/DefaultFileSystemSnapshotter.java;205;0
+d;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/DefaultFileSystemSnapshotter.java;151;0
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Variable;Rename Variable	normalizedSnapshots : List<NormalizedFileSnapshot> to sortedFingerprints : List<FileFingerprint> in method public appendSortedToHasher(hasher BuildCacheHasher, fingerprints Collection<FileFingerprint>) : void in class org.gradle.internal.fingerprint.impl.NormalizedPathFingerprintCompareStrategy
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/NormalizedPathFingerprintCompareStrategy.java;112;0
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/NormalizedPathFingerprintCompareStrategy.java;112;0
+--------------------
+0256a2c3364bb6016bc1c4f60180157cf9ffb3ea;Move Attribute;Move Attribute	private artifactId : ComponentArtifactIdentifier from class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker.TransformerExecution to class org.gradle.api.internal.artifacts.transform.DefaultArtifactTransformDependencies
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;215;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultArtifactTransformDependencies.java;37;0
+--------------------
+1c9f846b3885f4e599e2fd5a2e41f0253b40e9d9;Rename Variable;Rename Variable	treeSnapshot : FileSystemSnapshot to snapshot : FileSystemSnapshot in method public visitDirectoryTree(directoryTree DirectoryFileTree) : void in class org.gradle.internal.snapshot.impl.DefaultFileSystemSnapshotter.FileCollectionVisitorImpl
+s;subprojects/core/src/main/java/org/gradle/internal/snapshot/impl/DefaultFileSystemSnapshotter.java;254;0
+d;subprojects/core/src/main/java/org/gradle/internal/snapshot/impl/DefaultFileSystemSnapshotter.java;254;0
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.ProgressListener moved to org.gradle.internal.logging.internal.ProgressListener
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/ProgressListener.java;19;6
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/ProgressListener.java;19;6
+--------------------
+4b29f609179a29b53ecde7f37c9f6a97aad28598;Move Method;Move Method	public configure(action Action<? super I>) : void from class org.gradle.api.internal.AbstractNamedDomainObjectContainer.DomainObjectCreatingProvider to public configure(action Action<? super I>) : void from class org.gradle.api.internal.DefaultNamedDomainObjectCollection.AbstractDomainObjectCreatingProvider
+s;subprojects/core/src/main/java/org/gradle/api/internal/AbstractNamedDomainObjectContainer.java;136;8
+d;subprojects/core/src/main/java/org/gradle/api/internal/DefaultNamedDomainObjectCollection.java;787;8
+--------------------
+4f1a5edfa438967a5a0f1aeaa29aaa740f513c81;Move Method;Move Method	private showUsage(out PrintStream) : void from class org.gradle.launcher.Main to private showUsage(out PrintStream) : void from class org.gradle.launcher.CommandLineActionFactory
+s;subprojects/gradle-launcher/src/main/java/org/gradle/launcher/Main.java;108;8
+d;subprojects/gradle-launcher/src/main/java/org/gradle/launcher/CommandLineActionFactory.java;75;8
+--------------------
+27ec2b2d7a1b5d625b012bfeafa2ec104e3df118;Move Method;Move Method	package registerJar(builder BinaryTypeBuilder<JarBinarySpec>) : void from class org.gradle.jvm.plugins.JvmComponentPlugin.Rules to package registerJar(builder BinaryTypeBuilder<JarBinarySpec>) : void from class org.gradle.jvm.plugins.JvmComponentPlugin
+s;subprojects/platform-jvm/src/main/java/org/gradle/jvm/plugins/JvmComponentPlugin.java;72;3
+d;subprojects/platform-jvm/src/main/java/org/gradle/jvm/plugins/JvmComponentPlugin.java;62;3
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.DefaultLoggingConfigurer moved to org.gradle.internal.logging.internal.DefaultLoggingConfigurer
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/DefaultLoggingConfigurer.java;25;12
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/DefaultLoggingConfigurer.java;25;12
+--------------------
+0247f8b627ebb8660ad2c3d16ee32cd997632d60;Move Class;Move Class	org.gradle.runtime.jvm.JvmBinaryTasks moved to org.gradle.jvm.JvmBinaryTasks
+s;subprojects/platform-jvm/src/main/java/org/gradle/runtime/jvm/JvmBinaryTasks.java;24;14
+d;subprojects/platform-jvm/src/main/java/org/gradle/jvm/JvmBinaryTasks.java;24;14
+--------------------
+87cc68212eeed37726bc4cc59837b347e985f8f8;Pull Up Method;Pull Up Method	public isScript() : boolean from class org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.SimpleConfigurationUseSite to public isScript() : boolean from class org.gradle.api.internal.artifacts.configurations.ConfigurationUseSite
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/DefaultConfiguration.java;1368;3
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/ConfigurationUseSite.java;44;5
+--------------------
+1cc10318aa131d73c464e5ec8543e102f27174b0;Change Package;Change Package	org.gradle.messaging.concurrent to org.gradle.internal
+s;subprojects/base-services/src/main/java/org/gradle/messaging/concurrent/CompositeStoppable.java;29;81
+s;subprojects/base-services/src/main/java/org/gradle/messaging/concurrent/Stoppable.java;18;10
+d;subprojects/base-services/src/main/java/org/gradle/internal/CompositeStoppable.java;28;81
+d;subprojects/base-services/src/main/java/org/gradle/internal/Stoppable.java;18;10
+--------------------
+78a2a9096b07d46f249b9d451d54bf14c2a26215;Rename Parameter;Rename Parameter	scriptClassLoader : ScriptClassLoader to classLoaderProvider : ScriptClassLoaderProvider in method public ModuleMappingPluginResolver(name String, classLoaderProvider ScriptClassLoaderProvider, dependencyResolutionServices DependencyResolutionServices, instantiator Instantiator, mapper Mapper, repositoriesConfigurer Action<? super RepositoryHandler>) in class org.gradle.plugin.resolve.internal.ModuleMappingPluginResolver
+s;subprojects/core/src/main/groovy/org/gradle/plugin/resolve/internal/ModuleMappingPluginResolver.java;44;0
+d;subprojects/core/src/main/groovy/org/gradle/plugin/resolve/internal/ModuleMappingPluginResolver.java;44;0
+--------------------
+466ff5d291871b89c5935d2327b0aa56aac80dc0;Move Class;Move Class	org.gradle.runtime.base.internal.DefaultComponentSpecContainer moved to org.gradle.platform.base.internal.DefaultComponentSpecContainer
+s;subprojects/language-base/src/main/groovy/org/gradle/runtime/base/internal/DefaultComponentSpecContainer.java;24;4
+d;subprojects/language-base/src/main/groovy/org/gradle/platform/base/internal/DefaultComponentSpecContainer.java;24;4
+--------------------
+5030842c515fe2fe1def55cc0c0f122ed6eedc62;Rename Variable;Rename Variable	orderSensitive : boolean to compareType : TaskFilePropertyCompareType in method public read(decoder Decoder) : FileCollectionSnapshotImpl in class org.gradle.api.internal.changedetection.state.DefaultFileSnapshotterSerializer
+s;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/DefaultFileSnapshotterSerializer.java;39;0
+d;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/DefaultFileSnapshotterSerializer.java;39;0
+--------------------
+74a93b0a2ec5ae61e417d7caed2e45ec47b8dd79;Extract Method;Extract Method	private getBuildTypes(component NativeComponentInternal, buildTypes BuildTypeContainer) : Set<BuildType> extracted from public create(binaries BinaryContainer, toolChains ToolChainRegistryInternal, platforms PlatformContainer) : void in class org.gradle.nativebinaries.internal.configure.CreateNativeBinaries
+s;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/internal/configure/CreateNativeBinaries.java;38;22
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/internal/configure/CreateNativeBinaries.java;81;2
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/internal/configure/CreateNativeBinaries.java;43;14
+--------------------
+8b6fe9cbe04bb2967ac221bc1add16f49b75a0db;Rename Parameter;Rename Parameter	id : ComponentIdentifier to componentIdentifier : ComponentIdentifier in method public DefaultUnresolvedComponentResult(componentIdentifier ComponentIdentifier, failure Throwable) in class org.gradle.api.internal.artifacts.result.DefaultUnresolvedComponentResult
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/resolution/DefaultUnresolvedSoftwareComponent.java;25;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/result/DefaultUnresolvedComponentResult.java;25;0
+--------------------
+7846c2cb2cc96358758cc767b7bf3eda33067a93;Rename Class;Rename Class	org.gradle.model.internal.inspect.ModelRuleInspector renamed to org.gradle.model.internal.inspect.ModelRuleExtractor
+s;subprojects/model-core/src/main/java/org/gradle/model/internal/inspect/ModelRuleInspector.java;42;187
+d;subprojects/model-core/src/main/java/org/gradle/model/internal/inspect/ModelRuleExtractor.java;42;187
+--------------------
+2adeddf67e3f8e45754ffc6a655461f2cf164041;Rename Variable;Rename Variable	xmlTestsuite : XmlTestsuite to xmlTestSuite : XmlTestSuite in method public completed(testId Object, event TestCompleteEvent) : void in class org.gradle.api.internal.tasks.testing.junit.TestNGJUnitXmlReportGenerator
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/TestNGJUnitXmlReportGenerator.java;72;0
+d;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/TestNGJUnitXmlReportGenerator.java;72;0
+--------------------
+405343e005887c176b0ded1207fa8177231dd3eb;Move And Rename Class;Move And Rename Class	org.gradle.api.internal.artifacts.ivyservice.resolveengine.CompositeComponentMetaDataResolver moved and renamed to org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultDependencyResolver.ComponentMetaDataResolverChain
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/resolveengine/CompositeComponentMetaDataResolver.java;25;16
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/resolveengine/DefaultDependencyResolver.java;199;16
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerBuildServices(registration ServiceRegistration) : void from class org.gradle.api.internal.tasks.CompileServices to public registerBuildServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/plugins/src/main/java/org/gradle/api/internal/tasks/CompileServices.java;37;1
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;37;3
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.ProgressEvent moved to org.gradle.internal.logging.internal.ProgressEvent
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/ProgressEvent.java;21;22
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/ProgressEvent.java;21;22
+--------------------
+ae8d11437549d9db8951692dbe7316fdd91cc48c;Move Class;Move Class	org.gradle.internal.fingerprint.impl.AbstractFileCollectionFingerprinter.FileCollectionVisitorImpl moved to org.gradle.api.internal.changedetection.state.DefaultFileSystemSnapshotter.FileCollectionVisitorImpl
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/AbstractFileCollectionFingerprinter.java;73;26
+d;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/DefaultFileSystemSnapshotter.java;265;26
+--------------------
+17fde0839b6504ee461fe3f5b68bb21773bc6880;Rename Class;Rename Class	org.gradle.internal.fingerprint.impl.EmptyFileCollectionFingerprint renamed to org.gradle.internal.fingerprint.impl.EmptyHistoricalFileCollectionFingerprint
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/EmptyFileCollectionFingerprint.java;32;41
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/EmptyHistoricalFileCollectionFingerprint.java;28;30
+--------------------
+466ff5d291871b89c5935d2327b0aa56aac80dc0;Move Class;Move Class	org.gradle.runtime.base.internal.DefaultBinaryNamingSchemeBuilder moved to org.gradle.platform.base.internal.DefaultBinaryNamingSchemeBuilder
+s;subprojects/language-base/src/main/groovy/org/gradle/runtime/base/internal/DefaultBinaryNamingSchemeBuilder.java;22;42
+d;subprojects/language-base/src/main/groovy/org/gradle/platform/base/internal/DefaultBinaryNamingSchemeBuilder.java;22;42
+--------------------
+60e2cc5db0fa23628507b0d667480df7c5021cc2;Rename Method;Rename Method	public getArtifact(artifact ModuleVersionArtifactMetaData) : LocallyAvailableExternalResource renamed to public getMetaDataArtifact(moduleVersionIdentifier ModuleVersionIdentifier) : LocallyAvailableExternalResource in class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.DisconnectedDescriptorParseContext
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/DisconnectedDescriptorParseContext.java;36;2
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/DisconnectedDescriptorParseContext.java;37;2
+--------------------
+759323a091a54c0c38085db9e2d4dbe51d2ac8c0;Rename Variable;Rename Variable	stderrChain : OutputEventListener to stdErrChain : OutputEventListener in method public OutputEventRenderer() in class org.gradle.logging.internal.OutputEventRenderer
+s;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;42;0
+d;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;42;0
+--------------------
+1f38fd3e75eb6ffc9f49ed131d3378fbaa52d823;Rename Parameter;Rename Parameter	dependencyMgts : Map<String,PomDependencyMgt> to inherited : Map<String,PomDependencyMgt> in method public addInheritedDependencyMgts(inherited Map<String,PomDependencyMgt>) : void in class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.PomReader
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/PomReader.java;181;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/PomReader.java;175;0
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.DefaultStdOutLoggingSystem moved to org.gradle.internal.logging.internal.DefaultStdOutLoggingSystem
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/DefaultStdOutLoggingSystem.java;22;15
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/DefaultStdOutLoggingSystem.java;22;15
+--------------------
+64dfa03e49c90b649db80780acda6aef52fcdaac;Rename Method;Rename Method	public getDependencies() : ArtifactTransformDependencies renamed to public getDependenciesProvider() : ArtifactTransformDependenciesProvider in class org.gradle.api.internal.artifacts.transform.TransformationSubject.InitialArtifactTransformationSubject
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationSubject.java;160;3
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationSubject.java;159;3
+--------------------
+94b9299d67b55faed89b8bb10656cb76202d3b19;Extract Variable;Extract Variable	endpoint : Optional<URI> in method private configureClient(s3RegionalResource S3RegionalResource) : void from class org.gradle.internal.resource.transport.aws.s3.S3Client
+d;subprojects/resources-s3/src/main/java/org/gradle/internal/resource/transport/aws/s3/S3Client.java;172;0
+--------------------
+fa68ba4f85b8c080c94154f8d9ec45fd4a42c88b;Rename Method;Rename Method	public addMethod(method MethodMetaData, id String, style LinkMetaData.Style) : void renamed to public addBlockMethod(method MethodMetaData, style LinkMetaData.Style) : void in class org.gradle.build.docs.dsl.ClassLinkMetaData
+s;buildSrc/src/main/groovy/org/gradle/build/docs/dsl/ClassLinkMetaData.java;84;2
+d;buildSrc/src/main/groovy/org/gradle/build/docs/dsl/ClassLinkMetaData.java;94;2
+--------------------
+c7c34ca34f40c34bcd0d6e56c96accd2453e9d40;Move Method;Move Method	private createArtifactMetaData(module ModuleVersionMetaData, type String, classifier String) : Set<ModuleVersionArtifactMetaData> from class org.gradle.api.internal.artifacts.repositories.legacy.IvyDependencyResolverAdapter to private createArtifactMetaData(module ModuleVersionMetaData, type String, classifier String) : Set<ModuleVersionArtifactMetaData> from class org.gradle.api.internal.artifacts.MavenCandidateArtifacts
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/legacy/IvyDependencyResolverAdapter.java;163;4
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/MavenCandidateArtifacts.java;44;4
+--------------------
+1ee3201804af61bc908074afb53cc54351be8fd1;Rename Method;Rename Method	private dump(sb StringBuilder) : String renamed to private toString(sb StringBuilder) : String in class org.gradle.api.internal.runtimeshaded.Trie
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/runtimeshaded/ImplementationDependencyRelocator.java;56;8
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/runtimeshaded/Trie.java;42;8
+--------------------
+c45d20cecca7bad9c6efa9b0c1749f8f92a8ec7b;Move And Rename Class;Move And Rename Class	org.gradle.plugin.internal.DefaultPluginId moved and renamed to org.gradle.plugin.use.PluginId
+s;subprojects/core/src/main/java/org/gradle/plugin/internal/DefaultPluginId.java;26;103
+d;subprojects/core/src/main/java/org/gradle/plugin/use/PluginId.java;26;99
+--------------------
+def883542ffe9a82f631af9484a4c4246aebb05d;Rename Parameter;Rename Parameter	buildIdentity : BuildIdentity to currentBuild : BuildState in method public IncludedBuildTaskReferenceResolver(includedBuilds IncludedBuildTaskGraph, currentBuild BuildState) in class org.gradle.composite.internal.IncludedBuildTaskReferenceResolver
+s;subprojects/composite-builds/src/main/java/org/gradle/composite/internal/IncludedBuildTaskReferenceResolver.java;33;0
+d;subprojects/composite-builds/src/main/java/org/gradle/composite/internal/IncludedBuildTaskReferenceResolver.java;33;0
+--------------------
+62209c190e58093b86a55d4fedfe22e3f369f524;Move Attribute;Move Attribute	public STRING_VALUE_COLLECTOR : StringValueCollector from class org.gradle.api.internal.provider.AbstractCollectionProperty to class org.gradle.api.internal.provider.Collectors
+s;subprojects/core/src/main/java/org/gradle/api/internal/provider/AbstractCollectionProperty.java;34;0
+d;subprojects/core/src/main/java/org/gradle/api/internal/provider/Collectors.java;30;0
+--------------------
+a566c130fdb05aa9677500c7531849a964c8de19;Rename Parameter;Rename Parameter	primaryInput : File to primaryInputSnapshot : FileSystemLocationSnapshot in method private getMutableTransformationIdentity(primaryInputSnapshot FileSystemLocationSnapshot, transformer Transformer, humanReadableIdentifier String) : TransformationIdentity in class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;147;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;148;0
+--------------------
+c7d66826c3f4b4b5e077de25fc23656b04e93e3f;Move Method;Move Method	public writeOutputs(className String, testCaseName String, destination TestOutputEvent.Destination, writer Writer) : void from class org.gradle.api.internal.tasks.testing.junit.result.TestReportDataCollector to public writeOutputs(className String, testCaseName String, destination TestOutputEvent.Destination, writer Writer) : void from class org.gradle.api.internal.tasks.testing.junit.result.InMemoryTestResultsProvider
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/TestReportDataCollector.java;115;2
+d;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/InMemoryTestResultsProvider.java;41;2
+--------------------
+a4a6cf08c49ab18639732323cade470a1221b3e9;Extract Variable;Extract Variable	sourceSet : BaseLanguageSourceSet in method public convert(source Object) : LocalComponentMetaData from class org.gradle.language.base.internal.resolve.LanguageSourceSetLocalComponentFactory
+d;subprojects/platform-base/src/main/java/org/gradle/language/base/internal/resolve/LanguageSourceSetLocalComponentFactory.java;49;0
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Method;Rename Method	private snapshotJarContents(fileSnapshot PhysicalFileSnapshot) : HashCode renamed to private fingerprintJarContents(fileSnapshot PhysicalFileSnapshot) : HashCode in class org.gradle.internal.fingerprint.impl.ClasspathFingerprintingStrategy
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/ClasspathFingerprintingStrategy.java;186;3
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/ClasspathFingerprintingStrategy.java;185;3
+--------------------
+0b1d93759fd5b2bca126e5af8aa26794575ab9c3;Rename Parameter;Rename Parameter	buildOperationProcessor : BuildOperationProcessor to buildOperationExecutor : BuildOperationExecutor in method package Assembler(buildOperationExecutor BuildOperationExecutor, compilerOutputFileNamingSchemeFactory CompilerOutputFileNamingSchemeFactory, commandLineTool CommandLineToolInvocationWorker, invocationContext CommandLineToolContext, specTransformer Transformer<AssembleSpec,AssembleSpec>, objectFileExtension String, useCommandFile boolean) in class org.gradle.nativeplatform.toolchain.internal.msvcpp.Assembler
+s;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/internal/msvcpp/Assembler.java;31;0
+d;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/internal/msvcpp/Assembler.java;31;0
+--------------------
+46e3c467fa243fd397bf21942ea448d1e6d9f917;Pull Up Method;Pull Up Method	public MapValueSnapshot(entries ImmutableMap<ValueSnapshot,ValueSnapshot>) from class org.gradle.internal.snapshot.impl.MapValueSnapshot to public AbstractMapSnapshot(entries ImmutableList<Pair<T,T>>) from class org.gradle.internal.snapshot.impl.AbstractMapSnapshot
+s;subprojects/snapshots/src/main/java/org/gradle/internal/snapshot/impl/MapValueSnapshot.java;33;2
+d;subprojects/snapshots/src/main/java/org/gradle/internal/snapshot/impl/AbstractMapSnapshot.java;27;2
+--------------------
+a5517a187fba5f1683a1ba998b2035f6de8218fc;Pull Up Method;Pull Up Method	public size() : int from class org.gradle.api.internal.collections.ListElementSource to public size() : int from class org.gradle.api.internal.collections.AbstractIterationOrderRetainingElementSource
+s;subprojects/core/src/main/java/org/gradle/api/internal/collections/ListElementSource.java;42;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/collections/AbstractIterationOrderRetainingElementSource.java;52;3
+--------------------
+466ff5d291871b89c5935d2327b0aa56aac80dc0;Move Class;Move Class	org.gradle.runtime.base.internal.toolchain.ArgCollector moved to org.gradle.platform.base.internal.toolchain.ArgCollector
+s;subprojects/language-base/src/main/groovy/org/gradle/runtime/base/internal/toolchain/ArgCollector.java;19;6
+d;subprojects/language-base/src/main/groovy/org/gradle/platform/base/internal/toolchain/ArgCollector.java;19;6
+--------------------
+d1f611d47f00ee78c4bff606701caf8d1f61085b;Move Method;Move Method	public beforeEach(type Class<S>, configAction Action<? super S>) : void from class org.gradle.model.internal.core.DomainObjectCollectionBackedModelMap to public beforeEach(type Class<S>, configAction Action<? super S>) : void from class org.gradle.model.internal.core.DomainObjectSetBackedModelMap
+s;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectCollectionBackedModelMap.java;143;3
+d;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectSetBackedModelMap.java;197;3
+--------------------
+5030842c515fe2fe1def55cc0c0f122ed6eedc62;Move Class;Move Class	org.gradle.api.internal.changedetection.state.OrderInsensitiveFileCollectionHashBuilder.Entry moved to org.gradle.api.internal.changedetection.state.OrderInsensitiveTaskFilePropertyCompareStrategy.Entry
+s;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/OrderInsensitiveFileCollectionHashBuilder.java;48;30
+d;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/OrderInsensitiveTaskFilePropertyCompareStrategy.java;87;31
+--------------------
+2b4ed1119990f5b8c80bca77b1c4d71c88dd5914;Extract Interface;Extract Interface	org.gradle.api.file.DirectoryProperty from classes [org.gradle.api.file.DirectoryVar]
+s;subprojects/core-api/src/main/java/org/gradle/api/file/DirectoryVar.java;22;10
+d;subprojects/core-api/src/main/java/org/gradle/api/file/DirectoryProperty.java;25;56
+d;subprojects/core-api/src/main/java/org/gradle/api/file/DirectoryVar.java;22;10
+--------------------
+d1f611d47f00ee78c4bff606701caf8d1f61085b;Move Method;Move Method	public named(name String, configAction Action<? super T>) : void from class org.gradle.model.internal.core.DomainObjectCollectionBackedModelMap to public named(name String, configAction Action<? super T>) : void from class org.gradle.model.internal.core.DomainObjectSetBackedModelMap
+s;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectCollectionBackedModelMap.java;153;8
+d;subprojects/platform-base/src/main/java/org/gradle/model/internal/core/DomainObjectSetBackedModelMap.java;207;8
+--------------------
+7399de635ddafc084d15fdfd13855d35c41ba59a;Pull Up Method;Pull Up Method	public convert(args Iterable<String>) : StartParameter from class org.gradle.initialization.DefaultCommandLineConverter to public convert(args Iterable<String>) : T from class org.gradle.initialization.AbstractCommandLineConverter
+s;subprojects/gradle-core/src/main/groovy/org/gradle/initialization/DefaultCommandLineConverter.java;100;4
+d;subprojects/gradle-core/src/main/groovy/org/gradle/initialization/AbstractCommandLineConverter.java;21;4
+--------------------
+7cdae0d5eda30cf34fa1de8f09fe96b6ef752a1b;Push Down Attribute;Push Down Attribute	public DOUBLE_SEPARATOR : String from class org.gradle.plugin.use.PluginId to class org.gradle.plugin.use.internal.DefaultPluginId
+s;subprojects/core/src/main/java/org/gradle/plugin/use/PluginId.java;29;0
+d;subprojects/core/src/main/java/org/gradle/plugin/use/internal/DefaultPluginId.java;31;0
+--------------------
+a2103c17f51d01f3a608e2de25c521f5f7e117b9;Move Attribute;Move Attribute	package EMPTY : ArtifactTransformDependenciesProvider from class org.gradle.api.internal.artifacts.transform.ArtifactTransformDependenciesProvider to class org.gradle.api.internal.artifacts.transform.DefaultArtifactTransformDependenciesProvider
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/ArtifactTransformDependenciesProvider.java;33;6
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultArtifactTransformDependenciesProvider.java;47;5
+--------------------
+292e874ba7de04448d853f8fdce321e2bb55c434;Pull Up Method;Pull Up Method	public appendToHasher(hasher Hasher) : void from class org.gradle.internal.snapshot.impl.ManagedNamedTypeSnapshot to public appendToHasher(hasher Hasher) : void from class org.gradle.internal.snapshot.impl.AbstractManagedTypeSnapshot
+s;subprojects/snapshots/src/main/java/org/gradle/internal/snapshot/impl/ManagedNamedTypeSnapshot.java;76;4
+d;subprojects/snapshots/src/main/java/org/gradle/internal/snapshot/impl/AbstractManagedTypeSnapshot.java;51;5
+--------------------
+1cb680bdbca7950b6ab577461fedbb6d6e4ec100;Move Attribute;Move Attribute	private artifactId : ComponentArtifactIdentifier from class org.gradle.api.internal.artifacts.transform.TransformNode.ChainedTransformNode to class org.gradle.api.internal.artifacts.transform.InitialArtifactTransformationSubject
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformNode.java;208;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/InitialArtifactTransformationSubject.java;27;0
+--------------------
+d0ef4d87194a1b0624992dda39ee5d8a66b592b0;Rename Variable;Rename Variable	colour : Ansi.Color to color : ColorMap.Color in method protected doAppend(text String) : void in class org.gradle.logging.internal.AnsiConsole.TextAreaImpl
+s;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/AnsiConsole.java;229;0
+d;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/AnsiConsole.java;225;0
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.DefaultLoggingConfigurer moved to org.gradle.internal.logging.internal.DefaultLoggingConfigurer
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/DefaultLoggingConfigurer.java;25;12
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/DefaultLoggingConfigurer.java;25;12
+--------------------
+174b5706166440b22462f5d13b8343bec4001987;Move Method;Move Method	private isWindowsSdk() : Spec<File> from class org.gradle.nativebinaries.toolchain.internal.msvcpp.DefaultVisualStudioLocator to private isWindowsSdk() : Spec<File> from class org.gradle.nativebinaries.toolchain.internal.msvcpp.DefaultWindowsSdkLocator
+s;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/DefaultVisualStudioLocator.java;96;6
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/DefaultWindowsSdkLocator.java;223;6
+--------------------
+29b411cd86346eef56b6826567241dbbe2447b05;Pull Up Attribute;Pull Up Attribute	package listNextIndex : int from class org.gradle.api.internal.collections.ListElementSource.RealizedElementListIterator to class org.gradle.api.internal.collections.ListElementSource.AbstractElementListIterator
+s;subprojects/core/src/main/java/org/gradle/api/internal/collections/ListElementSource.java;133;0
+d;subprojects/core/src/main/java/org/gradle/api/internal/collections/ListElementSource.java;133;0
+--------------------
+87cc68212eeed37726bc4cc59837b347e985f8f8;Rename Method;Rename Method	public isScriptContext() : boolean renamed to public isScript() : boolean in class org.gradle.internal.service.scopes.ProjectScopeServices.ScriptScopedContext
+s;subprojects/core/src/main/java/org/gradle/internal/service/scopes/ProjectScopeServices.java;234;3
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/ProjectScopeServices.java;244;3
+--------------------
+f89db84bf58b7a85ee785b8ac836475120c5e788;Move Attribute;Move Attribute	private modelRuleSourceDetector : ModelRuleSourceDetector from class org.gradle.api.internal.plugins.DefaultObjectConfigurationAction to class org.gradle.api.internal.plugins.RulesCapablePluginApplicator
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/DefaultObjectConfigurationAction.java;46;0
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/RulesCapablePluginApplicator.java;30;0
+--------------------
+d4cf231ce187ddf62d8598c36d245ee534b81edb;Rename Method;Rename Method	public writeOutputs(className String, destination TestOutputEvent.Destination, writer Writer) : void renamed to public writeAllOutput(className String, destination TestOutputEvent.Destination, writer Writer) : void in class org.gradle.api.internal.tasks.testing.junit.result.BinaryResultBackedTestResultsProvider
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/BinaryResultBackedTestResultsProvider.java;39;2
+d;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/junit/result/BinaryResultBackedTestResultsProvider.java;39;2
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerProjectServices(registration ServiceRegistration) : void from class org.gradle.composite.internal.CompositeBuildServices to public registerProjectServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/composite-builds/src/main/java/org/gradle/composite/internal/CompositeBuildServices.java;50;1
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;47;3
+--------------------
+44731bbec5aa64cfebeff4fa83e607e9a83b5a73;Rename Method;Rename Method	package createTransformerExecutionHistoryRepository(transformerWorkspaceProvider ProjectTransformerWorkspaceProvider, executionHistoryStore ExecutionHistoryStore) : ProjectTransformerExecutionHistoryRepository renamed to package createTransformerWorkspaceProvider(projectLayout ProjectLayout, executionHistoryStore ExecutionHistoryStore) : MutableTransformationWorkspaceProvider in class org.gradle.api.internal.artifacts.DefaultDependencyManagementServices.DependencyResolutionScopeServices
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/DefaultDependencyManagementServices.java;237;2
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/DefaultDependencyManagementServices.java;233;2
+--------------------
+0275396d54701ccf7d5efffffbce4c08df51c74d;Rename Class;Rename Class	org.gradle.api.internal.file.copy.NormalizingCopySpecVisitorTest renamed to org.gradle.api.internal.file.copy.NormalizingCopyActionDecoratorTest
+s;subprojects/core/src/test/groovy/org/gradle/api/internal/file/copy/NormalizingCopySpecVisitorTest.java;34;137
+d;subprojects/core/src/test/groovy/org/gradle/api/internal/file/copy/NormalizingCopyActionDecoratorTest.java;34;137
+--------------------
+2f94bfed05d248447439febefb45e841b7d73793;Rename Class;Rename Class	org.gradle.util.MockTimeProvider renamed to org.gradle.util.MockClock
+s;subprojects/core/src/testFixtures/groovy/org/gradle/util/MockTimeProvider.java;21;23
+d;subprojects/core/src/testFixtures/groovy/org/gradle/util/MockClock.java;21;23
+--------------------
+8b6fe9cbe04bb2967ac221bc1add16f49b75a0db;Change Package;Change Package	org.gradle.api.artifacts.resolution to org.gradle.api.artifacts.result.jvm
+s;subprojects/core/src/main/groovy/org/gradle/api/artifacts/resolution/JvmLibraryArtifact.java;20;7
+s;subprojects/core/src/main/groovy/org/gradle/api/artifacts/resolution/JvmLibrary.java;22;9
+s;subprojects/core/src/main/groovy/org/gradle/api/artifacts/resolution/JvmLibraryJavadocArtifact.java;20;7
+s;subprojects/core/src/main/groovy/org/gradle/api/artifacts/resolution/JvmLibrarySourcesArtifact.java;20;7
+d;subprojects/core/src/main/groovy/org/gradle/api/artifacts/result/jvm/JvmLibraryArtifact.java;21;7
+d;subprojects/core/src/main/groovy/org/gradle/api/artifacts/result/jvm/JvmLibrary.java;23;9
+d;subprojects/core/src/main/groovy/org/gradle/api/artifacts/result/jvm/JvmLibraryJavadocArtifact.java;20;7
+d;subprojects/core/src/main/groovy/org/gradle/api/artifacts/result/jvm/JvmLibrarySourcesArtifact.java;20;7
+--------------------
+b65dd02c5e0bff44e6b592aaed4d44c568a67e33;Rename Method;Rename Method	public createInputFileSpec(paths ValidatingValue, validationAction ValidationAction) : DeclaredTaskInputFileProperty renamed to private createInputFilesSpec(paths ValidatingValue, validationAction ValidationAction) : DeclaredTaskInputFileProperty in class org.gradle.api.internal.tasks.DefaultPropertySpecFactory
+s;subprojects/core/src/main/java/org/gradle/api/internal/tasks/DefaultPropertySpecFactory.java;35;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/tasks/DefaultPropertySpecFactory.java;51;2
+--------------------
+f89db84bf58b7a85ee785b8ac836475120c5e788;Move Attribute;Move Attribute	private modelRuleSourceDetector : ModelRuleSourceDetector from class org.gradle.plugin.use.resolve.service.internal.PluginResolutionServiceResolver to class org.gradle.api.internal.plugins.PluginInspector
+s;subprojects/plugin-use/src/main/java/org/gradle/plugin/use/resolve/service/internal/PluginResolutionServiceResolver.java;57;0
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/plugins/PluginInspector.java;24;0
+--------------------
+74a93b0a2ec5ae61e417d7caed2e45ec47b8dd79;Extract Method;Extract Method	private allComponents() : Collection<NativeComponentInternal> extracted from public create(binaries BinaryContainer, toolChains ToolChainRegistryInternal, platforms PlatformContainer) : void in class org.gradle.nativebinaries.internal.configure.CreateNativeBinaries
+s;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/internal/configure/CreateNativeBinaries.java;38;22
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/internal/configure/CreateNativeBinaries.java;59;12
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/internal/configure/CreateNativeBinaries.java;43;14
+--------------------
+466ff5d291871b89c5935d2327b0aa56aac80dc0;Move Class;Move Class	org.gradle.runtime.base.internal.registry.AbstractTypeBuilder moved to org.gradle.platform.base.internal.registry.AbstractTypeBuilder
+s;subprojects/language-base/src/main/groovy/org/gradle/runtime/base/internal/registry/AbstractTypeBuilder.java;21;19
+d;subprojects/language-base/src/main/groovy/org/gradle/platform/base/internal/registry/AbstractTypeBuilder.java;21;19
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.platform.base.internal.registry.ComponentModelBaseServiceRegistry to public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/platform-base/src/main/java/org/gradle/platform/base/internal/registry/ComponentModelBaseServiceRegistry.java;47;2
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;42;3
+--------------------
+466ff5d291871b89c5935d2327b0aa56aac80dc0;Move Class;Move Class	org.gradle.runtime.base.internal.DefaultComponentSpecIdentifier moved to org.gradle.platform.base.internal.DefaultComponentSpecIdentifier
+s;subprojects/language-base/src/main/groovy/org/gradle/runtime/base/internal/DefaultComponentSpecIdentifier.java;20;40
+d;subprojects/language-base/src/main/groovy/org/gradle/platform/base/internal/DefaultComponentSpecIdentifier.java;20;40
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Variable;Rename Variable	unaccountedForPreviousSnapshots : Set<String> to unaccountedForPreviousFingerprints : Set<String> in method public visitChangesSince(visitor TaskStateChangeVisitor, current Map<String,FileFingerprint>, previous Map<String,FileFingerprint>, propertyTitle String, includeAdded boolean) : boolean in class org.gradle.internal.fingerprint.impl.AbsolutePathFingerprintCompareStrategy
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/AbsolutePathFingerprintCompareStrategy.java;37;0
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/AbsolutePathFingerprintCompareStrategy.java;37;0
+--------------------
+2f94bfed05d248447439febefb45e841b7d73793;Move Attribute;Move Attribute	private clock : Clock from class org.gradle.initialization.DefaultBuildRequestMetaData to class org.gradle.tooling.internal.provider.NormalizeBuildStartTimeBuildExecuter
+s;subprojects/core/src/main/java/org/gradle/initialization/DefaultBuildRequestMetaData.java;23;0
+d;subprojects/launcher/src/main/java/org/gradle/tooling/internal/provider/NormalizeBuildStartTimeBuildExecuter.java;37;0
+--------------------
+0b1d93759fd5b2bca126e5af8aa26794575ab9c3;Rename Variable;Rename Variable	buildOperationProcessor : BuildOperationProcessor to buildOperationExecutor : BuildOperationExecutor in method public addToolChain(toolChainRegistry NativeToolChainRegistryInternal, serviceRegistry ServiceRegistry) : void in class org.gradle.nativeplatform.toolchain.plugins.GccCompilerPlugin.Rules
+s;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/plugins/GccCompilerPlugin.java;58;0
+d;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/toolchain/plugins/GccCompilerPlugin.java;58;0
+--------------------
+cdbb523c8d74b6173ebec5801543747fee72bbb8;Move Method;Move Method	public getAllSource() : FileTree from class org.gradle.api.internal.file.copy.CopyActionImpl to public getAllSource() : FileTree from class org.gradle.api.internal.file.copy.DefaultCopySpec
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/CopyActionImpl.java;80;9
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/DefaultCopySpec.java;130;9
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Variable;Rename Variable	normalizedFileSnapshot : NormalizedFileSnapshot to fileFingerprint : FileFingerprint in method public visit(fileSnapshot PhysicalSnapshot, normalizedContentHash HashCode) : void in class org.gradle.internal.fingerprint.impl.ClasspathFingerprintingStrategy.ClasspathFingerprintVisitor
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/ClasspathFingerprintingStrategy.java;220;0
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/ClasspathFingerprintingStrategy.java;219;0
+--------------------
+f584bdd68fdd41242eeb08794fca697f7cda9468;Rename Class;Rename Class	org.gradle.api.internal.file.copy.DelegatingCopySpecVisitor renamed to org.gradle.api.internal.file.copy.DelegatingCopySpecContentVisitor
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/DelegatingCopySpecVisitor.java;20;34
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/DelegatingCopySpecContentVisitor.java;20;34
+--------------------
+6ef80d0fd841b09065034898c46bad5a8f6c6507;Rename Variable;Rename Variable	resolver : DependencyToModuleVersionResolver to repositoryChain : RepositoryChain in method public execute() : ArtifactResolutionQueryResult in class org.gradle.api.internal.artifacts.resolution.DefaultArtifactResolutionQuery
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/resolution/DefaultArtifactResolutionQuery.java;80;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/resolution/DefaultArtifactResolutionQuery.java;82;0
+--------------------
+9520a27c2abc18b37cccf046d9939f2262034e23;Move Attribute;Move Attribute	private logger : Logger from class org.gradle.logging.PrintStreamLoggingSystem to class org.gradle.logging.internal.LoggingBackedStyledTextOutput
+s;subprojects/gradle-core/src/main/groovy/org/gradle/logging/PrintStreamLoggingSystem.java;38;0
+d;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/LoggingBackedStyledTextOutput.java;23;0
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.api.publish.internal.PublishServices to public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/publish/src/main/java/org/gradle/api/publish/internal/PublishServices.java;33;1
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;42;3
+--------------------
+a5517a187fba5f1683a1ba998b2035f6de8218fc;Pull Up Method;Pull Up Method	public clear() : void from class org.gradle.api.internal.collections.IterationOrderRetainingSetElementSource to public clear() : void from class org.gradle.api.internal.collections.AbstractIterationOrderRetainingElementSource
+s;subprojects/core/src/main/java/org/gradle/api/internal/collections/IterationOrderRetainingSetElementSource.java;114;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/collections/AbstractIterationOrderRetainingElementSource.java;95;3
+--------------------
+621444cd75598e6d1592c382d224f665f93a7c9e;Move Attribute;Move Attribute	private DEFAULT_CONFIGURATION : Configuration from class org.gradle.internal.component.external.model.DefaultMutableIvyModuleResolveMetadata to class org.gradle.api.internal.artifacts.repositories.metadata.IvyMutableModuleMetadataFactory
+s;subprojects/dependency-management/src/main/java/org/gradle/internal/component/external/model/DefaultMutableIvyModuleResolveMetadata.java;37;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/repositories/metadata/IvyMutableModuleMetadataFactory.java;36;0
+--------------------
+75785398f19b634494316b0eb8f2427ab6adbc1a;Move Class;Move Class	org.gradle.api.internal.Actions moved to org.gradle.internal.Actions
+s;subprojects/base-services/src/main/java/org/gradle/api/internal/Actions.java;28;180
+d;subprojects/base-services/src/main/java/org/gradle/internal/Actions.java;28;180
+--------------------
+6dfeb7a78e9467173836f1541cca10331a90f97b;Rename Method;Rename Method	private onNotError(listener OutputEventListener) : OutputEventListener renamed to private onNonError(listener OutputEventListener) : OutputEventListener in class org.gradle.logging.internal.OutputEventRenderer
+s;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;109;8
+d;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;114;8
+--------------------
+791be764951adf12aa6b89eb25fa60656178ca35;Extract Superclass;Extract Superclass	org.gradle.platform.base.internal.DefaultBinaryTasksCollection from classes [org.gradle.nativeplatform.internal.DefaultNativeBinaryTasks]
+s;subprojects/platform-native/src/main/groovy/org/gradle/nativeplatform/internal/DefaultNativeBinaryTasks.java;28;28
+d;subprojects/platform-base/src/main/java/org/gradle/platform/base/internal/DefaultBinaryTasksCollection.java;24;11
+d;subprojects/platform-native/src/main/groovy/org/gradle/nativeplatform/internal/DefaultNativeBinaryTasks.java;28;28
+--------------------
+5030842c515fe2fe1def55cc0c0f122ed6eedc62;Rename Method;Rename Method	public isOrderSensitive() : boolean renamed to public getCompareType() : TaskFilePropertyCompareType in class org.gradle.api.internal.tasks.DefaultTaskInputs.PropertySpec
+s;subprojects/core/src/main/java/org/gradle/api/internal/tasks/DefaultTaskInputs.java;264;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/tasks/DefaultTaskInputs.java;267;3
+--------------------
+c670284b6eb1bce6ce6f9a50f98e9f1f6e6456e1;Rename Parameter;Rename Parameter	scriptPluginFactory : ScriptPluginFactory to scriptApplicator : ScriptApplicator in method protected createProjectEvaluator(buildOperationExecutor BuildOperationExecutor, cachingServiceLocator CachingServiceLocator, scriptApplicator ScriptApplicator) : ProjectEvaluator in class org.gradle.internal.service.scopes.BuildScopeServices
+s;subprojects/core/src/main/java/org/gradle/internal/service/scopes/BuildScopeServices.java;222;0
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/BuildScopeServices.java;224;0
+--------------------
+174b5706166440b22462f5d13b8343bec4001987;Extract Interface;Extract Interface	org.gradle.nativebinaries.toolchain.internal.msvcpp.WindowsLocator from classes [org.gradle.nativebinaries.toolchain.internal.msvcpp.VisualStudioLocator]
+s;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/VisualStudioLocator.java;20;6
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/WindowsLocator.java;21;12
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/VisualStudioLocator.java;20;6
+--------------------
+0275396d54701ccf7d5efffffbce4c08df51c74d;Move Method;Move Method	private getDestination() : File from class org.gradle.api.internal.file.copy.FileCopyAction to private getDestination() : File from class org.gradle.api.internal.file.copy.FileCopier
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/FileCopyAction.java;60;2
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/FileCopier.java;60;2
+--------------------
+b5045ac26e790804349578c8fe182b71d025b1ba;Rename Parameter;Rename Parameter	artifactTransformDependencies : ArtifactTransformDependencies to dependencies : ArtifactTransformDependencies in method public transform(primaryInput File, outputDir File, dependencies ArtifactTransformDependencies) : List<File> in class org.gradle.api.internal.artifacts.transform.DefaultTransformer
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformer.java;46;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformer.java;46;0
+--------------------
+e5aa852157392c4bafe35a2392ed3d3681b602b9;Extract And Move Method;Extract And Move Method	private assertArtifactsResolved() : void extracted from private resolve() : void in class org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.ConfigurationResolvableDependencies.LenientResolutionResult & moved to class org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.ConfigurationResolvableDependencies
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/DefaultConfiguration.java;1233;14
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/DefaultConfiguration.java;1236;2
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/configurations/DefaultConfiguration.java;1248;13
+--------------------
+174b5706166440b22462f5d13b8343bec4001987;Move Class;Move Class	org.gradle.nativebinaries.toolchain.internal.msvcpp.DefaultVisualStudioLocator.VersionLookupPath moved to org.gradle.nativebinaries.toolchain.internal.msvcpp.DefaultWindowsLocator.VersionLookupPath
+s;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/DefaultVisualStudioLocator.java;178;9
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/DefaultWindowsLocator.java;68;9
+--------------------
+870c44d0890dc9890ebc3b8f103331acea3fd4e9;Rename Variable;Rename Variable	aDepMgt : PomDependencyMgt to dependencyMgt : PomDependencyMgt in method private doParsePom(parserSettings DescriptorParseContext, mdBuilder GradlePomModuleDescriptorBuilder, pomReader PomReader) : void in class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.GradlePomModuleDescriptorParser
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/GradlePomModuleDescriptorParser.java;138;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/GradlePomModuleDescriptorParser.java;143;0
+--------------------
+2f94bfed05d248447439febefb45e841b7d73793;Move Attribute;Move Attribute	private startTime : long from class org.gradle.internal.time.DefaultEventTimer to class org.gradle.util.Clock
+s;subprojects/base-services/src/main/java/org/gradle/internal/time/DefaultEventTimer.java;20;0
+d;subprojects/core/src/main/java/org/gradle/util/Clock.java;28;0
+--------------------
+e7e9502dbcf5bf8e4ca5e0c1763a301372a9ed83;Rename Parameter;Rename Parameter	buildExecutionTimer : BuildExecutionTimer to buildRequestMetaData : BuildRequestMetaData in method public BuildSessionScopeServices(parent ServiceRegistry, startParameter StartParameter, buildRequestMetaData BuildRequestMetaData, injectedPluginClassPath ClassPath) in class org.gradle.internal.service.scopes.BuildSessionScopeServices
+s;subprojects/core/src/main/java/org/gradle/internal/service/scopes/BuildSessionScopeServices.java;104;0
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/BuildSessionScopeServices.java;105;0
+--------------------
+2d05278491b82956f8be05244f05103c3a32406d;Extract Method;Extract Method	private setPomProperties(pomProperties Map<String,String>) : void extracted from private setPomProperties() : void in class org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.PomReader
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/PomReader.java;168;4
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/PomReader.java;176;5
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/ivyresolve/parser/PomReader.java;183;2
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.ConsoleBackedProgressRenderer moved to org.gradle.internal.logging.internal.ConsoleBackedProgressRenderer
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/ConsoleBackedProgressRenderer.java;28;103
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/ConsoleBackedProgressRenderer.java;28;103
+--------------------
+09bcdc7b17166ecb8be267724403dace3d86e2a1;Move Method;Move Method	public clearInMemoryCache() : void from class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker to public clearInMemoryCache() : void from class org.gradle.api.internal.artifacts.transform.DefaultTransformerExecutionHistoryRepository
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;87;2
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerExecutionHistoryRepository.java;77;2
+--------------------
+174b5706166440b22462f5d13b8343bec4001987;Pull Up Method;Pull Up Method	private locateInHierarchy(candidate File, condition Spec<File>) : Search from class org.gradle.nativebinaries.toolchain.internal.msvcpp.DefaultVisualStudioLocator to protected locateInHierarchy(candidate File, condition Spec<File>) : Search from class org.gradle.nativebinaries.toolchain.internal.msvcpp.DefaultWindowsLocator
+s;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/DefaultVisualStudioLocator.java;165;11
+d;subprojects/cpp/src/main/groovy/org/gradle/nativebinaries/toolchain/internal/msvcpp/DefaultWindowsLocator.java;55;11
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.StandardOutputCapture moved to org.gradle.internal.logging.StandardOutputCapture
+s;subprojects/core/src/main/groovy/org/gradle/logging/StandardOutputCapture.java;18;14
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/StandardOutputCapture.java;18;14
+--------------------
+2b92559abf52c924400ef04a8f9bfe540ea2c407;Move Attribute;Move Attribute	private jarSnapshotFeeder : JarSnapshotFeeder from class org.gradle.api.internal.tasks.compile.incremental.SelectiveCompilation to class org.gradle.api.internal.tasks.compile.incremental.StaleClassesDetecter
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/compile/incremental/SelectiveCompilation.java;45;0
+d;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/compile/incremental/StaleClassesDetecter.java;37;0
+--------------------
+db9cfa9b84346fdb0430734928996bb52cb78698;Rename Method;Rename Method	private isReachableFrom(fromTask TaskInfo, toTask TaskInfo) : boolean renamed to private doesConsumerDependOnDestroyer(consumingTask TaskInfo, destroyerTask TaskInfo) : boolean in class org.gradle.execution.taskgraph.DefaultTaskExecutionPlan
+s;subprojects/core/src/main/java/org/gradle/execution/taskgraph/DefaultTaskExecutionPlan.java;800;20
+d;subprojects/core/src/main/java/org/gradle/execution/taskgraph/DefaultTaskExecutionPlan.java;799;20
+--------------------
+6dfeb7a78e9467173836f1541cca10331a90f97b;Rename Method;Rename Method	private onNotError(listener OutputEventListener) : OutputEventListener renamed to private onNonError(listener OutputEventListener) : OutputEventListener in class org.gradle.logging.internal.OutputEventRenderer
+s;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;109;8
+d;subprojects/gradle-core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;114;8
+--------------------
+274f550468455bc96fe5ec0cc67ca2fffcda9b0a;Rename Variable;Rename Variable	artifactMetaData : ModuleVersionArtifactMetaData to artifact : IvyArtifactName in method private createMetaDataFromDefaultArtifact(moduleVersionIdentifier ModuleComponentIdentifier, dependency DependencyMetaData, artifactResolver ArtifactResolver) : MutableModuleVersionMetaData in class org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolver
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/resolver/ExternalResourceResolver.java;220;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/resolver/ExternalResourceResolver.java;220;0
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.api.reporting.components.internal.DiagnosticsServices to public registerGradleServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/diagnostics/src/main/java/org/gradle/api/reporting/components/internal/DiagnosticsServices.java;48;2
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;42;3
+--------------------
+557d4c3bb24dfd9554f695f7e2a7a9d887ecaf5e;Rename Method;Rename Method	public setCommandLine2StartParameterConverter(commandLine2StartParameterConverter CommandLine2StartParameterConverter) : void renamed to public setCommandLineConverter(commandLineConverter CommandLineConverter<StartParameter>) : void in class org.gradle.initialization.DefaultGradleLauncherFactory
+s;subprojects/gradle-core/src/main/groovy/org/gradle/initialization/DefaultGradleLauncherFactory.java;120;3
+d;subprojects/gradle-core/src/main/groovy/org/gradle/initialization/DefaultGradleLauncherFactory.java;122;3
+--------------------
+062e28424f195da8e99eeee7586fac4b6e83eb8d;Extract Method;Extract Method	private addStandardErrorListener() : void extracted from public addStandardOutputAndError() : void in class org.gradle.logging.internal.OutputEventRenderer
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;72;9
+d;subprojects/core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;89;9
+d;subprojects/core/src/main/groovy/org/gradle/logging/internal/OutputEventRenderer.java;73;3
+--------------------
+aeea70787d16882e9f77a012c1129232101d5cc0;Inline Method;Inline Method	public matchesClass(className String) : boolean inlined to public matchesTest(className String, methodName String) : boolean in class org.gradle.api.internal.tasks.testing.selection.TestSelectionMatcher
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/selection/TestSelectionMatcher.java;46;2
+s;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/selection/TestSelectionMatcher.java;68;2
+d;subprojects/plugins/src/main/groovy/org/gradle/api/internal/tasks/testing/selection/TestSelectionMatcher.java;50;11
+--------------------
+46e3c467fa243fd397bf21942ea448d1e6d9f917;Pull Up Method;Pull Up Method	public equals(obj Object) : boolean from class org.gradle.internal.snapshot.impl.MapValueSnapshot to public equals(obj Object) : boolean from class org.gradle.internal.snapshot.impl.AbstractMapSnapshot
+s;subprojects/snapshots/src/main/java/org/gradle/internal/snapshot/impl/MapValueSnapshot.java;60;10
+d;subprojects/snapshots/src/main/java/org/gradle/internal/snapshot/impl/AbstractMapSnapshot.java;45;10
+--------------------
+292e874ba7de04448d853f8fdce321e2bb55c434;Rename Parameter;Rename Parameter	propertyHandlers : List<ClassGenerationHandler> to generationHandlers : List<ClassGenerationHandler> in method private inspectType(type Class<?>, validators List<ClassValidator>, generationHandlers List<ClassGenerationHandler>, unclaimedHandler UnclaimedPropertyHandler) : void in class org.gradle.internal.instantiation.AbstractClassGenerator
+s;subprojects/model-core/src/main/java/org/gradle/internal/instantiation/AbstractClassGenerator.java;198;0
+d;subprojects/model-core/src/main/java/org/gradle/internal/instantiation/AbstractClassGenerator.java;199;0
+--------------------
+8b6fe9cbe04bb2967ac221bc1add16f49b75a0db;Move And Rename Class;Move And Rename Class	org.gradle.api.artifacts.resolution.SoftwareArtifact moved and renamed to org.gradle.api.artifacts.result.Artifact
+s;subprojects/core/src/main/groovy/org/gradle/api/artifacts/resolution/SoftwareArtifact.java;24;21
+d;subprojects/core/src/main/groovy/org/gradle/api/artifacts/result/Artifact.java;24;21
+--------------------
+2f94bfed05d248447439febefb45e841b7d73793;Rename Parameter;Rename Parameter	timeProvider : TimeProvider to clock : Clock in method public DefaultStdOutLoggingSystem(listener OutputEventListener, clock Clock) in class org.gradle.internal.logging.source.DefaultStdOutLoggingSystem
+s;subprojects/logging/src/main/java/org/gradle/internal/logging/source/DefaultStdOutLoggingSystem.java;26;0
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/source/DefaultStdOutLoggingSystem.java;26;0
+--------------------
+8033999eef837cf36a04958312dcef9e90e160f7;Pull Up Method;Pull Up Method	public getProperty(property String) : Object from class org.gradle.nativeplatform.tasks.LinkExecutable to public getProperty(property String) : Object from class org.gradle.nativeplatform.tasks.AbstractLinkTask
+s;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/tasks/LinkExecutable.java;40;2
+d;subprojects/platform-native/src/main/java/org/gradle/nativeplatform/tasks/AbstractLinkTask.java;64;2
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Variable;Rename Variable	snapshot : NormalizedFileSnapshot to fingerprint : FileFingerprint in method public read(decoder Decoder) : Map<String,FileFingerprint> in class org.gradle.internal.fingerprint.impl.FingerprintMapSerializer
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/SnapshotMapSerializer.java;55;0
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/FingerprintMapSerializer.java;54;0
+--------------------
+fd55bcfcec67114e556a3e6d70cae8834c617798;Rename Method;Rename Method	public editFiles(files List<File>) : void renamed to public editFileInExternalApplication(file File, attemptToOpen boolean) : void in class org.gradle.gradleplugin.userinterface.swing.standalone.Application
+s;subprojects/gradle-ui/src/main/java/org/gradle/gradleplugin/userinterface/swing/standalone/Application.java;180;30
+d;subprojects/gradle-ui/src/main/java/org/gradle/gradleplugin/userinterface/swing/standalone/Application.java;225;17
+--------------------
+6d7b8eb13439437ea8b91df03b628c8fefad7f4f;Move Method;Move Method	public getClassLoaderHash() : HashCode from class org.gradle.internal.classloader.HashedVisitableURLClassLoader to public getClassLoaderHash() : HashCode from class org.gradle.internal.classloader.HashedClassLoader
+s;subprojects/base-services/src/main/java/org/gradle/internal/classloader/HashedVisitableURLClassLoader.java;38;3
+d;subprojects/base-services/src/main/java/org/gradle/internal/classloader/HashedClassLoader.java;29;2
+--------------------
+75785398f19b634494316b0eb8f2427ab6adbc1a;Move Class;Move Class	org.gradle.api.internal.ErroringAction moved to org.gradle.internal.ErroringAction
+s;subprojects/base-services/src/main/java/org/gradle/api/internal/ErroringAction.java;22;22
+d;subprojects/base-services/src/main/java/org/gradle/internal/ErroringAction.java;21;22
+--------------------
+7a1d5808f89b34fee9c6d30b303567b50954a11c;Rename Variable;Rename Variable	initialFileName : String to humanReadableIdentifier : String in method private getTransformationIdentity(project ProjectInternal, primaryInput File, transformer Transformer, subject TransformationSubject) : TransformationIdentity in class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;133;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;133;0
+--------------------
+5030842c515fe2fe1def55cc0c0f122ed6eedc62;Move Class;Move Class	org.gradle.api.internal.changedetection.state.OrderInsensitiveFileCollectionHashBuilder.Entry moved to org.gradle.api.internal.changedetection.state.OrderInsensitiveTaskFilePropertyCompareStrategy.Entry
+s;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/OrderInsensitiveFileCollectionHashBuilder.java;48;30
+d;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/OrderInsensitiveTaskFilePropertyCompareStrategy.java;87;31
+--------------------
+195d4dade6072ae76c5e6648ddbfd37ba109c476;Rename Variable;Rename Variable	file : File to primaryInput : File in method public hasCachedResult(subjectToTransform TransformationSubject, dependenciesProvider ArtifactTransformDependenciesProvider) : boolean in class org.gradle.api.internal.artifacts.transform.TransformationStep
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationStep.java;77;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/TransformationStep.java;80;0
+--------------------
+c9fa4c32ce839e6e7b8d8985bcfe6cd4e40234c5;Rename Parameter;Rename Parameter	warnOnIncludeDuplicate : boolean to onUnhandledDuplicate : Action<? super FileCopyDetails> in method public DuplicateHandlingCopySpecContentVisitor(visitor CopySpecContentVisitor, onUnhandledDuplicate Action<? super FileCopyDetails>) in class org.gradle.api.internal.file.copy.DuplicateHandlingCopySpecContentVisitor
+s;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/DuplicateHandlingCopySpecContentVisitor.java;38;0
+d;subprojects/core/src/main/groovy/org/gradle/api/internal/file/copy/DuplicateHandlingCopySpecContentVisitor.java;38;0
+--------------------
+0ae9da185d0df9b5831dce48eca21118d1fac5d7;Push Down Method;Push Down Method	private PluginId(value String) from class org.gradle.plugin.use.PluginId to public DefaultPluginId(value String) from class org.gradle.plugin.use.internal.DefaultPluginId
+s;subprojects/core/src/main/java/org/gradle/plugin/use/PluginId.java;41;2
+d;subprojects/core/src/main/java/org/gradle/plugin/use/internal/DefaultPluginId.java;42;2
+--------------------
+44731bbec5aa64cfebeff4fa83e607e9a83b5a73;Move Attribute;Move Attribute	private executionHistoryStore : ExecutionHistoryStore from class org.gradle.api.internal.artifacts.transform.DefaultTransformerExecutionHistoryRepository to class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker.TransformerExecution
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerExecutionHistoryRepository.java;40;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;194;0
+--------------------
+7a1d5808f89b34fee9c6d30b303567b50954a11c;Rename Method;Rename Method	public getInitialSubjectFileName() : String renamed to public getHumanReadableIdentifier() : String in class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker.MutableTransformationIdentity
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;487;3
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;487;3
+--------------------
+025e6b28a66e65f7930f81a45d83e79b16a730bd;Move Class;Move Class	org.gradle.logging.internal.ColorMap moved to org.gradle.internal.logging.internal.ColorMap
+s;subprojects/core/src/main/groovy/org/gradle/logging/internal/ColorMap.java;21;10
+d;subprojects/logging/src/main/java/org/gradle/internal/logging/internal/ColorMap.java;21;10
+--------------------
+7a1d5808f89b34fee9c6d30b303567b50954a11c;Rename Method;Rename Method	public getInitialSubjectFileName() : String renamed to public getHumanReadableIdentifier() : String in class org.gradle.api.internal.artifacts.transform.DefaultTransformerInvoker.ImmutableTransformationIdentity
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;431;3
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformerInvoker.java;431;3
+--------------------
+b00e86d87d95a0fe68b29f5e6890dab300ae81f5;Rename Class;Rename Class	org.gradle.api.DomainObjectProvider renamed to org.gradle.api.NamedDomainObjectProvider
+s;subprojects/core-api/src/main/java/org/gradle/api/DomainObjectProvider.java;21;25
+d;subprojects/core-api/src/main/java/org/gradle/api/NamedDomainObjectProvider.java;21;25
+--------------------
+7cdae0d5eda30cf34fa1de8f09fe96b6ef752a1b;Push Down Attribute;Push Down Attribute	public INVALID_PLUGIN_ID_CHAR_MATCHER : CharMatcher from class org.gradle.plugin.use.PluginId to class org.gradle.plugin.use.internal.DefaultPluginId
+s;subprojects/core/src/main/java/org/gradle/plugin/use/PluginId.java;32;4
+d;subprojects/core/src/main/java/org/gradle/plugin/use/internal/DefaultPluginId.java;34;4
+--------------------
+6d7b8eb13439437ea8b91df03b628c8fefad7f4f;Move Attribute;Move Attribute	private systemClassLoaderServiceLocator : CachingServiceLocator from class org.gradle.internal.classloader.AbstractClassLoaderFactory to class org.gradle.internal.classloader.DefaultClassLoaderFactory
+s;subprojects/base-services/src/main/java/org/gradle/internal/classloader/AbstractClassLoaderFactory.java;38;0
+d;subprojects/base-services/src/main/java/org/gradle/internal/classloader/DefaultClassLoaderFactory.java;31;0
+--------------------
+dc83ae2badc8c3d6c9d5d816e0c46dc03f3b2f2f;Move Method;Move Method	public getDaemonMaxIdleTimeValue() : Integer from class org.gradle.internal.composite.CompositeParameters to public getDaemonMaxIdleTimeValue() : Integer from class org.gradle.tooling.internal.consumer.DefaultConnectionParameters
+s;subprojects/core/src/main/groovy/org/gradle/internal/composite/CompositeParameters.java;51;2
+d;subprojects/tooling-api/src/main/java/org/gradle/tooling/internal/consumer/DefaultConnectionParameters.java;138;2
+--------------------
+7db7f81d52fc3f92ccd17918b30d836fc8d58d60;Rename Parameter;Rename Parameter	payload : P to name : String in method public create(type ModelType<S>, modelNode MutableModelNode, name String) : S in class org.gradle.model.internal.core.BaseInstanceFactory
+s;subprojects/model-core/src/main/java/org/gradle/model/internal/core/BaseInstanceFactory.java;128;0
+d;subprojects/model-core/src/main/java/org/gradle/model/internal/core/BaseInstanceFactory.java;128;0
+--------------------
+45aab7c9fe20506029f00129537fafeead787bec;Pull Up Method;Pull Up Method	public registerBuildSessionServices(registration ServiceRegistration) : void from class org.gradle.jvm.test.internal.services.JvmTestingServices to public registerBuildSessionServices(registration ServiceRegistration) : void from class org.gradle.internal.service.scopes.AbstractPluginServiceRegistry
+s;subprojects/testing-jvm/src/main/java/org/gradle/jvm/test/internal/services/JvmTestingServices.java;29;3
+d;subprojects/core/src/main/java/org/gradle/internal/service/scopes/AbstractPluginServiceRegistry.java;27;3
+--------------------
+39770a05f54e31a90150a636e2dcbafeda233dba;Extract Method;Extract Method	public canNotConstructTypeException(type ModelType<T>) : ModelTypeInitializationException extracted from public getNodeInitializer(schema ModelSchema<T>) : NodeInitializer in class org.gradle.model.internal.core.DefaultNodeInitializerRegistry
+s;subprojects/model-core/src/main/java/org/gradle/model/internal/core/DefaultNodeInitializerRegistry.java;55;16
+d;subprojects/model-core/src/main/java/org/gradle/model/internal/core/DefaultNodeInitializerRegistry.java;66;18
+d;subprojects/model-core/src/main/java/org/gradle/model/internal/core/DefaultNodeInitializerRegistry.java;55;9
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Variable;Rename Variable	snapshot : NormalizedFileSnapshot to fingerprint : FileFingerprint in method public write(encoder Encoder, value Map<String,FileFingerprint>) : void in class org.gradle.internal.fingerprint.impl.FingerprintMapSerializer
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/SnapshotMapSerializer.java;109;0
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/FingerprintMapSerializer.java;108;0
+--------------------
+e7e9502dbcf5bf8e4ca5e0c1763a301372a9ed83;Move Class;Move Class	org.gradle.util.MockClock moved to org.gradle.internal.time.MockClock
+s;subprojects/core/src/testFixtures/groovy/org/gradle/util/MockClock.java;21;23
+d;subprojects/core/src/testFixtures/groovy/org/gradle/internal/time/MockClock.java;19;23
+--------------------
+6ef80d0fd841b09065034898c46bad5a8f6c6507;Rename Parameter;Rename Parameter	mainResolver : DependencyToModuleVersionResolver to mainResolvers : RepositoryChain in method public ExternalResourceResolverDescriptorParseContext(mainResolvers RepositoryChain, moduleResolver ExternalResourceResolver, moduleVersionIdentifier ModuleVersionIdentifier) in class org.gradle.api.internal.artifacts.repositories.resolver.ExternalResourceResolverDescriptorParseContext
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/resolver/ExternalResourceResolverDescriptorParseContext.java;44;0
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/repositories/resolver/ExternalResourceResolverDescriptorParseContext.java;45;0
+--------------------
+5123c0c967b52977b1d7c42321424abcca6f28e2;Rename Method;Rename Method	private createNormalizedSnapshot(snapshot PhysicalSnapshot, content HashCode) : NormalizedFileSnapshot renamed to private createFileFingerprint(snapshot PhysicalSnapshot, content HashCode) : FileFingerprint in class org.gradle.internal.fingerprint.impl.ClasspathFingerprintingStrategy.ClasspathFingerprintVisitor
+s;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/ClasspathFingerprintingStrategy.java;227;5
+d;subprojects/core/src/main/java/org/gradle/internal/fingerprint/impl/ClasspathFingerprintingStrategy.java;226;5
+--------------------
+561c7a3aee1387cb61cd1fd602573101db91bd4b;Rename Method;Rename Method	public stopTaskExecution() : void renamed to public finishBuild() : void in class org.gradle.composite.internal.DefaultIncludedBuildControllers
+s;subprojects/composite-builds/src/main/java/org/gradle/composite/internal/DefaultIncludedBuildControllers.java;82;9
+d;subprojects/composite-builds/src/main/java/org/gradle/composite/internal/DefaultIncludedBuildControllers.java;90;7
+--------------------
+1efe1ad8225f29b3ff2778b4c7cfea4e323421c2;Rename Variable;Rename Variable	testName : String to includedTests : String in method public run() : void in class org.gradle.nativeplatform.test.xctest.internal.XcTestExecuter.XcTestDetector
+s;subprojects/testing-native/src/main/java/org/gradle/nativeplatform/test/xctest/internal/XcTestExecuter.java;103;0
+d;subprojects/testing-native/src/main/java/org/gradle/nativeplatform/test/xctest/internal/XcTestExecuter.java;94;0
+--------------------
+5030842c515fe2fe1def55cc0c0f122ed6eedc62;Rename Parameter;Rename Parameter	orderSensitive : boolean to compareType : TaskFilePropertyCompareType in method public snapshot(input FileCollection, allowReuse boolean, compareType TaskFilePropertyCompareType) : FileCollectionSnapshot in class org.gradle.api.internal.changedetection.state.AbstractFileCollectionSnapshotter
+s;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/AbstractFileCollectionSnapshotter.java;50;0
+d;subprojects/core/src/main/java/org/gradle/api/internal/changedetection/state/AbstractFileCollectionSnapshotter.java;52;0
+--------------------
+51b80f5b3a24af9c10066be0171bff04c63f3823;Rename Method;Rename Method	public isOverlappingOutputsDetected() : boolean renamed to public hasOverlappingOutputs() : boolean in class org.gradle.api.internal.tasks.execution.ExecuteActionsTaskExecuter.TaskExecution
+s;subprojects/core/src/main/java/org/gradle/api/internal/tasks/execution/ExecuteActionsTaskExecuter.java;244;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/tasks/execution/ExecuteActionsTaskExecuter.java;244;3
+--------------------
+b2828b69ec14f695c749e99faa9300b97bf585a4;Move Attribute;Move Attribute	private isolationLock : ProjectStateRegistry.SafeExclusiveLock from class org.gradle.api.internal.artifacts.transform.AbstractTransformer to class org.gradle.api.internal.artifacts.transform.DefaultTransformer
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/AbstractTransformer.java;39;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/transform/DefaultTransformer.java;79;0
+--------------------
+c1aa55efcb7cc617ee893c47b4c519a42b5c9ecd;Move Attribute;Move Attribute	public ORG_GRADLE_DEPRECATION_TRACE_PROPERTY_NAME : String from class org.gradle.util.SingleMessageLogger to class org.gradle.internal.featurelifecycle.LoggingDeprecatedFeatureHandler
+s;subprojects/logging/src/main/java/org/gradle/util/SingleMessageLogger.java;45;0
+d;subprojects/logging/src/main/java/org/gradle/internal/featurelifecycle/LoggingDeprecatedFeatureHandler.java;29;0
+--------------------
+29b411cd86346eef56b6826567241dbbe2447b05;Pull Up Method;Pull Up Method	public hasNext() : boolean from class org.gradle.api.internal.collections.AbstractIterationOrderRetainingElementSource.RealizedElementCollectionIterator to public hasNext() : boolean from class org.gradle.api.internal.collections.AbstractIterationOrderRetainingElementSource.AbstractElementCollectionIterator
+s;subprojects/core/src/main/java/org/gradle/api/internal/collections/AbstractIterationOrderRetainingElementSource.java;167;3
+d;subprojects/core/src/main/java/org/gradle/api/internal/collections/AbstractIterationOrderRetainingElementSource.java;168;3
+--------------------
+5a8edbbab63048482143b748904993ac139bcef8;Rename Variable;Rename Variable	rulePattern : ArtifactId to ruleArtifactId : ArtifactId in method public acceptModule(element ModuleIdentifier) : boolean in class org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultModuleResolutionFilter.ExcludeRuleSpec
+s;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/resolveengine/DefaultModuleResolutionFilter.java;601;0
+d;subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/ivyservice/resolveengine/DefaultModuleResolutionFilter.java;600;0
+--------------------
+104c163bdf1ca691c9322d19809ada36976f646f;Rename Method;Rename Method	public getResults() : Set<ModuleVersionArtifactMetaData> renamed to public getArtifacts() : Set<ModuleVersionArtifactMetaData> in class org.gradle.api.internal.artifacts.ivyservice.DefaultBuildableArtifactSetResolveResult
+s;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/DefaultBuildableArtifactSetResolveResult.java;37;3
+d;subprojects/core-impl/src/main/groovy/org/gradle/api/internal/artifacts/ivyservice/DefaultBuildableArtifactSetResolveResult.java;41;3
